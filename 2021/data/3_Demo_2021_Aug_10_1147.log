@@ -1,0 +1,720 @@
+1.2038 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+97.7337 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+98.7562 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001AE453D2940>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001AE452C64A8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+98.7570 	EXP 	window1: mouseVisible = True
+98.7570 	EXP 	window1: recordFrameIntervals = False
+98.9225 	EXP 	window1: recordFrameIntervals = True
+99.1072 	EXP 	window1: recordFrameIntervals = False
+99.4273 	EXP 	Created Cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/cue.png', interpolate=True, mask=None, maskParams=None, name='Cue', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+99.5027 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='instructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+99.5674 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+99.5694 	EXP 	Created Trial1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Trial1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+99.6340 	EXP 	Created Fixation2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+99.6359 	EXP 	Created Trial2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Trial2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+99.6711 	EXP 	Cue: autoDraw = True
+100.6368 	EXP 	instructions: autoDraw = True
+100.6863 	EXP 	Cue: autoDraw = False
+106.6363 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+106.6367 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+106.6369 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同颜色及位置3.png', 'correctAns': 2}
+106.6612 	EXP 	instructions: autoDraw = False
+106.6612 	EXP 	Cue: autoDraw = False
+106.6612 	EXP 	instructions: autoDraw = False
+106.6612 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置3.png'
+106.6612 	EXP 	Fixation1: autoDraw = True
+107.6629 	EXP 	Fixation1: autoDraw = False
+107.6629 	EXP 	Trial1: autoDraw = True
+115.6534 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同颜色及边数5.png', 'correctAns': 1}
+115.6901 	EXP 	Fixation1: autoDraw = False
+115.6901 	EXP 	Trial1: autoDraw = False
+115.6901 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数5.png'
+115.6901 	EXP 	Fixation1: autoDraw = True
+116.6785 	EXP 	Trial1: autoDraw = True
+116.6952 	EXP 	Fixation1: autoDraw = False
+124.6392 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同位置及边数1.png', 'correctAns': 1}
+124.6739 	EXP 	Fixation1: autoDraw = False
+124.6739 	EXP 	Trial1: autoDraw = False
+124.6739 	EXP 	Trial1: image = 'Task samples\\相同位置及边数1.png'
+124.6739 	EXP 	Fixation1: autoDraw = True
+125.6616 	EXP 	Trial1: autoDraw = True
+125.6788 	EXP 	Fixation1: autoDraw = False
+133.6379 	EXP 	New trial (rep=0, index=3): {'images': 'Task samples\\相同位置及边数5.png', 'correctAns': 1}
+133.6686 	EXP 	Fixation1: autoDraw = False
+133.6686 	EXP 	Trial1: autoDraw = False
+133.6686 	EXP 	Trial1: image = 'Task samples\\相同位置及边数5.png'
+133.6686 	EXP 	Fixation1: autoDraw = True
+134.6556 	EXP 	Trial1: autoDraw = True
+134.6724 	EXP 	Fixation1: autoDraw = False
+142.6469 	EXP 	New trial (rep=0, index=4): {'images': 'Task samples\\相同颜色及边数10.png', 'correctAns': 2}
+142.6674 	EXP 	Fixation1: autoDraw = False
+142.6674 	EXP 	Trial1: autoDraw = False
+142.6674 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数10.png'
+142.6674 	EXP 	Fixation1: autoDraw = True
+143.6680 	EXP 	Trial1: autoDraw = True
+143.6847 	EXP 	Fixation1: autoDraw = False
+150.0458 	EXP 	New trial (rep=0, index=5): {'images': 'Task samples\\相同颜色及位置10.png', 'correctAns': 2}
+150.0638 	DATA 	Keypress: 2
+150.0781 	EXP 	Fixation1: autoDraw = False
+150.0781 	EXP 	Trial1: autoDraw = False
+150.0781 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置10.png'
+150.0781 	EXP 	Fixation1: autoDraw = True
+150.7812 	DATA 	Keypress: 2
+150.9478 	DATA 	Keypress: 2
+151.0660 	EXP 	Trial1: autoDraw = True
+151.0830 	EXP 	Fixation1: autoDraw = False
+151.1383 	EXP 	New trial (rep=0, index=6): {'images': 'Task samples\\相同位置及边数2.png', 'correctAns': 1}
+151.1573 	DATA 	Keypress: 2
+151.1714 	EXP 	Fixation1: autoDraw = False
+151.1714 	EXP 	Trial1: autoDraw = False
+151.1714 	EXP 	Trial1: image = 'Task samples\\相同位置及边数2.png'
+151.1714 	EXP 	Fixation1: autoDraw = True
+151.3063 	DATA 	Keypress: 2
+151.6904 	DATA 	Keypress: 2
+151.8561 	DATA 	Keypress: 2
+152.0574 	DATA 	Keypress: 2
+152.1576 	EXP 	Trial1: autoDraw = True
+152.1752 	EXP 	Fixation1: autoDraw = False
+152.2458 	EXP 	New trial (rep=0, index=7): {'images': 'Task samples\\相同颜色及位置2.png', 'correctAns': 2}
+152.2648 	DATA 	Keypress: 2
+152.2789 	EXP 	Fixation1: autoDraw = False
+152.2789 	EXP 	Trial1: autoDraw = False
+152.2789 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置2.png'
+152.2789 	EXP 	Fixation1: autoDraw = True
+152.3988 	DATA 	Keypress: 2
+152.5641 	DATA 	Keypress: 2
+152.7483 	DATA 	Keypress: 2
+153.2838 	EXP 	Trial1: autoDraw = True
+153.3005 	EXP 	Fixation1: autoDraw = False
+153.8563 	DATA 	Keypress: 2
+153.8715 	EXP 	New trial (rep=0, index=8): {'images': 'Task samples\\相同颜色及位置4.png', 'correctAns': 1}
+153.9052 	EXP 	Fixation1: autoDraw = False
+153.9052 	EXP 	Trial1: autoDraw = False
+153.9052 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置4.png'
+153.9052 	EXP 	Fixation1: autoDraw = True
+154.3958 	DATA 	Keypress: 2
+154.4071 	DATA 	Keypress: 1
+154.7251 	DATA 	Keypress: 2
+154.8927 	EXP 	Trial1: autoDraw = True
+154.8992 	DATA 	Keypress: 2
+154.9104 	EXP 	Fixation1: autoDraw = False
+154.9150 	EXP 	New trial (rep=0, index=9): {'images': 'Task samples\\相同颜色及边数6.png', 'correctAns': 1}
+154.9341 	DATA 	Keypress: 1
+154.9480 	EXP 	Fixation1: autoDraw = False
+154.9480 	EXP 	Trial1: autoDraw = False
+154.9480 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数6.png'
+154.9480 	EXP 	Fixation1: autoDraw = True
+155.2504 	DATA 	Keypress: 2
+155.4346 	DATA 	Keypress: 2
+155.8670 	DATA 	Keypress: 2
+155.9337 	EXP 	Trial1: autoDraw = True
+155.9505 	EXP 	Fixation1: autoDraw = False
+156.0888 	EXP 	New trial (rep=0, index=10): {'images': 'Task samples\\相同颜色及边数1.png', 'correctAns': 1}
+156.1070 	DATA 	Keypress: 2
+156.1217 	EXP 	Fixation1: autoDraw = False
+156.1217 	EXP 	Trial1: autoDraw = False
+156.1217 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数1.png'
+156.1217 	EXP 	Fixation1: autoDraw = True
+156.2250 	DATA 	Keypress: 2
+156.3904 	DATA 	Keypress: 2
+156.5573 	DATA 	Keypress: 2
+156.6910 	DATA 	Keypress: 2
+156.8249 	DATA 	Keypress: 2
+156.9583 	DATA 	Keypress: 2
+157.1051 	DATA 	Keypress: 2
+157.1070 	EXP 	Trial1: autoDraw = True
+157.1237 	EXP 	Fixation1: autoDraw = False
+157.2454 	EXP 	New trial (rep=0, index=11): {'images': 'Task samples\\相同位置及边数4.png', 'correctAns': 1}
+157.2680 	DATA 	Keypress: 2
+157.2782 	EXP 	Fixation1: autoDraw = False
+157.2782 	EXP 	Trial1: autoDraw = False
+157.2782 	EXP 	Trial1: image = 'Task samples\\相同位置及边数4.png'
+157.2782 	EXP 	Fixation1: autoDraw = True
+157.3638 	DATA 	Keypress: 2
+157.5142 	DATA 	Keypress: 2
+157.6642 	DATA 	Keypress: 2
+157.8986 	DATA 	Keypress: 2
+158.0320 	DATA 	Keypress: 2
+158.1658 	DATA 	Keypress: 2
+158.2645 	EXP 	Trial1: autoDraw = True
+158.2815 	EXP 	Fixation1: autoDraw = False
+158.4897 	DATA 	Keypress: 2
+158.5024 	EXP 	New trial (rep=0, index=12): {'images': 'Task samples\\相同位置及边数7.png', 'correctAns': 1}
+158.5368 	EXP 	Fixation1: autoDraw = False
+158.5368 	EXP 	Trial1: autoDraw = False
+158.5368 	EXP 	Trial1: image = 'Task samples\\相同位置及边数7.png'
+158.5368 	EXP 	Fixation1: autoDraw = True
+158.6718 	DATA 	Keypress: 2
+158.8219 	DATA 	Keypress: 2
+159.0054 	DATA 	Keypress: 2
+159.1570 	DATA 	Keypress: 2
+159.2902 	DATA 	Keypress: 2
+159.4391 	DATA 	Keypress: 2
+159.5227 	EXP 	Trial1: autoDraw = True
+159.5396 	EXP 	Fixation1: autoDraw = False
+159.5776 	EXP 	New trial (rep=0, index=13): {'images': 'Task samples\\相同颜色及边数3.png', 'correctAns': 2}
+159.6007 	DATA 	Keypress: 2
+159.6105 	EXP 	Fixation1: autoDraw = False
+159.6105 	EXP 	Trial1: autoDraw = False
+159.6105 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数3.png'
+159.6105 	EXP 	Fixation1: autoDraw = True
+159.7957 	DATA 	Keypress: 2
+159.9973 	DATA 	Keypress: 2
+160.2803 	DATA 	Keypress: 2
+160.5951 	EXP 	Trial1: autoDraw = True
+160.6018 	EXP 	New trial (rep=0, index=14): {'images': 'Task samples\\相同位置及边数9.png', 'correctAns': 2}
+160.6232 	DATA 	Keypress: 2
+160.6234 	DATA 	Keypress: 1
+160.6330 	EXP 	Fixation1: autoDraw = False
+160.6330 	EXP 	Fixation1: autoDraw = False
+160.6330 	EXP 	Trial1: autoDraw = False
+160.6330 	EXP 	Trial1: image = 'Task samples\\相同位置及边数9.png'
+160.6330 	EXP 	Fixation1: autoDraw = True
+160.9021 	DATA 	Keypress: 2
+161.1858 	DATA 	Keypress: 1
+161.3870 	DATA 	Keypress: 2
+161.6209 	EXP 	Trial1: autoDraw = True
+161.6378 	EXP 	Fixation1: autoDraw = False
+161.6618 	EXP 	New trial (rep=0, index=15): {'images': 'Task samples\\相同颜色及边数4.png', 'correctAns': 2}
+161.6853 	DATA 	Keypress: 1
+161.6921 	EXP 	Fixation1: autoDraw = False
+161.6921 	EXP 	Trial1: autoDraw = False
+161.6921 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数4.png'
+161.6921 	EXP 	Fixation1: autoDraw = True
+161.8614 	DATA 	Keypress: 2
+161.8625 	DATA 	Keypress: 1
+162.0616 	DATA 	Keypress: 1
+162.2450 	DATA 	Keypress: 1
+162.2618 	DATA 	Keypress: 2
+162.4283 	DATA 	Keypress: 2
+162.4619 	DATA 	Keypress: 1
+162.6132 	DATA 	Keypress: 1
+162.6950 	EXP 	Fixation1: autoDraw = False
+162.6950 	EXP 	Trial1: autoDraw = True
+162.7840 	DATA 	Keypress: 2
+162.7999 	EXP 	New trial (rep=0, index=16): {'images': 'Task samples\\相同位置及边数8.png', 'correctAns': 1}
+162.8244 	DATA 	Keypress: 1
+162.8329 	EXP 	Fixation1: autoDraw = False
+162.8329 	EXP 	Trial1: autoDraw = False
+162.8329 	EXP 	Trial1: image = 'Task samples\\相同位置及边数8.png'
+162.8329 	EXP 	Fixation1: autoDraw = True
+162.9851 	DATA 	Keypress: 2
+163.1691 	DATA 	Keypress: 1
+163.2024 	DATA 	Keypress: 2
+163.4189 	DATA 	Keypress: 1
+163.5856 	DATA 	Keypress: 2
+163.8195 	EXP 	Trial1: autoDraw = True
+163.8262 	EXP 	New trial (rep=0, index=17): {'images': 'Task samples\\相同位置及边数3.png', 'correctAns': 2}
+163.8442 	DATA 	Keypress: 2
+163.8573 	EXP 	Fixation1: autoDraw = False
+163.8573 	EXP 	Fixation1: autoDraw = False
+163.8573 	EXP 	Trial1: autoDraw = False
+163.8573 	EXP 	Trial1: image = 'Task samples\\相同位置及边数3.png'
+163.8573 	EXP 	Fixation1: autoDraw = True
+164.0099 	DATA 	Keypress: 2
+164.0262 	DATA 	Keypress: 1
+164.1930 	DATA 	Keypress: 1
+164.4275 	DATA 	Keypress: 1
+164.6443 	DATA 	Keypress: 2
+164.8427 	EXP 	Trial1: autoDraw = True
+164.8595 	EXP 	Fixation1: autoDraw = False
+164.8808 	EXP 	New trial (rep=0, index=18): {'images': 'Task samples\\相同位置及边数6.png', 'correctAns': 2}
+164.9000 	DATA 	Keypress: 2
+164.9139 	EXP 	Fixation1: autoDraw = False
+164.9139 	EXP 	Trial1: autoDraw = False
+164.9139 	EXP 	Trial1: image = 'Task samples\\相同位置及边数6.png'
+164.9139 	EXP 	Fixation1: autoDraw = True
+164.9663 	DATA 	Keypress: 1
+165.1508 	DATA 	Keypress: 1
+165.2015 	DATA 	Keypress: 2
+165.4012 	DATA 	Keypress: 1
+165.6998 	DATA 	Keypress: 2
+165.9013 	EXP 	Trial1: autoDraw = True
+165.9180 	EXP 	Fixation1: autoDraw = False
+166.0893 	EXP 	New trial (rep=0, index=19): {'images': 'Task samples\\相同颜色及位置8.png', 'correctAns': 2}
+166.1083 	DATA 	Keypress: 1
+166.1227 	EXP 	Fixation1: autoDraw = False
+166.1227 	EXP 	Trial1: autoDraw = False
+166.1227 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置8.png'
+166.1227 	EXP 	Fixation1: autoDraw = True
+167.0773 	DATA 	Keypress: 2
+167.1068 	EXP 	Trial1: autoDraw = True
+167.1241 	EXP 	Fixation1: autoDraw = False
+167.1292 	DATA 	Keypress: 1
+167.1439 	EXP 	New trial (rep=0, index=20): {'images': 'Task samples\\相同位置及边数10.png', 'correctAns': 1}
+167.1785 	EXP 	Fixation1: autoDraw = False
+167.1785 	EXP 	Trial1: autoDraw = False
+167.1785 	EXP 	Trial1: image = 'Task samples\\相同位置及边数10.png'
+167.1785 	EXP 	Fixation1: autoDraw = True
+167.3970 	DATA 	Keypress: 2
+167.5808 	DATA 	Keypress: 1
+167.7638 	DATA 	Keypress: 2
+167.9148 	DATA 	Keypress: 1
+168.1308 	DATA 	Keypress: 2
+168.1648 	EXP 	Trial1: autoDraw = True
+168.1816 	EXP 	Fixation1: autoDraw = False
+168.2530 	EXP 	New trial (rep=0, index=21): {'images': 'Task samples\\相同颜色及边数8.png', 'correctAns': 1}
+168.2763 	DATA 	Keypress: 1
+168.2867 	EXP 	Fixation1: autoDraw = False
+168.2867 	EXP 	Trial1: autoDraw = False
+168.2867 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数8.png'
+168.2867 	EXP 	Fixation1: autoDraw = True
+168.4385 	DATA 	Keypress: 2
+168.5556 	DATA 	Keypress: 1
+168.7733 	DATA 	Keypress: 2
+168.8222 	DATA 	Keypress: 1
+169.0230 	DATA 	Keypress: 2
+169.2222 	DATA 	Keypress: 1
+169.2723 	EXP 	Trial1: autoDraw = True
+169.2892 	EXP 	Fixation1: autoDraw = False
+169.3606 	EXP 	New trial (rep=0, index=22): {'images': 'Task samples\\相同颜色及位置5.png', 'correctAns': 1}
+169.3810 	DATA 	Keypress: 2
+169.3936 	EXP 	Fixation1: autoDraw = False
+169.3936 	EXP 	Trial1: autoDraw = False
+169.3936 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置5.png'
+169.3936 	EXP 	Fixation1: autoDraw = True
+169.4794 	DATA 	Keypress: 1
+169.6629 	DATA 	Keypress: 2
+169.8295 	DATA 	Keypress: 1
+170.0142 	DATA 	Keypress: 2
+170.0964 	DATA 	Keypress: 1
+170.2966 	DATA 	Keypress: 2
+170.3817 	EXP 	Trial1: autoDraw = True
+170.3991 	EXP 	Fixation1: autoDraw = False
+170.4862 	EXP 	New trial (rep=0, index=23): {'images': 'Task samples\\相同颜色及位置6.png', 'correctAns': 2}
+170.5044 	DATA 	Keypress: 1
+170.5154 	EXP 	Fixation1: autoDraw = False
+170.5154 	EXP 	Trial1: autoDraw = False
+170.5154 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置6.png'
+170.5154 	EXP 	Fixation1: autoDraw = True
+170.6349 	DATA 	Keypress: 2
+170.7851 	DATA 	Keypress: 1
+171.0689 	DATA 	Keypress: 2
+171.1709 	DATA 	Keypress: 1
+171.5012 	DATA 	Keypress: 1
+171.5031 	EXP 	Trial1: autoDraw = True
+171.5199 	EXP 	Fixation1: autoDraw = False
+171.7071 	EXP 	New trial (rep=0, index=24): {'images': 'Task samples\\相同颜色及边数2.png', 'correctAns': 1}
+171.7265 	DATA 	Keypress: 2
+171.7411 	EXP 	Fixation1: autoDraw = False
+171.7411 	EXP 	Trial1: autoDraw = False
+171.7411 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数2.png'
+171.7411 	EXP 	Fixation1: autoDraw = True
+171.8265 	DATA 	Keypress: 1
+172.0111 	DATA 	Keypress: 2
+172.1478 	DATA 	Keypress: 1
+172.3808 	DATA 	Keypress: 2
+172.5108 	DATA 	Keypress: 1
+172.7281 	EXP 	Trial1: autoDraw = True
+172.7449 	EXP 	Fixation1: autoDraw = False
+172.8839 	EXP 	New trial (rep=0, index=25): {'images': 'Task samples\\相同颜色及边数9.png', 'correctAns': 1}
+172.9031 	DATA 	Keypress: 1
+172.9161 	EXP 	Fixation1: autoDraw = False
+172.9161 	EXP 	Trial1: autoDraw = False
+172.9161 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数9.png'
+172.9161 	EXP 	Fixation1: autoDraw = True
+173.1198 	DATA 	Keypress: 2
+173.2030 	DATA 	Keypress: 1
+173.6204 	DATA 	Keypress: 1
+173.8026 	DATA 	Keypress: 2
+173.9035 	EXP 	Trial1: autoDraw = True
+173.9204 	EXP 	Fixation1: autoDraw = False
+174.0418 	DATA 	Keypress: 1
+174.0589 	EXP 	New trial (rep=0, index=26): {'images': 'Task samples\\相同颜色及边数7.png', 'correctAns': 2}
+174.0914 	EXP 	Fixation1: autoDraw = False
+174.0914 	EXP 	Trial1: autoDraw = False
+174.0914 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数7.png'
+174.0914 	EXP 	Fixation1: autoDraw = True
+174.1626 	DATA 	Keypress: 2
+174.2945 	DATA 	Keypress: 1
+174.5268 	DATA 	Keypress: 2
+174.6444 	DATA 	Keypress: 1
+174.8649 	DATA 	Keypress: 2
+174.9775 	DATA 	Keypress: 1
+175.0963 	EXP 	Trial1: autoDraw = True
+175.1131 	EXP 	Fixation1: autoDraw = False
+175.2010 	EXP 	New trial (rep=0, index=27): {'images': 'Task samples\\相同颜色及位置9.png', 'correctAns': 1}
+175.2201 	DATA 	Keypress: 2
+175.2349 	EXP 	Fixation1: autoDraw = False
+175.2349 	EXP 	Trial1: autoDraw = False
+175.2349 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置9.png'
+175.2349 	EXP 	Fixation1: autoDraw = True
+175.3533 	DATA 	Keypress: 1
+175.5379 	DATA 	Keypress: 2
+176.0540 	DATA 	Keypress: 1
+176.2221 	EXP 	Trial1: autoDraw = True
+176.2390 	EXP 	Fixation1: autoDraw = False
+176.2778 	EXP 	New trial (rep=0, index=28): {'images': 'Task samples\\相同颜色及位置7.png', 'correctAns': 1}
+176.2968 	DATA 	Keypress: 2
+176.3100 	EXP 	Fixation1: autoDraw = False
+176.3100 	EXP 	Trial1: autoDraw = False
+176.3100 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置7.png'
+176.3100 	EXP 	Fixation1: autoDraw = True
+176.4292 	DATA 	Keypress: 1
+176.6639 	DATA 	Keypress: 2
+176.8296 	DATA 	Keypress: 1
+177.0316 	DATA 	Keypress: 2
+177.1465 	DATA 	Keypress: 1
+177.2967 	EXP 	Trial1: autoDraw = True
+177.3134 	EXP 	Fixation1: autoDraw = False
+177.3426 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+177.3430 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+177.3431 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同的奇偶规律 3.png', 'correctAns': 1}
+177.3631 	DATA 	Keypress: 2
+177.3677 	EXP 	Fixation1: autoDraw = False
+177.3677 	EXP 	Trial1: autoDraw = False
+177.3677 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 3.png'
+177.3677 	EXP 	Fixation2: autoDraw = True
+177.6871 	DATA 	Keypress: 1
+177.7893 	DATA 	Keypress: 2
+178.1889 	DATA 	Keypress: 2
+178.3378 	DATA 	Keypress: 1
+178.3687 	EXP 	Fixation2: autoDraw = False
+178.3687 	EXP 	Trial2: autoDraw = True
+178.5073 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同的奇偶规律 8.png', 'correctAns': 1}
+178.5259 	DATA 	Keypress: 2
+178.5398 	EXP 	Fixation2: autoDraw = False
+178.5398 	EXP 	Trial2: autoDraw = False
+178.5398 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 8.png'
+178.5398 	EXP 	Fixation2: autoDraw = True
+178.9093 	DATA 	Keypress: 2
+179.3931 	DATA 	Keypress: 2
+179.5267 	EXP 	Trial2: autoDraw = True
+179.5436 	EXP 	Fixation2: autoDraw = False
+179.5822 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同的位置规律 4.png', 'correctAns': 1}
+179.6013 	DATA 	Keypress: 1
+179.6146 	EXP 	Fixation2: autoDraw = False
+179.6146 	EXP 	Trial2: autoDraw = False
+179.6146 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 4.png'
+179.6146 	EXP 	Fixation2: autoDraw = True
+179.8003 	DATA 	Keypress: 2
+180.0672 	DATA 	Keypress: 1
+180.2015 	DATA 	Keypress: 2
+180.4837 	DATA 	Keypress: 1
+180.6026 	EXP 	Trial2: autoDraw = True
+180.6195 	EXP 	Fixation2: autoDraw = False
+180.7909 	DATA 	Keypress: 2
+180.8077 	EXP 	New trial (rep=0, index=3): {'images': 'Task samples\\相同的数列规律 6.png', 'correctAns': 1}
+180.8407 	EXP 	Fixation2: autoDraw = False
+180.8407 	EXP 	Trial2: autoDraw = False
+180.8407 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 6.png'
+180.8407 	EXP 	Fixation2: autoDraw = True
+181.2434 	DATA 	Keypress: 1
+181.6280 	DATA 	Keypress: 2
+181.8266 	EXP 	Trial2: autoDraw = True
+181.8435 	EXP 	Fixation2: autoDraw = False
+182.1810 	EXP 	New trial (rep=0, index=4): {'images': 'Task samples\\相同的位置规律 7.png', 'correctAns': 1}
+182.2002 	DATA 	Keypress: 1
+182.2147 	EXP 	Fixation2: autoDraw = False
+182.2147 	EXP 	Trial2: autoDraw = False
+182.2147 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 7.png'
+182.2147 	EXP 	Fixation2: autoDraw = True
+182.6191 	DATA 	Keypress: 2
+183.1681 	DATA 	Keypress: 1
+183.2196 	EXP 	Trial2: autoDraw = True
+183.2372 	EXP 	Fixation2: autoDraw = False
+183.6087 	EXP 	New trial (rep=0, index=5): {'images': 'Task samples\\相同的位置规律 9.png', 'correctAns': 1}
+183.6280 	DATA 	Keypress: 2
+183.6410 	EXP 	Fixation2: autoDraw = False
+183.6410 	EXP 	Trial2: autoDraw = False
+183.6410 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 9.png'
+183.6410 	EXP 	Fixation2: autoDraw = True
+184.0937 	DATA 	Keypress: 1
+184.5783 	DATA 	Keypress: 2
+184.6273 	EXP 	Trial2: autoDraw = True
+184.6443 	EXP 	Fixation2: autoDraw = False
+185.0355 	DATA 	Keypress: 1
+185.0492 	EXP 	New trial (rep=0, index=6): {'images': 'Task samples\\相同的数列规律 9.jpg', 'correctAns': 1}
+185.0831 	EXP 	Fixation2: autoDraw = False
+185.0831 	EXP 	Trial2: autoDraw = False
+185.0831 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 9.jpg'
+185.0831 	EXP 	Fixation2: autoDraw = True
+185.5029 	DATA 	Keypress: 2
+185.9521 	DATA 	Keypress: 1
+186.0534 	EXP 	Trial2: autoDraw = True
+186.0870 	EXP 	Fixation2: autoDraw = False
+186.4075 	DATA 	Keypress: 2
+186.4244 	EXP 	New trial (rep=0, index=7): {'images': 'Task samples\\相同的位置规律 3.png', 'correctAns': 2}
+186.4590 	EXP 	Fixation2: autoDraw = False
+186.4590 	EXP 	Trial2: autoDraw = False
+186.4590 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 3.png'
+186.4590 	EXP 	Fixation2: autoDraw = True
+186.8449 	DATA 	Keypress: 1
+187.3113 	DATA 	Keypress: 2
+187.4457 	EXP 	Trial2: autoDraw = True
+187.4626 	EXP 	Fixation2: autoDraw = False
+187.7008 	EXP 	New trial (rep=0, index=8): {'images': 'Task samples\\相同的奇偶规律 5.png', 'correctAns': 1}
+187.7199 	DATA 	Keypress: 1
+187.7346 	EXP 	Fixation2: autoDraw = False
+187.7346 	EXP 	Trial2: autoDraw = False
+187.7346 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 5.png'
+187.7346 	EXP 	Fixation2: autoDraw = True
+188.1532 	DATA 	Keypress: 2
+188.3540 	DATA 	Keypress: 1
+188.5536 	DATA 	Keypress: 2
+188.7205 	EXP 	Trial2: autoDraw = True
+188.7373 	EXP 	Fixation2: autoDraw = False
+188.8248 	EXP 	New trial (rep=0, index=9): {'images': 'Task samples\\相同的数列规律 5.png', 'correctAns': 1}
+188.8439 	DATA 	Keypress: 2
+188.8584 	EXP 	Fixation2: autoDraw = False
+188.8584 	EXP 	Trial2: autoDraw = False
+188.8584 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 5.png'
+188.8584 	EXP 	Fixation2: autoDraw = True
+189.0106 	DATA 	Keypress: 1
+189.1788 	DATA 	Keypress: 2
+189.3279 	DATA 	Keypress: 1
+189.4609 	DATA 	Keypress: 2
+189.6283 	DATA 	Keypress: 1
+189.7459 	DATA 	Keypress: 2
+189.8436 	EXP 	Trial2: autoDraw = True
+189.8604 	EXP 	Fixation2: autoDraw = False
+189.9159 	EXP 	New trial (rep=0, index=10): {'images': 'Task samples\\相同的位置规律 6.png', 'correctAns': 2}
+189.9349 	DATA 	Keypress: 1
+189.9487 	EXP 	Fixation2: autoDraw = False
+189.9487 	EXP 	Trial2: autoDraw = False
+189.9487 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 6.png'
+189.9487 	EXP 	Fixation2: autoDraw = True
+190.0005 	DATA 	Keypress: 2
+190.1520 	DATA 	Keypress: 1
+190.3009 	DATA 	Keypress: 2
+190.4510 	DATA 	Keypress: 1
+190.5679 	DATA 	Keypress: 2
+190.9335 	DATA 	Keypress: 2
+190.9353 	EXP 	Trial2: autoDraw = True
+190.9522 	EXP 	Fixation2: autoDraw = False
+191.1782 	DATA 	Keypress: 1
+191.1901 	EXP 	New trial (rep=0, index=11): {'images': 'Task samples\\相同的奇偶规律 9.png', 'correctAns': 2}
+191.2243 	EXP 	Fixation2: autoDraw = False
+191.2243 	EXP 	Trial2: autoDraw = False
+191.2243 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 9.png'
+191.2243 	EXP 	Fixation2: autoDraw = True
+192.2100 	EXP 	Trial2: autoDraw = True
+192.2276 	EXP 	Fixation2: autoDraw = False
+192.9819 	EXP 	New trial (rep=0, index=12): {'images': 'Task samples\\相同的奇偶规律 6.png', 'correctAns': 1}
+193.0048 	DATA 	Keypress: 2
+193.0152 	EXP 	Fixation2: autoDraw = False
+193.0152 	EXP 	Trial2: autoDraw = False
+193.0152 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 6.png'
+193.0152 	EXP 	Fixation2: autoDraw = True
+193.5352 	DATA 	Keypress: 1
+193.8358 	DATA 	Keypress: 1
+194.0017 	EXP 	Trial2: autoDraw = True
+194.0187 	EXP 	Fixation2: autoDraw = False
+194.0739 	DATA 	Keypress: 1
+194.0907 	EXP 	New trial (rep=0, index=13): {'images': 'Task samples\\相同的数列规律 2.png', 'correctAns': 1}
+194.1230 	EXP 	Fixation2: autoDraw = False
+194.1230 	EXP 	Trial2: autoDraw = False
+194.1230 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 2.png'
+194.1230 	EXP 	Fixation2: autoDraw = True
+194.3255 	DATA 	Keypress: 1
+194.5425 	DATA 	Keypress: 1
+194.7593 	DATA 	Keypress: 1
+194.9929 	DATA 	Keypress: 1
+195.1086 	EXP 	Trial2: autoDraw = True
+195.1253 	EXP 	Fixation2: autoDraw = False
+195.2302 	EXP 	New trial (rep=0, index=14): {'images': 'Task samples\\相同的奇偶规律 4.png', 'correctAns': 2}
+195.2493 	DATA 	Keypress: 1
+195.2631 	EXP 	Fixation2: autoDraw = False
+195.2631 	EXP 	Trial2: autoDraw = False
+195.2631 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 4.png'
+195.2631 	EXP 	Fixation2: autoDraw = True
+195.5819 	DATA 	Keypress: 1
+195.7825 	DATA 	Keypress: 1
+196.0163 	DATA 	Keypress: 1
+196.2504 	EXP 	Trial2: autoDraw = True
+196.2568 	DATA 	Keypress: 1
+196.2673 	EXP 	Fixation2: autoDraw = False
+196.2720 	EXP 	New trial (rep=0, index=15): {'images': 'Task samples\\相同的数列规律 7.png', 'correctAns': 2}
+196.3049 	EXP 	Fixation2: autoDraw = False
+196.3049 	EXP 	Trial2: autoDraw = False
+196.3049 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 7.png'
+196.3049 	EXP 	Fixation2: autoDraw = True
+196.5255 	DATA 	Keypress: 1
+196.7744 	DATA 	Keypress: 1
+196.9746 	DATA 	Keypress: 1
+197.1412 	DATA 	Keypress: 1
+197.2928 	EXP 	Trial2: autoDraw = True
+197.3098 	EXP 	Fixation2: autoDraw = False
+197.3140 	EXP 	New trial (rep=0, index=16): {'images': 'Task samples\\相同的数列规律 3.png', 'correctAns': 2}
+197.3333 	DATA 	Keypress: 1
+197.3482 	EXP 	Fixation2: autoDraw = False
+197.3482 	EXP 	Trial2: autoDraw = False
+197.3482 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 3.png'
+197.3482 	EXP 	Fixation2: autoDraw = True
+197.5043 	DATA 	Keypress: 1
+197.8182 	DATA 	Keypress: 1
+198.0005 	DATA 	Keypress: 1
+198.2006 	DATA 	Keypress: 1
+198.3315 	EXP 	Trial2: autoDraw = True
+198.3489 	EXP 	Fixation2: autoDraw = False
+198.3692 	EXP 	New trial (rep=0, index=17): {'images': 'Task samples\\相同的数列规律 1.png', 'correctAns': 1}
+198.3892 	DATA 	Keypress: 1
+198.3894 	DATA 	Keypress: 2
+198.4027 	EXP 	Fixation2: autoDraw = False
+198.4027 	EXP 	Trial2: autoDraw = False
+198.4027 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 1.png'
+198.4027 	EXP 	Fixation2: autoDraw = True
+198.5388 	DATA 	Keypress: 1
+198.7052 	DATA 	Keypress: 1
+198.7377 	DATA 	Keypress: 2
+198.8881 	DATA 	Keypress: 1
+199.0731 	DATA 	Keypress: 2
+199.0887 	DATA 	Keypress: 1
+199.2389 	DATA 	Keypress: 1
+199.2566 	DATA 	Keypress: 2
+199.3891 	EXP 	Trial2: autoDraw = True
+199.4061 	EXP 	Fixation2: autoDraw = False
+199.4436 	EXP 	New trial (rep=0, index=18): {'images': 'Task samples\\相同的位置规律 5.png', 'correctAns': 1}
+199.4617 	DATA 	Keypress: 1
+199.4770 	EXP 	Fixation2: autoDraw = False
+199.4770 	EXP 	Trial2: autoDraw = False
+199.4770 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 5.png'
+199.4770 	EXP 	Fixation2: autoDraw = True
+199.6464 	DATA 	Keypress: 2
+199.6633 	DATA 	Keypress: 1
+199.8291 	DATA 	Keypress: 1
+199.8472 	DATA 	Keypress: 2
+200.0456 	DATA 	Keypress: 2
+200.0683 	DATA 	Keypress: 1
+200.2303 	DATA 	Keypress: 1
+200.4302 	DATA 	Keypress: 2
+200.4633 	DATA 	Keypress: 1
+200.4651 	EXP 	Trial2: autoDraw = True
+200.4820 	EXP 	Fixation2: autoDraw = False
+200.6373 	EXP 	New trial (rep=0, index=19): {'images': 'Task samples\\相同的数列规律 10.png', 'correctAns': 2}
+200.6554 	DATA 	Keypress: 2
+200.6556 	DATA 	Keypress: 1
+200.6696 	EXP 	Fixation2: autoDraw = False
+200.6696 	EXP 	Trial2: autoDraw = False
+200.6696 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 10.png'
+200.6696 	EXP 	Fixation2: autoDraw = True
+200.8556 	DATA 	Keypress: 2
+200.8719 	DATA 	Keypress: 1
+201.0560 	DATA 	Keypress: 1
+201.0724 	DATA 	Keypress: 2
+201.2570 	DATA 	Keypress: 1
+201.2732 	DATA 	Keypress: 2
+201.4728 	DATA 	Keypress: 1
+201.5073 	DATA 	Keypress: 2
+201.6567 	EXP 	Trial2: autoDraw = True
+201.6736 	EXP 	Fixation2: autoDraw = False
+201.6783 	DATA 	Keypress: 1
+201.6949 	EXP 	New trial (rep=0, index=20): {'images': 'Task samples\\相同的奇偶规律 2.png', 'correctAns': 2}
+201.7140 	DATA 	Keypress: 2
+201.7278 	EXP 	Fixation2: autoDraw = False
+201.7278 	EXP 	Trial2: autoDraw = False
+201.7278 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 2.png'
+201.7278 	EXP 	Fixation2: autoDraw = True
+201.9132 	DATA 	Keypress: 2
+201.9304 	DATA 	Keypress: 1
+202.1130 	DATA 	Keypress: 1
+202.1483 	DATA 	Keypress: 2
+202.2974 	DATA 	Keypress: 2
+202.3340 	DATA 	Keypress: 1
+202.4827 	DATA 	Keypress: 1
+202.4975 	DATA 	Keypress: 2
+202.6644 	DATA 	Keypress: 1
+202.6819 	DATA 	Keypress: 2
+202.7163 	EXP 	Trial2: autoDraw = True
+202.7334 	EXP 	Fixation2: autoDraw = False
+202.8710 	DATA 	Keypress: 1
+202.8883 	EXP 	New trial (rep=0, index=21): {'images': 'Task samples\\相同的数列规律 4.png', 'correctAns': 2}
+202.9171 	EXP 	Fixation2: autoDraw = False
+202.9171 	EXP 	Trial2: autoDraw = False
+202.9171 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 4.png'
+202.9171 	EXP 	Fixation2: autoDraw = True
+203.0523 	DATA 	Keypress: 1
+203.2522 	DATA 	Keypress: 1
+203.4691 	DATA 	Keypress: 1
+203.6695 	DATA 	Keypress: 2
+203.9005 	EXP 	Trial2: autoDraw = True
+203.9179 	EXP 	Fixation2: autoDraw = False
+204.0552 	EXP 	New trial (rep=0, index=22): {'images': 'Task samples\\相同的位置规律 1.png', 'correctAns': 1}
+204.0744 	DATA 	Keypress: 2
+204.0890 	EXP 	Fixation2: autoDraw = False
+204.0890 	EXP 	Trial2: autoDraw = False
+204.0890 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 1.png'
+204.0890 	EXP 	Fixation2: autoDraw = True
+204.2907 	DATA 	Keypress: 1
+204.5087 	DATA 	Keypress: 2
+204.7580 	DATA 	Keypress: 1
+204.8747 	DATA 	Keypress: 2
+205.0734 	DATA 	Keypress: 1
+205.0752 	EXP 	Trial2: autoDraw = True
+205.0920 	EXP 	Fixation2: autoDraw = False
+205.1973 	EXP 	New trial (rep=0, index=23): {'images': 'Task samples\\相同的位置规律 10.png', 'correctAns': 2}
+205.2153 	DATA 	Keypress: 2
+205.2297 	EXP 	Fixation2: autoDraw = False
+205.2297 	EXP 	Trial2: autoDraw = False
+205.2297 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 10.png'
+205.2297 	EXP 	Fixation2: autoDraw = True
+205.3502 	DATA 	Keypress: 1
+205.4824 	DATA 	Keypress: 2
+205.6492 	DATA 	Keypress: 1
+205.7827 	DATA 	Keypress: 2
+206.0826 	DATA 	Keypress: 2
+206.2166 	EXP 	Trial2: autoDraw = True
+206.2333 	EXP 	Fixation2: autoDraw = False
+206.3050 	EXP 	New trial (rep=0, index=24): {'images': 'Task samples\\相同的位置规律 8.png', 'correctAns': 2}
+206.3240 	DATA 	Keypress: 2
+206.3378 	EXP 	Fixation2: autoDraw = False
+206.3378 	EXP 	Trial2: autoDraw = False
+206.3378 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 8.png'
+206.3378 	EXP 	Fixation2: autoDraw = True
+206.3403 	DATA 	Keypress: 1
+206.5586 	DATA 	Keypress: 2
+206.8750 	DATA 	Keypress: 2
+207.1409 	DATA 	Keypress: 1
+207.2410 	DATA 	Keypress: 2
+207.3248 	EXP 	Trial2: autoDraw = True
+207.3418 	EXP 	Fixation2: autoDraw = False
+207.4139 	EXP 	New trial (rep=0, index=25): {'images': 'Task samples\\相同的奇偶规律 10.png', 'correctAns': 2}
+207.4331 	DATA 	Keypress: 1
+207.4468 	EXP 	Fixation2: autoDraw = False
+207.4468 	EXP 	Trial2: autoDraw = False
+207.4468 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 10.png'
+207.4468 	EXP 	Fixation2: autoDraw = True
+207.5652 	DATA 	Keypress: 2
+207.7488 	DATA 	Keypress: 1
+207.9154 	DATA 	Keypress: 2
+208.0538 	DATA 	Keypress: 1
+208.3164 	DATA 	Keypress: 2
+208.4323 	EXP 	Trial2: autoDraw = True
+208.4491 	EXP 	Fixation2: autoDraw = False
+208.5707 	EXP 	New trial (rep=0, index=26): {'images': 'Task samples\\相同的位置规律 2.png', 'correctAns': 1}
+208.5908 	DATA 	Keypress: 2
+208.6036 	EXP 	Fixation2: autoDraw = False
+208.6036 	EXP 	Trial2: autoDraw = False
+208.6036 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 2.png'
+208.6036 	EXP 	Fixation2: autoDraw = True
+208.8408 	DATA 	Keypress: 1
+209.0893 	DATA 	Keypress: 1
+209.2561 	DATA 	Keypress: 1
+209.4444 	DATA 	Keypress: 1
+209.5916 	EXP 	Trial2: autoDraw = True
+209.6085 	EXP 	Fixation2: autoDraw = False
+209.6317 	DATA 	Keypress: 1
+209.6465 	EXP 	New trial (rep=0, index=27): {'images': 'Task samples\\相同的奇偶规律 7.png', 'correctAns': 2}
+209.6795 	EXP 	Fixation2: autoDraw = False
+209.6795 	EXP 	Trial2: autoDraw = False
+209.6795 	EXP 	Trial2: image = 'Task samples\\相同的奇偶规律 7.png'
+209.6795 	EXP 	Fixation2: autoDraw = True
+209.8331 	DATA 	Keypress: 1
+210.0152 	DATA 	Keypress: 1
+210.1991 	DATA 	Keypress: 1
+210.4485 	DATA 	Keypress: 1
+210.6333 	DATA 	Keypress: 1
+210.6844 	EXP 	Trial2: autoDraw = True
+210.7010 	EXP 	Fixation2: autoDraw = False
+211.3064 	EXP 	New trial (rep=0, index=28): {'images': 'Task samples\\相同的数列规律 8.png', 'correctAns': 1}
+211.3263 	DATA 	Keypress: 2
+211.3392 	EXP 	Fixation2: autoDraw = False
+211.3392 	EXP 	Trial2: autoDraw = False
+211.3392 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 8.png'
+211.3392 	EXP 	Fixation2: autoDraw = True
+211.9749 	DATA 	Keypress: 2
+212.3268 	EXP 	Trial2: autoDraw = True
+212.3438 	EXP 	Fixation2: autoDraw = False
+212.5986 	DATA 	Keypress: 2
+212.6107 	EXP 	Fixation2: autoDraw = False
+212.6107 	EXP 	Trial2: autoDraw = False
+212.6715 	EXP 	window1: mouseVisible = True

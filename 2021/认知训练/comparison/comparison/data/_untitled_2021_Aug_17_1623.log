@@ -1,0 +1,984 @@
+1.1992 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.9410 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001CE31016828>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001CE30BEB3C8>, multiSample=False, name='window1', numSamples=2, pos=[325.0, -55.0], screen=0, size=array([1270, 1190]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.9410 	EXP 	window1: mouseVisible = True
+5.9411 	EXP 	window1: recordFrameIntervals = False
+6.1121 	EXP 	window1: recordFrameIntervals = True
+6.2921 	EXP 	window1: recordFrameIntervals = False
+6.6071 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='比较三个项目之间是否相等，相等的话按1键，不相等的话按2键\n准备好了按一键开始', units='height', win=Window(...), wrapWidth=1)
+6.6097 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+6.6124 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0., 0.]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+6.6136 	EXP 	Created equation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='equation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+6.6145 	EXP 	Created number = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='number', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+6.6584 	EXP 	text_3: autoDraw = True
+8.6871 	DATA 	Keypress: 1
+8.7157 	EXP 	Imported trail.xlsx as conditions, 62 conditions, 7 params
+8.7162 	EXP 	Created sequence: random, trialTypes=62, nReps=1, seed=None
+8.7164 	EXP 	New trial (rep=0, index=0): {'dotN': 6, 'equations': '3+2', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+8.7260 	EXP 	text_3: autoDraw = False
+8.7260 	EXP 	polygon: autoDraw = True
+9.7448 	EXP 	polygon: autoDraw = False
+9.7448 	EXP 	dots: pos = array([0.  , 0.25])
+9.7448 	EXP 	dots: fieldPos = array([0.  , 0.25])
+9.7448 	EXP 	equation: pos = array([-0.3 , -0.25])
+9.7448 	EXP 	equation: text = '3+2'
+9.7448 	EXP 	number: pos = array([ 0.3 , -0.25])
+9.7448 	EXP 	number: text = 5
+9.7448 	EXP 	dots: autoDraw = True
+9.7448 	EXP 	equation: autoDraw = True
+9.7448 	EXP 	number: autoDraw = True
+10.6684 	DATA 	Keypress: lwindows
+10.6851 	DATA 	Keypress: lshift
+11.1396 	DATA 	Keypress: s
+14.7012 	EXP 	New trial (rep=0, index=1): {'dotN': 9, 'equations': '5+4', 'numbers': 9, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+14.7204 	EXP 	dots: autoDraw = False
+14.7204 	EXP 	equation: autoDraw = False
+14.7204 	EXP 	number: autoDraw = False
+14.7204 	EXP 	polygon: autoDraw = True
+15.7190 	EXP 	polygon: autoDraw = False
+15.7190 	EXP 	dots: pos = array([-0.3 , -0.25])
+15.7190 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+15.7190 	EXP 	equation: pos = array([0.  , 0.25])
+15.7190 	EXP 	equation: text = '5+4'
+15.7190 	EXP 	number: pos = array([ 0.3 , -0.25])
+15.7190 	EXP 	number: text = 9
+15.7190 	EXP 	dots: autoDraw = True
+15.7190 	EXP 	equation: autoDraw = True
+15.7190 	EXP 	number: autoDraw = True
+20.7048 	EXP 	New trial (rep=0, index=2): {'dotN': 8, 'equations': '4+3', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+20.7223 	EXP 	dots: autoDraw = False
+20.7223 	EXP 	equation: autoDraw = False
+20.7223 	EXP 	number: autoDraw = False
+20.7223 	EXP 	polygon: autoDraw = True
+21.7214 	EXP 	polygon: autoDraw = False
+21.7214 	EXP 	dots: pos = array([0.  , 0.25])
+21.7214 	EXP 	dots: fieldPos = array([0.  , 0.25])
+21.7214 	EXP 	equation: pos = array([ 0.3 , -0.25])
+21.7214 	EXP 	equation: text = '4+3'
+21.7214 	EXP 	number: pos = array([-0.3 , -0.25])
+21.7214 	EXP 	number: text = 8
+21.7214 	EXP 	dots: autoDraw = True
+21.7214 	EXP 	equation: autoDraw = True
+21.7214 	EXP 	number: autoDraw = True
+26.7099 	EXP 	New trial (rep=0, index=3): {'dotN': 8, 'equations': '5+2', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+26.7259 	EXP 	dots: autoDraw = False
+26.7259 	EXP 	equation: autoDraw = False
+26.7259 	EXP 	number: autoDraw = False
+26.7259 	EXP 	polygon: autoDraw = True
+27.0291 	DATA 	Keypress: lshift
+27.0624 	DATA 	Keypress: lwindows
+27.7296 	EXP 	polygon: autoDraw = False
+27.7296 	EXP 	dots: pos = array([0.  , 0.25])
+27.7296 	EXP 	dots: fieldPos = array([0.  , 0.25])
+27.7296 	EXP 	equation: pos = array([-0.3 , -0.25])
+27.7296 	EXP 	equation: text = '5+2'
+27.7296 	EXP 	number: pos = array([ 0.3 , -0.25])
+27.7296 	EXP 	number: text = 7
+27.7296 	EXP 	dots: autoDraw = True
+27.7296 	EXP 	equation: autoDraw = True
+27.7296 	EXP 	number: autoDraw = True
+30.9722 	DATA 	Keypress: lshift
+30.9874 	DATA 	Keypress: lwindows
+32.7011 	EXP 	New trial (rep=0, index=4): {'dotN': 8, 'equations': '3+5', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+32.7170 	EXP 	dots: autoDraw = False
+32.7170 	EXP 	equation: autoDraw = False
+32.7170 	EXP 	number: autoDraw = False
+32.7170 	EXP 	polygon: autoDraw = True
+33.7179 	EXP 	polygon: autoDraw = False
+33.7179 	EXP 	dots: pos = array([-0.3 , -0.25])
+33.7179 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+33.7179 	EXP 	equation: pos = array([0.  , 0.25])
+33.7179 	EXP 	equation: text = '3+5'
+33.7179 	EXP 	number: pos = array([ 0.3 , -0.25])
+33.7179 	EXP 	number: text = 8
+33.7179 	EXP 	dots: autoDraw = True
+33.7179 	EXP 	equation: autoDraw = True
+33.7179 	EXP 	number: autoDraw = True
+38.7113 	EXP 	New trial (rep=0, index=5): {'dotN': 7, 'equations': '5+2', 'numbers': 7, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+38.7225 	EXP 	dots: autoDraw = False
+38.7225 	EXP 	equation: autoDraw = False
+38.7225 	EXP 	number: autoDraw = False
+38.7225 	EXP 	polygon: autoDraw = True
+39.7250 	EXP 	polygon: autoDraw = False
+39.7250 	EXP 	dots: pos = array([ 0.3 , -0.25])
+39.7250 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+39.7250 	EXP 	equation: pos = array([-0.3 , -0.25])
+39.7250 	EXP 	equation: text = '5+2'
+39.7250 	EXP 	number: pos = array([0.  , 0.25])
+39.7250 	EXP 	number: text = 7
+39.7250 	EXP 	dots: autoDraw = True
+39.7250 	EXP 	equation: autoDraw = True
+39.7250 	EXP 	number: autoDraw = True
+44.7115 	EXP 	New trial (rep=0, index=6): {'dotN': 7, 'equations': '2+5', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+44.7266 	EXP 	dots: autoDraw = False
+44.7266 	EXP 	equation: autoDraw = False
+44.7266 	EXP 	number: autoDraw = False
+44.7266 	EXP 	polygon: autoDraw = True
+45.7263 	EXP 	polygon: autoDraw = False
+45.7263 	EXP 	dots: pos = array([0.  , 0.25])
+45.7263 	EXP 	dots: fieldPos = array([0.  , 0.25])
+45.7263 	EXP 	equation: pos = array([ 0.3 , -0.25])
+45.7263 	EXP 	equation: text = '2+5'
+45.7263 	EXP 	number: pos = array([-0.3 , -0.25])
+45.7263 	EXP 	number: text = 7
+45.7263 	EXP 	dots: autoDraw = True
+45.7263 	EXP 	equation: autoDraw = True
+45.7263 	EXP 	number: autoDraw = True
+47.7383 	DATA 	Keypress: lwindows
+47.7695 	DATA 	Keypress: lshift
+48.5705 	DATA 	Keypress: lshift
+48.5709 	DATA 	Keypress: lwindows
+48.6031 	DATA 	Keypress: s
+50.6997 	EXP 	New trial (rep=0, index=7): {'dotN': 4, 'equations': '3+1', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+50.7157 	EXP 	dots: autoDraw = False
+50.7157 	EXP 	equation: autoDraw = False
+50.7157 	EXP 	number: autoDraw = False
+50.7157 	EXP 	polygon: autoDraw = True
+51.7168 	EXP 	polygon: autoDraw = False
+51.7168 	EXP 	dots: pos = array([ 0.3 , -0.25])
+51.7168 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+51.7168 	EXP 	equation: pos = array([0.  , 0.25])
+51.7168 	EXP 	equation: text = '3+1'
+51.7168 	EXP 	number: pos = array([-0.3 , -0.25])
+51.7168 	EXP 	number: text = 4
+51.7168 	EXP 	dots: autoDraw = True
+51.7168 	EXP 	equation: autoDraw = True
+51.7168 	EXP 	number: autoDraw = True
+56.7052 	EXP 	New trial (rep=0, index=8): {'dotN': 9, 'equations': '4+5', 'numbers': 9, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+56.7203 	EXP 	dots: autoDraw = False
+56.7203 	EXP 	equation: autoDraw = False
+56.7203 	EXP 	number: autoDraw = False
+56.7203 	EXP 	polygon: autoDraw = True
+57.7374 	EXP 	polygon: autoDraw = False
+57.7374 	EXP 	dots: pos = array([-0.3 , -0.25])
+57.7374 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+57.7374 	EXP 	equation: pos = array([0.  , 0.25])
+57.7374 	EXP 	equation: text = '4+5'
+57.7374 	EXP 	number: pos = array([ 0.3 , -0.25])
+57.7374 	EXP 	number: text = 9
+57.7374 	EXP 	dots: autoDraw = True
+57.7374 	EXP 	equation: autoDraw = True
+57.7374 	EXP 	number: autoDraw = True
+60.8814 	DATA 	Keypress: lshift
+60.9133 	DATA 	Keypress: lwindows
+61.2820 	DATA 	Keypress: s
+62.7097 	EXP 	New trial (rep=0, index=9): {'dotN': 5, 'equations': '3+2', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+62.7253 	EXP 	dots: autoDraw = False
+62.7253 	EXP 	equation: autoDraw = False
+62.7253 	EXP 	number: autoDraw = False
+62.7253 	EXP 	polygon: autoDraw = True
+63.7269 	EXP 	polygon: autoDraw = False
+63.7269 	EXP 	dots: pos = array([0.  , 0.25])
+63.7269 	EXP 	dots: fieldPos = array([0.  , 0.25])
+63.7269 	EXP 	equation: pos = array([ 0.3 , -0.25])
+63.7269 	EXP 	equation: text = '3+2'
+63.7269 	EXP 	number: pos = array([-0.3 , -0.25])
+63.7269 	EXP 	number: text = 5
+63.7269 	EXP 	dots: autoDraw = True
+63.7269 	EXP 	equation: autoDraw = True
+63.7269 	EXP 	number: autoDraw = True
+64.5508 	DATA 	Keypress: lwindows
+64.5663 	DATA 	Keypress: lshift
+66.9521 	DATA 	Keypress: lwindows
+66.9701 	DATA 	Keypress: lshift
+67.4583 	DATA 	Keypress: s
+68.7005 	EXP 	New trial (rep=0, index=10): {'dotN': 3, 'equations': '1+2', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+68.7166 	EXP 	dots: autoDraw = False
+68.7166 	EXP 	equation: autoDraw = False
+68.7166 	EXP 	number: autoDraw = False
+68.7166 	EXP 	polygon: autoDraw = True
+69.7168 	EXP 	polygon: autoDraw = False
+69.7168 	EXP 	dots: pos = array([ 0.3 , -0.25])
+69.7168 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+69.7168 	EXP 	equation: pos = array([0.  , 0.25])
+69.7168 	EXP 	equation: text = '1+2'
+69.7168 	EXP 	number: pos = array([-0.3 , -0.25])
+69.7168 	EXP 	number: text = 4
+69.7168 	EXP 	dots: autoDraw = True
+69.7168 	EXP 	equation: autoDraw = True
+69.7168 	EXP 	number: autoDraw = True
+74.7067 	EXP 	New trial (rep=0, index=11): {'dotN': 6, 'equations': '2+4', 'numbers': 6, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+74.7202 	EXP 	dots: autoDraw = False
+74.7202 	EXP 	equation: autoDraw = False
+74.7202 	EXP 	number: autoDraw = False
+74.7202 	EXP 	polygon: autoDraw = True
+75.7215 	EXP 	polygon: autoDraw = False
+75.7215 	EXP 	dots: pos = array([0.  , 0.25])
+75.7215 	EXP 	dots: fieldPos = array([0.  , 0.25])
+75.7215 	EXP 	equation: pos = array([-0.3 , -0.25])
+75.7215 	EXP 	equation: text = '2+4'
+75.7215 	EXP 	number: pos = array([ 0.3 , -0.25])
+75.7215 	EXP 	number: text = 6
+75.7215 	EXP 	dots: autoDraw = True
+75.7215 	EXP 	equation: autoDraw = True
+75.7215 	EXP 	number: autoDraw = True
+80.7109 	EXP 	New trial (rep=0, index=12): {'dotN': 8, 'equations': '1+7', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+80.7266 	EXP 	dots: autoDraw = False
+80.7266 	EXP 	equation: autoDraw = False
+80.7266 	EXP 	number: autoDraw = False
+80.7266 	EXP 	polygon: autoDraw = True
+80.7793 	DATA 	Keypress: lwindows
+80.8117 	DATA 	Keypress: lshift
+81.2522 	DATA 	Keypress: s
+81.7279 	EXP 	polygon: autoDraw = False
+81.7279 	EXP 	dots: pos = array([0.  , 0.25])
+81.7279 	EXP 	dots: fieldPos = array([0.  , 0.25])
+81.7279 	EXP 	equation: pos = array([-0.3 , -0.25])
+81.7279 	EXP 	equation: text = '1+7'
+81.7279 	EXP 	number: pos = array([ 0.3 , -0.25])
+81.7279 	EXP 	number: text = 8
+81.7279 	EXP 	dots: autoDraw = True
+81.7279 	EXP 	equation: autoDraw = True
+81.7279 	EXP 	number: autoDraw = True
+83.4825 	DATA 	Keypress: lwindows
+83.4992 	DATA 	Keypress: lshift
+84.0198 	DATA 	Keypress: s
+86.6995 	EXP 	New trial (rep=0, index=13): {'dotN': 5, 'equations': '2+3', 'numbers': 5, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+86.7150 	EXP 	dots: autoDraw = False
+86.7150 	EXP 	equation: autoDraw = False
+86.7150 	EXP 	number: autoDraw = False
+86.7150 	EXP 	polygon: autoDraw = True
+87.7332 	EXP 	polygon: autoDraw = False
+87.7332 	EXP 	dots: pos = array([ 0.3 , -0.25])
+87.7332 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+87.7332 	EXP 	equation: pos = array([-0.3 , -0.25])
+87.7332 	EXP 	equation: text = '2+3'
+87.7332 	EXP 	number: pos = array([0.  , 0.25])
+87.7332 	EXP 	number: text = 5
+87.7332 	EXP 	dots: autoDraw = True
+87.7332 	EXP 	equation: autoDraw = True
+87.7332 	EXP 	number: autoDraw = True
+92.7053 	EXP 	New trial (rep=0, index=14): {'dotN': 8, 'equations': '5+4', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+92.7206 	EXP 	dots: autoDraw = False
+92.7206 	EXP 	equation: autoDraw = False
+92.7206 	EXP 	number: autoDraw = False
+92.7206 	EXP 	polygon: autoDraw = True
+93.7205 	EXP 	polygon: autoDraw = False
+93.7205 	EXP 	dots: pos = array([-0.3 , -0.25])
+93.7205 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+93.7205 	EXP 	equation: pos = array([ 0.3 , -0.25])
+93.7205 	EXP 	equation: text = '5+4'
+93.7205 	EXP 	number: pos = array([0.  , 0.25])
+93.7205 	EXP 	number: text = 8
+93.7205 	EXP 	dots: autoDraw = True
+93.7205 	EXP 	equation: autoDraw = True
+93.7205 	EXP 	number: autoDraw = True
+94.9772 	DATA 	Keypress: lshift
+95.0109 	DATA 	Keypress: lwindows
+95.5471 	DATA 	Keypress: s
+98.7142 	EXP 	New trial (rep=0, index=15): {'dotN': 9, 'equations': '1+8', 'numbers': 9, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+98.7238 	EXP 	dots: autoDraw = False
+98.7238 	EXP 	equation: autoDraw = False
+98.7238 	EXP 	number: autoDraw = False
+98.7238 	EXP 	polygon: autoDraw = True
+99.7257 	EXP 	polygon: autoDraw = False
+99.7257 	EXP 	dots: pos = array([-0.3 , -0.25])
+99.7257 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+99.7257 	EXP 	equation: pos = array([ 0.3 , -0.25])
+99.7257 	EXP 	equation: text = '1+8'
+99.7257 	EXP 	number: pos = array([0.  , 0.25])
+99.7257 	EXP 	number: text = 9
+99.7257 	EXP 	dots: autoDraw = True
+99.7257 	EXP 	equation: autoDraw = True
+99.7257 	EXP 	number: autoDraw = True
+104.7139 	EXP 	New trial (rep=0, index=16): {'dotN': 6, 'equations': '5+1', 'numbers': 6, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+104.7298 	EXP 	dots: autoDraw = False
+104.7298 	EXP 	equation: autoDraw = False
+104.7298 	EXP 	number: autoDraw = False
+104.7298 	EXP 	polygon: autoDraw = True
+105.7330 	EXP 	polygon: autoDraw = False
+105.7330 	EXP 	dots: pos = array([-0.3 , -0.25])
+105.7330 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+105.7330 	EXP 	equation: pos = array([ 0.3 , -0.25])
+105.7330 	EXP 	equation: text = '5+1'
+105.7330 	EXP 	number: pos = array([0.  , 0.25])
+105.7330 	EXP 	number: text = 6
+105.7330 	EXP 	dots: autoDraw = True
+105.7330 	EXP 	equation: autoDraw = True
+105.7330 	EXP 	number: autoDraw = True
+110.7020 	EXP 	New trial (rep=0, index=17): {'dotN': 5, 'equations': '4+1', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+110.7193 	EXP 	dots: autoDraw = False
+110.7193 	EXP 	equation: autoDraw = False
+110.7193 	EXP 	number: autoDraw = False
+110.7193 	EXP 	polygon: autoDraw = True
+111.7202 	EXP 	polygon: autoDraw = False
+111.7202 	EXP 	dots: pos = array([ 0.3 , -0.25])
+111.7202 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+111.7202 	EXP 	equation: pos = array([0.  , 0.25])
+111.7202 	EXP 	equation: text = '4+1'
+111.7202 	EXP 	number: pos = array([-0.3 , -0.25])
+111.7202 	EXP 	number: text = 6
+111.7202 	EXP 	dots: autoDraw = True
+111.7202 	EXP 	equation: autoDraw = True
+111.7202 	EXP 	number: autoDraw = True
+116.7116 	EXP 	New trial (rep=0, index=18): {'dotN': 3, 'equations': '1+3', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+116.7246 	EXP 	dots: autoDraw = False
+116.7246 	EXP 	equation: autoDraw = False
+116.7246 	EXP 	number: autoDraw = False
+116.7246 	EXP 	polygon: autoDraw = True
+117.7243 	EXP 	polygon: autoDraw = False
+117.7243 	EXP 	dots: pos = array([ 0.3 , -0.25])
+117.7243 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+117.7243 	EXP 	equation: pos = array([-0.3 , -0.25])
+117.7243 	EXP 	equation: text = '1+3'
+117.7243 	EXP 	number: pos = array([0.  , 0.25])
+117.7243 	EXP 	number: text = 4
+117.7243 	EXP 	dots: autoDraw = True
+117.7243 	EXP 	equation: autoDraw = True
+117.7243 	EXP 	number: autoDraw = True
+122.7129 	EXP 	New trial (rep=0, index=19): {'dotN': 8, 'equations': '3+6', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+122.7289 	EXP 	dots: autoDraw = False
+122.7289 	EXP 	equation: autoDraw = False
+122.7289 	EXP 	number: autoDraw = False
+122.7289 	EXP 	polygon: autoDraw = True
+123.7141 	EXP 	polygon: autoDraw = False
+123.7141 	EXP 	dots: pos = array([ 0.3 , -0.25])
+123.7141 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+123.7141 	EXP 	equation: pos = array([-0.3 , -0.25])
+123.7141 	EXP 	equation: text = '3+6'
+123.7141 	EXP 	number: pos = array([0.  , 0.25])
+123.7141 	EXP 	number: text = 9
+123.7141 	EXP 	dots: autoDraw = True
+123.7141 	EXP 	equation: autoDraw = True
+123.7141 	EXP 	number: autoDraw = True
+128.7028 	EXP 	New trial (rep=0, index=20): {'dotN': 4, 'equations': '2+2', 'numbers': 3, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+128.7187 	EXP 	dots: autoDraw = False
+128.7187 	EXP 	equation: autoDraw = False
+128.7187 	EXP 	number: autoDraw = False
+128.7187 	EXP 	polygon: autoDraw = True
+129.7207 	EXP 	polygon: autoDraw = False
+129.7207 	EXP 	dots: pos = array([-0.3 , -0.25])
+129.7207 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+129.7207 	EXP 	equation: pos = array([0.  , 0.25])
+129.7207 	EXP 	equation: text = '2+2'
+129.7207 	EXP 	number: pos = array([ 0.3 , -0.25])
+129.7207 	EXP 	number: text = 3
+129.7207 	EXP 	dots: autoDraw = True
+129.7207 	EXP 	equation: autoDraw = True
+129.7207 	EXP 	number: autoDraw = True
+134.7068 	EXP 	New trial (rep=0, index=21): {'dotN': 9, 'equations': '5+3', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+134.7229 	EXP 	dots: autoDraw = False
+134.7229 	EXP 	equation: autoDraw = False
+134.7229 	EXP 	number: autoDraw = False
+134.7229 	EXP 	polygon: autoDraw = True
+135.7256 	EXP 	polygon: autoDraw = False
+135.7256 	EXP 	dots: pos = array([0.  , 0.25])
+135.7256 	EXP 	dots: fieldPos = array([0.  , 0.25])
+135.7256 	EXP 	equation: pos = array([ 0.3 , -0.25])
+135.7256 	EXP 	equation: text = '5+3'
+135.7256 	EXP 	number: pos = array([-0.3 , -0.25])
+135.7256 	EXP 	number: text = 9
+135.7256 	EXP 	dots: autoDraw = True
+135.7256 	EXP 	equation: autoDraw = True
+135.7256 	EXP 	number: autoDraw = True
+140.7158 	EXP 	New trial (rep=0, index=22): {'dotN': 3, 'equations': '1+2', 'numbers': 3, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+140.7284 	EXP 	dots: autoDraw = False
+140.7284 	EXP 	equation: autoDraw = False
+140.7284 	EXP 	number: autoDraw = False
+140.7284 	EXP 	polygon: autoDraw = True
+141.7306 	EXP 	polygon: autoDraw = False
+141.7306 	EXP 	dots: pos = array([-0.3 , -0.25])
+141.7306 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+141.7306 	EXP 	equation: pos = array([0.  , 0.25])
+141.7306 	EXP 	equation: text = '1+2'
+141.7306 	EXP 	number: pos = array([ 0.3 , -0.25])
+141.7306 	EXP 	number: text = 3
+141.7306 	EXP 	dots: autoDraw = True
+141.7306 	EXP 	equation: autoDraw = True
+141.7306 	EXP 	number: autoDraw = True
+146.7021 	EXP 	New trial (rep=0, index=23): {'dotN': 4, 'equations': '1+3', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+146.7182 	EXP 	dots: autoDraw = False
+146.7182 	EXP 	equation: autoDraw = False
+146.7182 	EXP 	number: autoDraw = False
+146.7182 	EXP 	polygon: autoDraw = True
+147.7193 	EXP 	polygon: autoDraw = False
+147.7193 	EXP 	dots: pos = array([ 0.3 , -0.25])
+147.7193 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+147.7193 	EXP 	equation: pos = array([0.  , 0.25])
+147.7193 	EXP 	equation: text = '1+3'
+147.7193 	EXP 	number: pos = array([-0.3 , -0.25])
+147.7193 	EXP 	number: text = 4
+147.7193 	EXP 	dots: autoDraw = True
+147.7193 	EXP 	equation: autoDraw = True
+147.7193 	EXP 	number: autoDraw = True
+152.7103 	EXP 	New trial (rep=0, index=24): {'dotN': 8, 'equations': '4+4', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+152.7245 	EXP 	dots: autoDraw = False
+152.7245 	EXP 	equation: autoDraw = False
+152.7245 	EXP 	number: autoDraw = False
+152.7245 	EXP 	polygon: autoDraw = True
+153.7254 	EXP 	polygon: autoDraw = False
+153.7254 	EXP 	dots: pos = array([ 0.3 , -0.25])
+153.7254 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+153.7254 	EXP 	equation: pos = array([0.  , 0.25])
+153.7254 	EXP 	equation: text = '4+4'
+153.7254 	EXP 	number: pos = array([-0.3 , -0.25])
+153.7254 	EXP 	number: text = 9
+153.7254 	EXP 	dots: autoDraw = True
+153.7254 	EXP 	equation: autoDraw = True
+153.7254 	EXP 	number: autoDraw = True
+158.7119 	EXP 	New trial (rep=0, index=25): {'dotN': 9, 'equations': '2+7', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+158.7290 	EXP 	dots: autoDraw = False
+158.7290 	EXP 	equation: autoDraw = False
+158.7290 	EXP 	number: autoDraw = False
+158.7290 	EXP 	polygon: autoDraw = True
+159.7309 	EXP 	polygon: autoDraw = False
+159.7309 	EXP 	dots: pos = array([-0.3 , -0.25])
+159.7309 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+159.7309 	EXP 	equation: pos = array([0.  , 0.25])
+159.7309 	EXP 	equation: text = '2+7'
+159.7309 	EXP 	number: pos = array([ 0.3 , -0.25])
+159.7309 	EXP 	number: text = 8
+159.7309 	EXP 	dots: autoDraw = True
+159.7309 	EXP 	equation: autoDraw = True
+159.7309 	EXP 	number: autoDraw = True
+164.7048 	EXP 	New trial (rep=0, index=26): {'dotN': 8, 'equations': '7+1', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+164.7177 	EXP 	dots: autoDraw = False
+164.7177 	EXP 	equation: autoDraw = False
+164.7177 	EXP 	number: autoDraw = False
+164.7177 	EXP 	polygon: autoDraw = True
+165.7188 	EXP 	polygon: autoDraw = False
+165.7188 	EXP 	dots: pos = array([0.  , 0.25])
+165.7188 	EXP 	dots: fieldPos = array([0.  , 0.25])
+165.7188 	EXP 	equation: pos = array([ 0.3 , -0.25])
+165.7188 	EXP 	equation: text = '7+1'
+165.7188 	EXP 	number: pos = array([-0.3 , -0.25])
+165.7188 	EXP 	number: text = 8
+165.7188 	EXP 	dots: autoDraw = True
+165.7188 	EXP 	equation: autoDraw = True
+165.7188 	EXP 	number: autoDraw = True
+170.7087 	EXP 	New trial (rep=0, index=27): {'dotN': 8, 'equations': '3+5', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+170.7219 	EXP 	dots: autoDraw = False
+170.7219 	EXP 	equation: autoDraw = False
+170.7219 	EXP 	number: autoDraw = False
+170.7219 	EXP 	polygon: autoDraw = True
+171.7228 	EXP 	polygon: autoDraw = False
+171.7228 	EXP 	dots: pos = array([-0.3 , -0.25])
+171.7228 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+171.7228 	EXP 	equation: pos = array([0.  , 0.25])
+171.7228 	EXP 	equation: text = '3+5'
+171.7228 	EXP 	number: pos = array([ 0.3 , -0.25])
+171.7228 	EXP 	number: text = 7
+171.7228 	EXP 	dots: autoDraw = True
+171.7228 	EXP 	equation: autoDraw = True
+171.7228 	EXP 	number: autoDraw = True
+176.7114 	EXP 	New trial (rep=0, index=28): {'dotN': 7, 'equations': '3+4', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+176.7273 	EXP 	dots: autoDraw = False
+176.7273 	EXP 	equation: autoDraw = False
+176.7273 	EXP 	number: autoDraw = False
+176.7273 	EXP 	polygon: autoDraw = True
+177.7297 	EXP 	polygon: autoDraw = False
+177.7297 	EXP 	dots: pos = array([-0.3 , -0.25])
+177.7297 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+177.7297 	EXP 	equation: pos = array([0.  , 0.25])
+177.7297 	EXP 	equation: text = '3+4'
+177.7297 	EXP 	number: pos = array([ 0.3 , -0.25])
+177.7297 	EXP 	number: text = 7
+177.7297 	EXP 	dots: autoDraw = True
+177.7297 	EXP 	equation: autoDraw = True
+177.7297 	EXP 	number: autoDraw = True
+181.1375 	DATA 	Keypress: lwindows
+181.1548 	DATA 	Keypress: lshift
+181.6082 	DATA 	Keypress: s
+182.7038 	EXP 	New trial (rep=0, index=29): {'dotN': 5, 'equations': '1+4', 'numbers': 5, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+182.7169 	EXP 	dots: autoDraw = False
+182.7169 	EXP 	equation: autoDraw = False
+182.7169 	EXP 	number: autoDraw = False
+182.7169 	EXP 	polygon: autoDraw = True
+183.7207 	EXP 	polygon: autoDraw = False
+183.7207 	EXP 	dots: pos = array([ 0.3 , -0.25])
+183.7207 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+183.7207 	EXP 	equation: pos = array([-0.3 , -0.25])
+183.7207 	EXP 	equation: text = '1+4'
+183.7207 	EXP 	number: pos = array([0.  , 0.25])
+183.7207 	EXP 	number: text = 5
+183.7207 	EXP 	dots: autoDraw = True
+183.7207 	EXP 	equation: autoDraw = True
+183.7207 	EXP 	number: autoDraw = True
+188.7073 	EXP 	New trial (rep=0, index=30): {'dotN': 5, 'equations': '2+2', 'numbers': 4, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+188.7227 	EXP 	dots: autoDraw = False
+188.7227 	EXP 	equation: autoDraw = False
+188.7227 	EXP 	number: autoDraw = False
+188.7227 	EXP 	polygon: autoDraw = True
+189.7224 	EXP 	polygon: autoDraw = False
+189.7224 	EXP 	dots: pos = array([0.  , 0.25])
+189.7224 	EXP 	dots: fieldPos = array([0.  , 0.25])
+189.7224 	EXP 	equation: pos = array([-0.3 , -0.25])
+189.7224 	EXP 	equation: text = '2+2'
+189.7224 	EXP 	number: pos = array([ 0.3 , -0.25])
+189.7224 	EXP 	number: text = 4
+189.7224 	EXP 	dots: autoDraw = True
+189.7224 	EXP 	equation: autoDraw = True
+189.7224 	EXP 	number: autoDraw = True
+192.2498 	DATA 	Mouse: Left button down, pos=(499,198)
+192.3480 	DATA 	Mouse:  Left button up, pos=(499,198)
+192.7808 	DATA 	Keypress: lwindows
+192.8140 	DATA 	Keypress: lshift
+193.2630 	DATA 	Keypress: s
+194.7138 	EXP 	New trial (rep=0, index=31): {'dotN': 5, 'equations': '4+1', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+194.7325 	EXP 	dots: autoDraw = False
+194.7325 	EXP 	equation: autoDraw = False
+194.7325 	EXP 	number: autoDraw = False
+194.7325 	EXP 	polygon: autoDraw = True
+195.7298 	EXP 	polygon: autoDraw = False
+195.7298 	EXP 	dots: pos = array([0.  , 0.25])
+195.7298 	EXP 	dots: fieldPos = array([0.  , 0.25])
+195.7298 	EXP 	equation: pos = array([ 0.3 , -0.25])
+195.7298 	EXP 	equation: text = '4+1'
+195.7298 	EXP 	number: pos = array([-0.3 , -0.25])
+195.7298 	EXP 	number: text = 5
+195.7298 	EXP 	dots: autoDraw = True
+195.7298 	EXP 	equation: autoDraw = True
+195.7298 	EXP 	number: autoDraw = True
+200.7000 	EXP 	New trial (rep=0, index=32): {'dotN': 7, 'equations': '1+5', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+200.7159 	EXP 	dots: autoDraw = False
+200.7159 	EXP 	equation: autoDraw = False
+200.7159 	EXP 	number: autoDraw = False
+200.7159 	EXP 	polygon: autoDraw = True
+201.7202 	EXP 	polygon: autoDraw = False
+201.7202 	EXP 	dots: pos = array([0.  , 0.25])
+201.7202 	EXP 	dots: fieldPos = array([0.  , 0.25])
+201.7202 	EXP 	equation: pos = array([ 0.3 , -0.25])
+201.7202 	EXP 	equation: text = '1+5'
+201.7202 	EXP 	number: pos = array([-0.3 , -0.25])
+201.7202 	EXP 	number: text = 7
+201.7202 	EXP 	dots: autoDraw = True
+201.7202 	EXP 	equation: autoDraw = True
+201.7202 	EXP 	number: autoDraw = True
+206.7085 	EXP 	New trial (rep=0, index=33): {'dotN': 7, 'equations': '4+3', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+206.7245 	EXP 	dots: autoDraw = False
+206.7245 	EXP 	equation: autoDraw = False
+206.7245 	EXP 	number: autoDraw = False
+206.7245 	EXP 	polygon: autoDraw = True
+207.7249 	EXP 	polygon: autoDraw = False
+207.7249 	EXP 	dots: pos = array([0.  , 0.25])
+207.7249 	EXP 	dots: fieldPos = array([0.  , 0.25])
+207.7249 	EXP 	equation: pos = array([-0.3 , -0.25])
+207.7249 	EXP 	equation: text = '4+3'
+207.7249 	EXP 	number: pos = array([ 0.3 , -0.25])
+207.7249 	EXP 	number: text = 7
+207.7249 	EXP 	dots: autoDraw = True
+207.7249 	EXP 	equation: autoDraw = True
+207.7249 	EXP 	number: autoDraw = True
+212.7116 	EXP 	New trial (rep=0, index=34): {'dotN': 7, 'equations': '6+1', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+212.7277 	EXP 	dots: autoDraw = False
+212.7277 	EXP 	equation: autoDraw = False
+212.7277 	EXP 	number: autoDraw = False
+212.7277 	EXP 	polygon: autoDraw = True
+213.7291 	EXP 	polygon: autoDraw = False
+213.7291 	EXP 	dots: pos = array([-0.3 , -0.25])
+213.7291 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+213.7291 	EXP 	equation: pos = array([ 0.3 , -0.25])
+213.7291 	EXP 	equation: text = '6+1'
+213.7291 	EXP 	number: pos = array([0.  , 0.25])
+213.7291 	EXP 	number: text = 7
+213.7291 	EXP 	dots: autoDraw = True
+213.7291 	EXP 	equation: autoDraw = True
+213.7291 	EXP 	number: autoDraw = True
+218.7039 	EXP 	New trial (rep=0, index=35): {'dotN': 8, 'equations': '4+4', 'numbers': 8, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+218.7180 	EXP 	dots: autoDraw = False
+218.7180 	EXP 	equation: autoDraw = False
+218.7180 	EXP 	number: autoDraw = False
+218.7180 	EXP 	polygon: autoDraw = True
+219.7175 	EXP 	polygon: autoDraw = False
+219.7175 	EXP 	dots: pos = array([ 0.3 , -0.25])
+219.7175 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+219.7175 	EXP 	equation: pos = array([0.  , 0.25])
+219.7175 	EXP 	equation: text = '4+4'
+219.7175 	EXP 	number: pos = array([-0.3 , -0.25])
+219.7175 	EXP 	number: text = 8
+219.7175 	EXP 	dots: autoDraw = True
+219.7175 	EXP 	equation: autoDraw = True
+219.7175 	EXP 	number: autoDraw = True
+224.7084 	EXP 	New trial (rep=0, index=36): {'dotN': 8, 'equations': '6+2', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+224.7241 	EXP 	dots: autoDraw = False
+224.7241 	EXP 	equation: autoDraw = False
+224.7241 	EXP 	number: autoDraw = False
+224.7241 	EXP 	polygon: autoDraw = True
+225.7293 	EXP 	polygon: autoDraw = False
+225.7293 	EXP 	dots: pos = array([0.  , 0.25])
+225.7293 	EXP 	dots: fieldPos = array([0.  , 0.25])
+225.7293 	EXP 	equation: pos = array([ 0.3 , -0.25])
+225.7293 	EXP 	equation: text = '6+2'
+225.7293 	EXP 	number: pos = array([-0.3 , -0.25])
+225.7293 	EXP 	number: text = 8
+225.7293 	EXP 	dots: autoDraw = True
+225.7293 	EXP 	equation: autoDraw = True
+225.7293 	EXP 	number: autoDraw = True
+230.7140 	EXP 	New trial (rep=0, index=37): {'dotN': 9, 'equations': '6+3', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+230.7279 	EXP 	dots: autoDraw = False
+230.7279 	EXP 	equation: autoDraw = False
+230.7279 	EXP 	number: autoDraw = False
+230.7279 	EXP 	polygon: autoDraw = True
+231.7291 	EXP 	polygon: autoDraw = False
+231.7291 	EXP 	dots: pos = array([0.  , 0.25])
+231.7291 	EXP 	dots: fieldPos = array([0.  , 0.25])
+231.7291 	EXP 	equation: pos = array([-0.3 , -0.25])
+231.7291 	EXP 	equation: text = '6+3'
+231.7291 	EXP 	number: pos = array([ 0.3 , -0.25])
+231.7291 	EXP 	number: text = 9
+231.7291 	EXP 	dots: autoDraw = True
+231.7291 	EXP 	equation: autoDraw = True
+231.7291 	EXP 	number: autoDraw = True
+236.6986 	EXP 	New trial (rep=0, index=38): {'dotN': 9, 'equations': '2+7', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+236.7159 	EXP 	dots: autoDraw = False
+236.7159 	EXP 	equation: autoDraw = False
+236.7159 	EXP 	number: autoDraw = False
+236.7159 	EXP 	polygon: autoDraw = True
+237.7158 	EXP 	polygon: autoDraw = False
+237.7158 	EXP 	dots: pos = array([0.  , 0.25])
+237.7158 	EXP 	dots: fieldPos = array([0.  , 0.25])
+237.7158 	EXP 	equation: pos = array([-0.3 , -0.25])
+237.7158 	EXP 	equation: text = '2+7'
+237.7158 	EXP 	number: pos = array([ 0.3 , -0.25])
+237.7158 	EXP 	number: text = 9
+237.7158 	EXP 	dots: autoDraw = True
+237.7158 	EXP 	equation: autoDraw = True
+237.7158 	EXP 	number: autoDraw = True
+242.7083 	EXP 	New trial (rep=0, index=39): {'dotN': 7, 'equations': '1+6', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+242.7225 	EXP 	dots: autoDraw = False
+242.7225 	EXP 	equation: autoDraw = False
+242.7225 	EXP 	number: autoDraw = False
+242.7225 	EXP 	polygon: autoDraw = True
+243.7230 	EXP 	polygon: autoDraw = False
+243.7230 	EXP 	dots: pos = array([0.  , 0.25])
+243.7230 	EXP 	dots: fieldPos = array([0.  , 0.25])
+243.7230 	EXP 	equation: pos = array([-0.3 , -0.25])
+243.7230 	EXP 	equation: text = '1+6'
+243.7230 	EXP 	number: pos = array([ 0.3 , -0.25])
+243.7230 	EXP 	number: text = 7
+243.7230 	EXP 	dots: autoDraw = True
+243.7230 	EXP 	equation: autoDraw = True
+243.7230 	EXP 	number: autoDraw = True
+248.7130 	EXP 	New trial (rep=0, index=40): {'dotN': 6, 'equations': '3+3', 'numbers': 5, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+248.7267 	EXP 	dots: autoDraw = False
+248.7267 	EXP 	equation: autoDraw = False
+248.7267 	EXP 	number: autoDraw = False
+248.7267 	EXP 	polygon: autoDraw = True
+249.7286 	EXP 	polygon: autoDraw = False
+249.7286 	EXP 	dots: pos = array([-0.3 , -0.25])
+249.7286 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+249.7286 	EXP 	equation: pos = array([0.  , 0.25])
+249.7286 	EXP 	equation: text = '3+3'
+249.7286 	EXP 	number: pos = array([ 0.3 , -0.25])
+249.7286 	EXP 	number: text = 5
+249.7286 	EXP 	dots: autoDraw = True
+249.7286 	EXP 	equation: autoDraw = True
+249.7286 	EXP 	number: autoDraw = True
+254.7042 	EXP 	New trial (rep=0, index=41): {'dotN': 7, 'equations': '2+6', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+254.7147 	EXP 	dots: autoDraw = False
+254.7147 	EXP 	equation: autoDraw = False
+254.7147 	EXP 	number: autoDraw = False
+254.7147 	EXP 	polygon: autoDraw = True
+255.7179 	EXP 	polygon: autoDraw = False
+255.7179 	EXP 	dots: pos = array([-0.3 , -0.25])
+255.7179 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+255.7179 	EXP 	equation: pos = array([ 0.3 , -0.25])
+255.7179 	EXP 	equation: text = '2+6'
+255.7179 	EXP 	number: pos = array([0.  , 0.25])
+255.7179 	EXP 	number: text = 7
+255.7179 	EXP 	dots: autoDraw = True
+255.7179 	EXP 	equation: autoDraw = True
+255.7179 	EXP 	number: autoDraw = True
+260.7066 	EXP 	New trial (rep=0, index=42): {'dotN': 7, 'equations': '2+5', 'numbers': 8, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+260.7203 	EXP 	dots: autoDraw = False
+260.7203 	EXP 	equation: autoDraw = False
+260.7203 	EXP 	number: autoDraw = False
+260.7203 	EXP 	polygon: autoDraw = True
+261.7219 	EXP 	polygon: autoDraw = False
+261.7219 	EXP 	dots: pos = array([ 0.3 , -0.25])
+261.7219 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+261.7219 	EXP 	equation: pos = array([0.  , 0.25])
+261.7219 	EXP 	equation: text = '2+5'
+261.7219 	EXP 	number: pos = array([-0.3 , -0.25])
+261.7219 	EXP 	number: text = 8
+261.7219 	EXP 	dots: autoDraw = True
+261.7219 	EXP 	equation: autoDraw = True
+261.7219 	EXP 	number: autoDraw = True
+266.7100 	EXP 	New trial (rep=0, index=43): {'dotN': 9, 'equations': '7+2', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+266.7260 	EXP 	dots: autoDraw = False
+266.7260 	EXP 	equation: autoDraw = False
+266.7260 	EXP 	number: autoDraw = False
+266.7260 	EXP 	polygon: autoDraw = True
+267.7270 	EXP 	polygon: autoDraw = False
+267.7270 	EXP 	dots: pos = array([ 0.3 , -0.25])
+267.7270 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+267.7270 	EXP 	equation: pos = array([0.  , 0.25])
+267.7270 	EXP 	equation: text = '7+2'
+267.7270 	EXP 	number: pos = array([-0.3 , -0.25])
+267.7270 	EXP 	number: text = 9
+267.7270 	EXP 	dots: autoDraw = True
+267.7270 	EXP 	equation: autoDraw = True
+267.7270 	EXP 	number: autoDraw = True
+272.6999 	EXP 	New trial (rep=0, index=44): {'dotN': 9, 'equations': '6+2', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+272.7159 	EXP 	dots: autoDraw = False
+272.7159 	EXP 	equation: autoDraw = False
+272.7159 	EXP 	number: autoDraw = False
+272.7159 	EXP 	polygon: autoDraw = True
+273.7172 	EXP 	polygon: autoDraw = False
+273.7172 	EXP 	dots: pos = array([0.  , 0.25])
+273.7172 	EXP 	dots: fieldPos = array([0.  , 0.25])
+273.7172 	EXP 	equation: pos = array([-0.3 , -0.25])
+273.7172 	EXP 	equation: text = '6+2'
+273.7172 	EXP 	number: pos = array([ 0.3 , -0.25])
+273.7172 	EXP 	number: text = 8
+273.7172 	EXP 	dots: autoDraw = True
+273.7172 	EXP 	equation: autoDraw = True
+273.7172 	EXP 	number: autoDraw = True
+278.7076 	EXP 	New trial (rep=0, index=45): {'dotN': 8, 'equations': '5+3', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+278.7215 	EXP 	dots: autoDraw = False
+278.7215 	EXP 	equation: autoDraw = False
+278.7215 	EXP 	number: autoDraw = False
+278.7215 	EXP 	polygon: autoDraw = True
+279.7215 	EXP 	polygon: autoDraw = False
+279.7215 	EXP 	dots: pos = array([-0.3 , -0.25])
+279.7215 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+279.7215 	EXP 	equation: pos = array([ 0.3 , -0.25])
+279.7215 	EXP 	equation: text = '5+3'
+279.7215 	EXP 	number: pos = array([0.  , 0.25])
+279.7215 	EXP 	number: text = 8
+279.7215 	EXP 	dots: autoDraw = True
+279.7215 	EXP 	equation: autoDraw = True
+279.7215 	EXP 	number: autoDraw = True
+284.7125 	EXP 	New trial (rep=0, index=46): {'dotN': 8, 'equations': '2+6', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+284.7265 	EXP 	dots: autoDraw = False
+284.7265 	EXP 	equation: autoDraw = False
+284.7265 	EXP 	number: autoDraw = False
+284.7265 	EXP 	polygon: autoDraw = True
+285.7266 	EXP 	polygon: autoDraw = False
+285.7266 	EXP 	dots: pos = array([-0.3 , -0.25])
+285.7266 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+285.7266 	EXP 	equation: pos = array([0.  , 0.25])
+285.7266 	EXP 	equation: text = '2+6'
+285.7266 	EXP 	number: pos = array([ 0.3 , -0.25])
+285.7266 	EXP 	number: text = 8
+285.7266 	EXP 	dots: autoDraw = True
+285.7266 	EXP 	equation: autoDraw = True
+285.7266 	EXP 	number: autoDraw = True
+290.6982 	EXP 	New trial (rep=0, index=47): {'dotN': 6, 'equations': '3+4', 'numbers': 7, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+290.7132 	EXP 	dots: autoDraw = False
+290.7132 	EXP 	equation: autoDraw = False
+290.7132 	EXP 	number: autoDraw = False
+290.7132 	EXP 	polygon: autoDraw = True
+291.7156 	EXP 	polygon: autoDraw = False
+291.7156 	EXP 	dots: pos = array([ 0.3 , -0.25])
+291.7156 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+291.7156 	EXP 	equation: pos = array([-0.3 , -0.25])
+291.7156 	EXP 	equation: text = '3+4'
+291.7156 	EXP 	number: pos = array([0.  , 0.25])
+291.7156 	EXP 	number: text = 7
+291.7156 	EXP 	dots: autoDraw = True
+291.7156 	EXP 	equation: autoDraw = True
+291.7156 	EXP 	number: autoDraw = True
+296.7109 	EXP 	New trial (rep=0, index=48): {'dotN': 6, 'equations': '3+3', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+296.7196 	EXP 	dots: autoDraw = False
+296.7196 	EXP 	equation: autoDraw = False
+296.7196 	EXP 	number: autoDraw = False
+296.7196 	EXP 	polygon: autoDraw = True
+297.7205 	EXP 	polygon: autoDraw = False
+297.7205 	EXP 	dots: pos = array([ 0.3 , -0.25])
+297.7205 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+297.7205 	EXP 	equation: pos = array([-0.3 , -0.25])
+297.7205 	EXP 	equation: text = '3+3'
+297.7205 	EXP 	number: pos = array([0.  , 0.25])
+297.7205 	EXP 	number: text = 6
+297.7205 	EXP 	dots: autoDraw = True
+297.7205 	EXP 	equation: autoDraw = True
+297.7205 	EXP 	number: autoDraw = True
+302.7103 	EXP 	New trial (rep=0, index=49): {'dotN': 9, 'equations': '8+1', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+302.7252 	EXP 	dots: autoDraw = False
+302.7252 	EXP 	equation: autoDraw = False
+302.7252 	EXP 	number: autoDraw = False
+302.7252 	EXP 	polygon: autoDraw = True
+303.7262 	EXP 	polygon: autoDraw = False
+303.7262 	EXP 	dots: pos = array([ 0.3 , -0.25])
+303.7262 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+303.7262 	EXP 	equation: pos = array([-0.3 , -0.25])
+303.7262 	EXP 	equation: text = '8+1'
+303.7262 	EXP 	number: pos = array([0.  , 0.25])
+303.7262 	EXP 	number: text = 9
+303.7262 	EXP 	dots: autoDraw = True
+303.7262 	EXP 	equation: autoDraw = True
+303.7262 	EXP 	number: autoDraw = True
+308.7007 	EXP 	New trial (rep=0, index=50): {'dotN': 2, 'equations': '1+1', 'numbers': 2, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+308.7150 	EXP 	dots: autoDraw = False
+308.7150 	EXP 	equation: autoDraw = False
+308.7150 	EXP 	number: autoDraw = False
+308.7150 	EXP 	polygon: autoDraw = True
+309.7302 	EXP 	polygon: autoDraw = False
+309.7302 	EXP 	dots: pos = array([ 0.3 , -0.25])
+309.7302 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+309.7302 	EXP 	equation: pos = array([0.  , 0.25])
+309.7302 	EXP 	equation: text = '1+1'
+309.7302 	EXP 	number: pos = array([-0.3 , -0.25])
+309.7302 	EXP 	number: text = 2
+309.7302 	EXP 	dots: autoDraw = True
+309.7302 	EXP 	equation: autoDraw = True
+309.7302 	EXP 	number: autoDraw = True
+314.7042 	EXP 	New trial (rep=0, index=51): {'dotN': 5, 'equations': '4+2', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+314.7214 	EXP 	dots: autoDraw = False
+314.7214 	EXP 	equation: autoDraw = False
+314.7214 	EXP 	number: autoDraw = False
+314.7214 	EXP 	polygon: autoDraw = True
+315.7712 	EXP 	polygon: autoDraw = False
+315.7712 	EXP 	dots: pos = array([ 0.3 , -0.25])
+315.7712 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+315.7712 	EXP 	equation: pos = array([-0.3 , -0.25])
+315.7712 	EXP 	equation: text = '4+2'
+315.7712 	EXP 	number: pos = array([0.  , 0.25])
+315.7712 	EXP 	number: text = 6
+315.7712 	EXP 	dots: autoDraw = True
+315.7712 	EXP 	equation: autoDraw = True
+315.7712 	EXP 	number: autoDraw = True
+320.7088 	EXP 	New trial (rep=0, index=52): {'dotN': 6, 'equations': '4+2', 'numbers': 6, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+320.7241 	EXP 	dots: autoDraw = False
+320.7241 	EXP 	equation: autoDraw = False
+320.7241 	EXP 	number: autoDraw = False
+320.7241 	EXP 	polygon: autoDraw = True
+321.7255 	EXP 	polygon: autoDraw = False
+321.7255 	EXP 	dots: pos = array([0.  , 0.25])
+321.7255 	EXP 	dots: fieldPos = array([0.  , 0.25])
+321.7255 	EXP 	equation: pos = array([ 0.3 , -0.25])
+321.7255 	EXP 	equation: text = '4+2'
+321.7255 	EXP 	number: pos = array([-0.3 , -0.25])
+321.7255 	EXP 	number: text = 6
+321.7255 	EXP 	dots: autoDraw = True
+321.7255 	EXP 	equation: autoDraw = True
+321.7255 	EXP 	number: autoDraw = True
+326.6988 	EXP 	New trial (rep=0, index=53): {'dotN': 2, 'equations': '1+1', 'numbers': 3, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+326.7151 	EXP 	dots: autoDraw = False
+326.7151 	EXP 	equation: autoDraw = False
+326.7151 	EXP 	number: autoDraw = False
+326.7151 	EXP 	polygon: autoDraw = True
+327.7306 	EXP 	polygon: autoDraw = False
+327.7306 	EXP 	dots: pos = array([ 0.3 , -0.25])
+327.7306 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+327.7306 	EXP 	equation: pos = array([0.  , 0.25])
+327.7306 	EXP 	equation: text = '1+1'
+327.7306 	EXP 	number: pos = array([-0.3 , -0.25])
+327.7306 	EXP 	number: text = 3
+327.7306 	EXP 	dots: autoDraw = True
+327.7306 	EXP 	equation: autoDraw = True
+327.7306 	EXP 	number: autoDraw = True
+332.7040 	EXP 	New trial (rep=0, index=54): {'dotN': 9, 'equations': '3+6', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+332.7201 	EXP 	dots: autoDraw = False
+332.7201 	EXP 	equation: autoDraw = False
+332.7201 	EXP 	number: autoDraw = False
+332.7201 	EXP 	polygon: autoDraw = True
+333.7186 	EXP 	polygon: autoDraw = False
+333.7186 	EXP 	dots: pos = array([ 0.3 , -0.25])
+333.7186 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+333.7186 	EXP 	equation: pos = array([0.  , 0.25])
+333.7186 	EXP 	equation: text = '3+6'
+333.7186 	EXP 	number: pos = array([-0.3 , -0.25])
+333.7186 	EXP 	number: text = 9
+333.7186 	EXP 	dots: autoDraw = True
+333.7186 	EXP 	equation: autoDraw = True
+333.7186 	EXP 	number: autoDraw = True
+338.7086 	EXP 	New trial (rep=0, index=55): {'dotN': 3, 'equations': '1+1', 'numbers': 3, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+338.7249 	EXP 	dots: autoDraw = False
+338.7249 	EXP 	equation: autoDraw = False
+338.7249 	EXP 	number: autoDraw = False
+338.7249 	EXP 	polygon: autoDraw = True
+339.7239 	EXP 	polygon: autoDraw = False
+339.7239 	EXP 	dots: pos = array([ 0.3 , -0.25])
+339.7239 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+339.7239 	EXP 	equation: pos = array([0.  , 0.25])
+339.7239 	EXP 	equation: text = '1+1'
+339.7239 	EXP 	number: pos = array([-0.3 , -0.25])
+339.7239 	EXP 	number: text = 3
+339.7239 	EXP 	dots: autoDraw = True
+339.7239 	EXP 	equation: autoDraw = True
+339.7239 	EXP 	number: autoDraw = True
+344.6979 	EXP 	New trial (rep=0, index=56): {'dotN': 4, 'equations': '2+2', 'numbers': 4, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+344.7134 	EXP 	dots: autoDraw = False
+344.7134 	EXP 	equation: autoDraw = False
+344.7134 	EXP 	number: autoDraw = False
+344.7134 	EXP 	polygon: autoDraw = True
+345.7212 	EXP 	polygon: autoDraw = False
+345.7212 	EXP 	dots: pos = array([-0.3 , -0.25])
+345.7212 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+345.7212 	EXP 	equation: pos = array([ 0.3 , -0.25])
+345.7212 	EXP 	equation: text = '2+2'
+345.7212 	EXP 	number: pos = array([0.  , 0.25])
+345.7212 	EXP 	number: text = 4
+345.7212 	EXP 	dots: autoDraw = True
+345.7212 	EXP 	equation: autoDraw = True
+345.7212 	EXP 	number: autoDraw = True
+350.7025 	EXP 	New trial (rep=0, index=57): {'dotN': 4, 'equations': '2+1', 'numbers': 4, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+350.7204 	EXP 	dots: autoDraw = False
+350.7204 	EXP 	equation: autoDraw = False
+350.7204 	EXP 	number: autoDraw = False
+350.7204 	EXP 	polygon: autoDraw = True
+351.7190 	EXP 	polygon: autoDraw = False
+351.7190 	EXP 	dots: pos = array([0.  , 0.25])
+351.7190 	EXP 	dots: fieldPos = array([0.  , 0.25])
+351.7190 	EXP 	equation: pos = array([ 0.3 , -0.25])
+351.7190 	EXP 	equation: text = '2+1'
+351.7190 	EXP 	number: pos = array([-0.3 , -0.25])
+351.7190 	EXP 	number: text = 4
+351.7190 	EXP 	dots: autoDraw = True
+351.7190 	EXP 	equation: autoDraw = True
+351.7190 	EXP 	number: autoDraw = True
+356.7097 	EXP 	New trial (rep=0, index=58): {'dotN': 7, 'equations': '1+7', 'numbers': 8, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+356.7257 	EXP 	dots: autoDraw = False
+356.7257 	EXP 	equation: autoDraw = False
+356.7257 	EXP 	number: autoDraw = False
+356.7257 	EXP 	polygon: autoDraw = True
+357.7256 	EXP 	polygon: autoDraw = False
+357.7256 	EXP 	dots: pos = array([ 0.3 , -0.25])
+357.7256 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+357.7256 	EXP 	equation: pos = array([-0.3 , -0.25])
+357.7256 	EXP 	equation: text = '1+7'
+357.7256 	EXP 	number: pos = array([0.  , 0.25])
+357.7256 	EXP 	number: text = 8
+357.7256 	EXP 	dots: autoDraw = True
+357.7256 	EXP 	equation: autoDraw = True
+357.7256 	EXP 	number: autoDraw = True
+362.6979 	EXP 	New trial (rep=0, index=59): {'dotN': 3, 'equations': '2+1', 'numbers': 3, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+362.7133 	EXP 	dots: autoDraw = False
+362.7133 	EXP 	equation: autoDraw = False
+362.7133 	EXP 	number: autoDraw = False
+362.7133 	EXP 	polygon: autoDraw = True
+363.7136 	EXP 	polygon: autoDraw = False
+363.7136 	EXP 	dots: pos = array([-0.3 , -0.25])
+363.7136 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+363.7136 	EXP 	equation: pos = array([ 0.3 , -0.25])
+363.7136 	EXP 	equation: text = '2+1'
+363.7136 	EXP 	number: pos = array([0.  , 0.25])
+363.7136 	EXP 	number: text = 3
+363.7136 	EXP 	dots: autoDraw = True
+363.7136 	EXP 	equation: autoDraw = True
+363.7136 	EXP 	number: autoDraw = True
+368.7026 	EXP 	New trial (rep=0, index=60): {'dotN': 6, 'equations': '1+5', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+368.7200 	EXP 	dots: autoDraw = False
+368.7200 	EXP 	equation: autoDraw = False
+368.7200 	EXP 	number: autoDraw = False
+368.7200 	EXP 	polygon: autoDraw = True
+369.7188 	EXP 	polygon: autoDraw = False
+369.7188 	EXP 	dots: pos = array([ 0.3 , -0.25])
+369.7188 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+369.7188 	EXP 	equation: pos = array([-0.3 , -0.25])
+369.7188 	EXP 	equation: text = '1+5'
+369.7188 	EXP 	number: pos = array([0.  , 0.25])
+369.7188 	EXP 	number: text = 6
+369.7188 	EXP 	dots: autoDraw = True
+369.7188 	EXP 	equation: autoDraw = True
+369.7188 	EXP 	number: autoDraw = True
+374.7097 	EXP 	New trial (rep=0, index=61): {'dotN': 4, 'equations': '2+1', 'numbers': 3, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+374.7232 	EXP 	dots: autoDraw = False
+374.7232 	EXP 	equation: autoDraw = False
+374.7232 	EXP 	number: autoDraw = False
+374.7232 	EXP 	polygon: autoDraw = True
+375.7229 	EXP 	polygon: autoDraw = False
+375.7229 	EXP 	dots: pos = array([0.  , 0.25])
+375.7229 	EXP 	dots: fieldPos = array([0.  , 0.25])
+375.7229 	EXP 	equation: pos = array([-0.3 , -0.25])
+375.7229 	EXP 	equation: text = '2+1'
+375.7229 	EXP 	number: pos = array([ 0.3 , -0.25])
+375.7229 	EXP 	number: text = 3
+375.7229 	EXP 	dots: autoDraw = True
+375.7229 	EXP 	equation: autoDraw = True
+375.7229 	EXP 	number: autoDraw = True
+380.7287 	EXP 	dots: autoDraw = False
+380.7287 	EXP 	equation: autoDraw = False
+380.7287 	EXP 	number: autoDraw = False
+380.7627 	EXP 	window1: mouseVisible = True

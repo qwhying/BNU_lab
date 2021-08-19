@@ -1,0 +1,80 @@
+1.1798 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+4.7979 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+5.7730 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000193199B7400>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000193198CDA90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.7732 	EXP 	window1: mouseVisible = True
+5.7732 	EXP 	window1: recordFrameIntervals = False
+5.9395 	EXP 	window1: recordFrameIntervals = True
+6.1235 	EXP 	window1: recordFrameIntervals = False
+6.3882 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+6.4545 	EXP 	window1: mouseVisible = True
+1.1861 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+4.6615 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+5.6151 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002173ADEA400>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000021739D4CBA8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.6153 	EXP 	window1: mouseVisible = True
+5.6153 	EXP 	window1: recordFrameIntervals = False
+5.7816 	EXP 	window1: recordFrameIntervals = True
+5.9652 	EXP 	window1: recordFrameIntervals = False
+6.2327 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+6.2475 	EXP 	Imported D:/程序设计/2021/task_conditions.xlsx as conditions, 10 conditions, 3 params
+6.2479 	EXP 	Created sequence: random, trialTypes=10, nReps=5, seed=None
+6.2481 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同颜色及位置8.png', 'texts': 18, 'pos': (0, 0.08)}
+6.3160 	EXP 	text: pos = array([0.  , 0.08])
+6.3160 	EXP 	text: text = 18
+6.3160 	EXP 	text: autoDraw = True
+7.2361 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同颜色及位置10.png', 'texts': 20, 'pos': (0, 0.1)}
+7.2504 	EXP 	text: autoDraw = False
+7.2504 	EXP 	text: pos = array([0. , 0.1])
+7.2504 	EXP 	text: text = 20
+7.2504 	EXP 	text: autoDraw = True
+8.2342 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同颜色及位置6.png', 'texts': 16, 'pos': (0, 0.06)}
+8.2513 	EXP 	text: autoDraw = False
+8.2513 	EXP 	text: pos = array([0.  , 0.06])
+8.2513 	EXP 	text: text = 16
+8.2513 	EXP 	text: autoDraw = True
+9.2373 	EXP 	New trial (rep=0, index=3): {'images': 'Task samples\\相同颜色及位置9.png', 'texts': 19, 'pos': (0, 0.09)}
+9.2516 	EXP 	text: autoDraw = False
+9.2516 	EXP 	text: pos = array([0.  , 0.09])
+9.2516 	EXP 	text: text = 19
+9.2516 	EXP 	text: autoDraw = True
+10.2359 	EXP 	New trial (rep=0, index=4): {'images': 'Task samples\\相同颜色及位置2.png', 'texts': 12, 'pos': (0, 0.02)}
+10.2523 	EXP 	text: autoDraw = False
+10.2523 	EXP 	text: pos = array([0.  , 0.02])
+10.2523 	EXP 	text: text = 12
+10.2523 	EXP 	text: autoDraw = True
+11.2369 	EXP 	New trial (rep=0, index=5): {'images': 'Task samples\\相同颜色及位置1.png', 'texts': 11, 'pos': (0, 0.01)}
+11.2531 	EXP 	text: autoDraw = False
+11.2531 	EXP 	text: pos = array([0.  , 0.01])
+11.2531 	EXP 	text: text = 11
+11.2531 	EXP 	text: autoDraw = True
+12.2404 	EXP 	New trial (rep=0, index=6): {'images': 'Task samples\\相同颜色及位置7.png', 'texts': 17, 'pos': (0, 0.07)}
+12.2541 	EXP 	text: autoDraw = False
+12.2541 	EXP 	text: pos = array([0.  , 0.07])
+12.2541 	EXP 	text: text = 17
+12.2541 	EXP 	text: autoDraw = True
+13.2388 	EXP 	New trial (rep=0, index=7): {'images': 'Task samples\\相同颜色及位置4.png', 'texts': 14, 'pos': (0, 0.04)}
+13.2552 	EXP 	text: autoDraw = False
+13.2552 	EXP 	text: pos = array([0.  , 0.04])
+13.2552 	EXP 	text: text = 14
+13.2552 	EXP 	text: autoDraw = True
+14.2406 	EXP 	New trial (rep=0, index=8): {'images': 'Task samples\\相同颜色及位置3.png', 'texts': 13, 'pos': (0, 0.03)}
+14.2563 	EXP 	text: autoDraw = False
+14.2563 	EXP 	text: pos = array([0.  , 0.03])
+14.2563 	EXP 	text: text = 13
+14.2563 	EXP 	text: autoDraw = True
+15.2402 	EXP 	New trial (rep=0, index=9): {'images': 'Task samples\\相同颜色及位置5.png', 'texts': 15, 'pos': (0, 0.05)}
+15.2568 	EXP 	text: autoDraw = False
+15.2568 	EXP 	text: pos = array([0.  , 0.05])
+15.2568 	EXP 	text: text = 15
+15.2568 	EXP 	text: autoDraw = True
+16.2411 	EXP 	New trial (rep=1, index=0): {'images': 'Task samples\\相同颜色及位置1.png', 'texts': 11, 'pos': (0, 0.01)}
+16.2575 	EXP 	text: autoDraw = False
+16.2575 	EXP 	text: pos = array([0.  , 0.01])
+16.2575 	EXP 	text: text = 11
+16.2575 	EXP 	text: autoDraw = True
+17.2422 	EXP 	New trial (rep=1, index=1): {'images': 'Task samples\\相同颜色及位置10.png', 'texts': 20, 'pos': (0, 0.1)}
+17.2593 	EXP 	text: autoDraw = False
+17.2593 	EXP 	text: pos = array([0. , 0.1])
+17.2593 	EXP 	text: text = 20
+17.2593 	EXP 	text: autoDraw = True
+17.9628 	DATA 	Keypress: escape
+18.1492 	EXP 	window1: mouseVisible = True

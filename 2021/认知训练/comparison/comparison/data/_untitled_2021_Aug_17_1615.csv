@@ -1,0 +1,6 @@
+﻿dotN,equations,numbers,field_position,pos1,pos2,correctR,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,text_3.started,text_3.stopped,key_resp_2.keys,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,polygon.started,polygon.stopped,dots.started,dots.stopped,equation.started,equation.stopped,number.started,number.stopped,key_resp.keys,key_resp.corr,key_resp.started,key_resp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,8.018797200056724,None,1,0.6313363000517711,8.018797200056724,None,,,,,,,,,,,,,,001,2021_Aug_17_1615,untitled,2021.2.1,None,
+8,5+2,7,"(0, 0.25)","(-0.3, -0.25)","(0.3, -0.25)",2,0,0,0,33,,,,,,,8.701463100034744,None,9.702632200089283,None,9.702632200089283,None,9.702632200089283,None,None,0,9.702632200089283,None,,001,2021_Aug_17_1615,untitled,2021.2.1,None,
+5,4+2,6,"(0.3, -0.25)","(-0.3, -0.25)","(0, 0.25)",2,0,1,1,1,,,,,,,14.678495700005442,None,15.690346400020644,None,15.690346400020644,None,15.690346400020644,None,None,0,15.690346400020644,None,,001,2021_Aug_17_1615,untitled,2021.2.1,None,
+8,3+6,9,"(0.3, -0.25)","(-0.3, -0.25)","(0, 0.25)",2,0,2,2,47,,,,,,,20.6818797000451,None,21.68324670009315,None,21.68324670009315,None,21.68324670009315,None,None,0,21.68324670009315,None,,001,2021_Aug_17_1615,untitled,2021.2.1,None,
+,,,,,,,,,,,,,,,,,26.68633789999876,None,,,,,,,,,,,,,,,,,

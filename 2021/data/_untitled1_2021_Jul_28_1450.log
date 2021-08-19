@@ -1,0 +1,17 @@
+1.1633 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.9247 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A92ED6A3C8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001A9302B5A90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.9254 	EXP 	window1: mouseVisible = True
+5.9255 	EXP 	window1: recordFrameIntervals = False
+6.0895 	EXP 	window1: recordFrameIntervals = True
+6.2733 	EXP 	window1: recordFrameIntervals = False
+6.7673 	DATA 	Keypress: p
+6.9158 	DATA 	Keypress: l
+7.0493 	DATA 	Keypress: p
+7.1475 	DATA 	Keypress: l
+7.2828 	DATA 	Keypress: p
+7.3998 	DATA 	Keypress: l
+7.8334 	DATA 	Keypress: b
+8.0002 	DATA 	Keypress: h
+8.0669 	DATA 	Keypress: v
+8.6321 	DATA 	Keypress: escape
+8.7511 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,696 @@
+1.2283 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.9898 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002730A8650F0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002730A938898>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 0.0], screen=0, size=array([1200, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.9906 	EXP 	window1: mouseVisible = True
+6.9906 	EXP 	window1: recordFrameIntervals = False
+7.1573 	EXP 	window1: recordFrameIntervals = True
+7.8114 	WARNING 	t of last frame was 20.26ms (=1/49)
+8.0785 	WARNING 	t of last frame was 20.32ms (=1/49)
+8.2584 	EXP 	window1: recordFrameIntervals = False
+8.5744 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='比较三个项目之间是否相等，相等的话按1键，不相等的话按2键\n准备好了按一键开始', units='height', win=Window(...), wrapWidth=1)
+8.5771 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+8.5798 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0., 0.]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+8.5811 	EXP 	Created equation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='equation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.5820 	EXP 	Created number = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='number', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.6248 	EXP 	text_3: autoDraw = True
+10.6334 	EXP 	Imported trail.xlsx as conditions, 62 conditions, 7 params
+10.6338 	EXP 	Created sequence: sequential, trialTypes=62, nReps=1, seed=None
+10.6340 	EXP 	New trial (rep=0, index=0): {'dotN': 9, 'equations': '5+3', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+10.6372 	DATA 	Keypress: 1
+10.6432 	EXP 	text_3: autoDraw = False
+10.6432 	EXP 	polygon: autoDraw = True
+11.6297 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+11.6612 	EXP 	polygon: autoDraw = False
+11.6612 	EXP 	dots: pos = array([0.  , 0.25])
+11.6612 	EXP 	dots: fieldPos = array([0.  , 0.25])
+11.6612 	EXP 	equation: pos = array([ 0.3 , -0.25])
+11.6612 	EXP 	equation: text = '5+3'
+11.6612 	EXP 	number: pos = array([-0.3 , -0.25])
+11.6612 	EXP 	number: text = 9
+11.6612 	EXP 	dots: autoDraw = True
+11.6612 	EXP 	equation: autoDraw = True
+11.6612 	EXP 	number: autoDraw = True
+16.6159 	EXP 	New trial (rep=0, index=1): {'dotN': 5, 'equations': '4+2', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+16.6362 	EXP 	dots: autoDraw = False
+16.6362 	EXP 	equation: autoDraw = False
+16.6362 	EXP 	number: autoDraw = False
+16.6362 	EXP 	polygon: autoDraw = True
+17.6170 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+17.6329 	EXP 	polygon: autoDraw = False
+17.6329 	EXP 	dots: pos = array([ 0.3 , -0.25])
+17.6329 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+17.6329 	EXP 	equation: pos = array([-0.3 , -0.25])
+17.6329 	EXP 	equation: text = '4+2'
+17.6329 	EXP 	number: pos = array([0.  , 0.25])
+17.6329 	EXP 	number: text = 6
+17.6329 	EXP 	dots: autoDraw = True
+17.6329 	EXP 	equation: autoDraw = True
+17.6329 	EXP 	number: autoDraw = True
+22.6209 	EXP 	New trial (rep=0, index=2): {'dotN': 5, 'equations': '2+2', 'numbers': 4, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+22.6368 	EXP 	dots: autoDraw = False
+22.6368 	EXP 	equation: autoDraw = False
+22.6368 	EXP 	number: autoDraw = False
+22.6368 	EXP 	polygon: autoDraw = True
+23.6234 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+23.6378 	EXP 	polygon: autoDraw = False
+23.6378 	EXP 	dots: pos = array([0.  , 0.25])
+23.6378 	EXP 	dots: fieldPos = array([0.  , 0.25])
+23.6378 	EXP 	equation: pos = array([-0.3 , -0.25])
+23.6378 	EXP 	equation: text = '2+2'
+23.6378 	EXP 	number: pos = array([ 0.3 , -0.25])
+23.6378 	EXP 	number: text = 4
+23.6378 	EXP 	dots: autoDraw = True
+23.6378 	EXP 	equation: autoDraw = True
+23.6378 	EXP 	number: autoDraw = True
+26.2958 	DATA 	Keypress: lwindows
+26.3135 	DATA 	Keypress: lshift
+26.7862 	DATA 	Keypress: s
+28.6300 	EXP 	New trial (rep=0, index=3): {'dotN': 7, 'equations': '2+6', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+28.6444 	EXP 	dots: autoDraw = False
+28.6444 	EXP 	equation: autoDraw = False
+28.6444 	EXP 	number: autoDraw = False
+28.6444 	EXP 	polygon: autoDraw = True
+29.6299 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+29.6472 	EXP 	polygon: autoDraw = False
+29.6472 	EXP 	dots: pos = array([-0.3 , -0.25])
+29.6472 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+29.6472 	EXP 	equation: pos = array([ 0.3 , -0.25])
+29.6472 	EXP 	equation: text = '2+6'
+29.6472 	EXP 	number: pos = array([0.  , 0.25])
+29.6472 	EXP 	number: text = 7
+29.6472 	EXP 	dots: autoDraw = True
+29.6472 	EXP 	equation: autoDraw = True
+29.6472 	EXP 	number: autoDraw = True
+34.6159 	EXP 	New trial (rep=0, index=4): {'dotN': 3, 'equations': '1+2', 'numbers': 3, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+34.6322 	EXP 	dots: autoDraw = False
+34.6322 	EXP 	equation: autoDraw = False
+34.6322 	EXP 	number: autoDraw = False
+34.6322 	EXP 	polygon: autoDraw = True
+35.6205 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=3, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+35.6336 	EXP 	polygon: autoDraw = False
+35.6336 	EXP 	dots: pos = array([-0.3 , -0.25])
+35.6336 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+35.6336 	EXP 	equation: pos = array([0.  , 0.25])
+35.6336 	EXP 	equation: text = '1+2'
+35.6336 	EXP 	number: pos = array([ 0.3 , -0.25])
+35.6336 	EXP 	number: text = 3
+35.6336 	EXP 	dots: autoDraw = True
+35.6336 	EXP 	equation: autoDraw = True
+35.6336 	EXP 	number: autoDraw = True
+40.6205 	EXP 	New trial (rep=0, index=5): {'dotN': 4, 'equations': '3+1', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+40.6365 	EXP 	dots: autoDraw = False
+40.6365 	EXP 	equation: autoDraw = False
+40.6365 	EXP 	number: autoDraw = False
+40.6365 	EXP 	polygon: autoDraw = True
+41.6229 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=4, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+41.6384 	EXP 	polygon: autoDraw = False
+41.6384 	EXP 	dots: pos = array([ 0.3 , -0.25])
+41.6384 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+41.6384 	EXP 	equation: pos = array([0.  , 0.25])
+41.6384 	EXP 	equation: text = '3+1'
+41.6384 	EXP 	number: pos = array([-0.3 , -0.25])
+41.6384 	EXP 	number: text = 4
+41.6384 	EXP 	dots: autoDraw = True
+41.6384 	EXP 	equation: autoDraw = True
+41.6384 	EXP 	number: autoDraw = True
+45.7134 	DATA 	Keypress: lwindows
+45.7301 	DATA 	Keypress: lshift
+46.6298 	EXP 	New trial (rep=0, index=6): {'dotN': 8, 'equations': '2+6', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+46.6456 	EXP 	dots: autoDraw = False
+46.6456 	EXP 	equation: autoDraw = False
+46.6456 	EXP 	number: autoDraw = False
+46.6456 	EXP 	polygon: autoDraw = True
+47.6278 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+47.6858 	EXP 	polygon: autoDraw = False
+47.6858 	EXP 	dots: pos = array([-0.3 , -0.25])
+47.6858 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+47.6858 	EXP 	equation: pos = array([0.  , 0.25])
+47.6858 	EXP 	equation: text = '2+6'
+47.6858 	EXP 	number: pos = array([ 0.3 , -0.25])
+47.6858 	EXP 	number: text = 8
+47.6858 	EXP 	dots: autoDraw = True
+47.6858 	EXP 	equation: autoDraw = True
+47.6858 	EXP 	number: autoDraw = True
+52.6336 	EXP 	New trial (rep=0, index=7): {'dotN': 7, 'equations': '4+3', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+52.6545 	EXP 	dots: autoDraw = False
+52.6545 	EXP 	equation: autoDraw = False
+52.6545 	EXP 	number: autoDraw = False
+52.6545 	EXP 	polygon: autoDraw = True
+53.6228 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+53.6370 	EXP 	polygon: autoDraw = False
+53.6370 	EXP 	dots: pos = array([0.  , 0.25])
+53.6370 	EXP 	dots: fieldPos = array([0.  , 0.25])
+53.6370 	EXP 	equation: pos = array([-0.3 , -0.25])
+53.6370 	EXP 	equation: text = '4+3'
+53.6370 	EXP 	number: pos = array([ 0.3 , -0.25])
+53.6370 	EXP 	number: text = 7
+53.6370 	EXP 	dots: autoDraw = True
+53.6370 	EXP 	equation: autoDraw = True
+53.6370 	EXP 	number: autoDraw = True
+58.6249 	EXP 	New trial (rep=0, index=8): {'dotN': 6, 'equations': '3+2', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+58.6396 	EXP 	dots: autoDraw = False
+58.6396 	EXP 	equation: autoDraw = False
+58.6396 	EXP 	number: autoDraw = False
+58.6396 	EXP 	polygon: autoDraw = True
+59.6276 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+59.6420 	EXP 	polygon: autoDraw = False
+59.6420 	EXP 	dots: pos = array([0.  , 0.25])
+59.6420 	EXP 	dots: fieldPos = array([0.  , 0.25])
+59.6420 	EXP 	equation: pos = array([-0.3 , -0.25])
+59.6420 	EXP 	equation: text = '3+2'
+59.6420 	EXP 	number: pos = array([ 0.3 , -0.25])
+59.6420 	EXP 	number: text = 5
+59.6420 	EXP 	dots: autoDraw = True
+59.6420 	EXP 	equation: autoDraw = True
+59.6420 	EXP 	number: autoDraw = True
+64.6263 	EXP 	New trial (rep=0, index=9): {'dotN': 3, 'equations': '1+3', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+64.6423 	EXP 	dots: autoDraw = False
+64.6423 	EXP 	equation: autoDraw = False
+64.6423 	EXP 	number: autoDraw = False
+64.6423 	EXP 	polygon: autoDraw = True
+65.6278 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=3, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+65.6434 	EXP 	polygon: autoDraw = False
+65.6434 	EXP 	dots: pos = array([ 0.3 , -0.25])
+65.6434 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+65.6434 	EXP 	equation: pos = array([-0.3 , -0.25])
+65.6434 	EXP 	equation: text = '1+3'
+65.6434 	EXP 	number: pos = array([0.  , 0.25])
+65.6434 	EXP 	number: text = 4
+65.6434 	EXP 	dots: autoDraw = True
+65.6434 	EXP 	equation: autoDraw = True
+65.6434 	EXP 	number: autoDraw = True
+70.6185 	EXP 	New trial (rep=0, index=10): {'dotN': 6, 'equations': '5+1', 'numbers': 6, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+70.6311 	EXP 	dots: autoDraw = False
+70.6311 	EXP 	equation: autoDraw = False
+70.6311 	EXP 	number: autoDraw = False
+70.6311 	EXP 	polygon: autoDraw = True
+71.6184 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+71.6322 	EXP 	polygon: autoDraw = False
+71.6322 	EXP 	dots: pos = array([-0.3 , -0.25])
+71.6322 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+71.6322 	EXP 	equation: pos = array([ 0.3 , -0.25])
+71.6322 	EXP 	equation: text = '5+1'
+71.6322 	EXP 	number: pos = array([0.  , 0.25])
+71.6322 	EXP 	number: text = 6
+71.6322 	EXP 	dots: autoDraw = True
+71.6322 	EXP 	equation: autoDraw = True
+71.6322 	EXP 	number: autoDraw = True
+76.6205 	EXP 	New trial (rep=0, index=11): {'dotN': 8, 'equations': '5+4', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+76.6364 	EXP 	dots: autoDraw = False
+76.6364 	EXP 	equation: autoDraw = False
+76.6364 	EXP 	number: autoDraw = False
+76.6364 	EXP 	polygon: autoDraw = True
+77.6218 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+77.6374 	EXP 	polygon: autoDraw = False
+77.6374 	EXP 	dots: pos = array([-0.3 , -0.25])
+77.6374 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+77.6374 	EXP 	equation: pos = array([ 0.3 , -0.25])
+77.6374 	EXP 	equation: text = '5+4'
+77.6374 	EXP 	number: pos = array([0.  , 0.25])
+77.6374 	EXP 	number: text = 8
+77.6374 	EXP 	dots: autoDraw = True
+77.6374 	EXP 	equation: autoDraw = True
+77.6374 	EXP 	number: autoDraw = True
+82.6260 	EXP 	New trial (rep=0, index=12): {'dotN': 9, 'equations': '6+3', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+82.6436 	EXP 	dots: autoDraw = False
+82.6436 	EXP 	equation: autoDraw = False
+82.6436 	EXP 	number: autoDraw = False
+82.6436 	EXP 	polygon: autoDraw = True
+83.6296 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+83.6444 	EXP 	polygon: autoDraw = False
+83.6444 	EXP 	dots: pos = array([0.  , 0.25])
+83.6444 	EXP 	dots: fieldPos = array([0.  , 0.25])
+83.6444 	EXP 	equation: pos = array([-0.3 , -0.25])
+83.6444 	EXP 	equation: text = '6+3'
+83.6444 	EXP 	number: pos = array([ 0.3 , -0.25])
+83.6444 	EXP 	number: text = 9
+83.6444 	EXP 	dots: autoDraw = True
+83.6444 	EXP 	equation: autoDraw = True
+83.6444 	EXP 	number: autoDraw = True
+88.6189 	EXP 	New trial (rep=0, index=13): {'dotN': 5, 'equations': '2+3', 'numbers': 5, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+88.6360 	EXP 	dots: autoDraw = False
+88.6360 	EXP 	equation: autoDraw = False
+88.6360 	EXP 	number: autoDraw = False
+88.6360 	EXP 	polygon: autoDraw = True
+89.6198 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+89.6370 	EXP 	polygon: autoDraw = False
+89.6370 	EXP 	dots: pos = array([ 0.3 , -0.25])
+89.6370 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+89.6370 	EXP 	equation: pos = array([-0.3 , -0.25])
+89.6370 	EXP 	equation: text = '2+3'
+89.6370 	EXP 	number: pos = array([0.  , 0.25])
+89.6370 	EXP 	number: text = 5
+89.6370 	EXP 	dots: autoDraw = True
+89.6370 	EXP 	equation: autoDraw = True
+89.6370 	EXP 	number: autoDraw = True
+94.6194 	EXP 	New trial (rep=0, index=14): {'dotN': 9, 'equations': '4+5', 'numbers': 9, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+94.6349 	EXP 	dots: autoDraw = False
+94.6349 	EXP 	equation: autoDraw = False
+94.6349 	EXP 	number: autoDraw = False
+94.6349 	EXP 	polygon: autoDraw = True
+95.6212 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+95.6370 	EXP 	polygon: autoDraw = False
+95.6370 	EXP 	dots: pos = array([-0.3 , -0.25])
+95.6370 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+95.6370 	EXP 	equation: pos = array([0.  , 0.25])
+95.6370 	EXP 	equation: text = '4+5'
+95.6370 	EXP 	number: pos = array([ 0.3 , -0.25])
+95.6370 	EXP 	number: text = 9
+95.6370 	EXP 	dots: autoDraw = True
+95.6370 	EXP 	equation: autoDraw = True
+95.6370 	EXP 	number: autoDraw = True
+98.8943 	DATA 	Keypress: lwindows
+98.9171 	DATA 	Keypress: lshift
+99.3332 	DATA 	Keypress: s
+100.6264 	EXP 	New trial (rep=0, index=15): {'dotN': 5, 'equations': '1+4', 'numbers': 5, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+100.6425 	EXP 	dots: autoDraw = False
+100.6425 	EXP 	equation: autoDraw = False
+100.6425 	EXP 	number: autoDraw = False
+100.6425 	EXP 	polygon: autoDraw = True
+101.6280 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+101.6448 	EXP 	polygon: autoDraw = False
+101.6448 	EXP 	dots: pos = array([ 0.3 , -0.25])
+101.6448 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+101.6448 	EXP 	equation: pos = array([-0.3 , -0.25])
+101.6448 	EXP 	equation: text = '1+4'
+101.6448 	EXP 	number: pos = array([0.  , 0.25])
+101.6448 	EXP 	number: text = 5
+101.6448 	EXP 	dots: autoDraw = True
+101.6448 	EXP 	equation: autoDraw = True
+101.6448 	EXP 	number: autoDraw = True
+106.6313 	EXP 	New trial (rep=0, index=16): {'dotN': 2, 'equations': '1+1', 'numbers': 2, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+106.6468 	EXP 	dots: autoDraw = False
+106.6468 	EXP 	equation: autoDraw = False
+106.6468 	EXP 	number: autoDraw = False
+106.6468 	EXP 	polygon: autoDraw = True
+107.6201 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=2, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+107.6310 	EXP 	polygon: autoDraw = False
+107.6310 	EXP 	dots: pos = array([ 0.3 , -0.25])
+107.6310 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+107.6310 	EXP 	equation: pos = array([0.  , 0.25])
+107.6310 	EXP 	equation: text = '1+1'
+107.6310 	EXP 	number: pos = array([-0.3 , -0.25])
+107.6310 	EXP 	number: text = 2
+107.6310 	EXP 	dots: autoDraw = True
+107.6310 	EXP 	equation: autoDraw = True
+107.6310 	EXP 	number: autoDraw = True
+112.6198 	EXP 	New trial (rep=0, index=17): {'dotN': 8, 'equations': '4+4', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+112.6379 	EXP 	dots: autoDraw = False
+112.6379 	EXP 	equation: autoDraw = False
+112.6379 	EXP 	number: autoDraw = False
+112.6379 	EXP 	polygon: autoDraw = True
+113.6232 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+113.6386 	EXP 	polygon: autoDraw = False
+113.6386 	EXP 	dots: pos = array([ 0.3 , -0.25])
+113.6386 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+113.6386 	EXP 	equation: pos = array([0.  , 0.25])
+113.6386 	EXP 	equation: text = '4+4'
+113.6386 	EXP 	number: pos = array([-0.3 , -0.25])
+113.6386 	EXP 	number: text = 9
+113.6386 	EXP 	dots: autoDraw = True
+113.6386 	EXP 	equation: autoDraw = True
+113.6386 	EXP 	number: autoDraw = True
+118.6235 	EXP 	New trial (rep=0, index=18): {'dotN': 4, 'equations': '2+2', 'numbers': 3, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+118.6395 	EXP 	dots: autoDraw = False
+118.6395 	EXP 	equation: autoDraw = False
+118.6395 	EXP 	number: autoDraw = False
+118.6395 	EXP 	polygon: autoDraw = True
+119.6263 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=4, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+119.6412 	EXP 	polygon: autoDraw = False
+119.6412 	EXP 	dots: pos = array([-0.3 , -0.25])
+119.6412 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+119.6412 	EXP 	equation: pos = array([0.  , 0.25])
+119.6412 	EXP 	equation: text = '2+2'
+119.6412 	EXP 	number: pos = array([ 0.3 , -0.25])
+119.6412 	EXP 	number: text = 3
+119.6412 	EXP 	dots: autoDraw = True
+119.6412 	EXP 	equation: autoDraw = True
+119.6412 	EXP 	number: autoDraw = True
+124.6301 	EXP 	New trial (rep=0, index=19): {'dotN': 3, 'equations': '1+1', 'numbers': 3, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+124.6465 	EXP 	dots: autoDraw = False
+124.6465 	EXP 	equation: autoDraw = False
+124.6465 	EXP 	number: autoDraw = False
+124.6465 	EXP 	polygon: autoDraw = True
+125.6308 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=3, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+125.6467 	EXP 	polygon: autoDraw = False
+125.6467 	EXP 	dots: pos = array([ 0.3 , -0.25])
+125.6467 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+125.6467 	EXP 	equation: pos = array([0.  , 0.25])
+125.6467 	EXP 	equation: text = '1+1'
+125.6467 	EXP 	number: pos = array([-0.3 , -0.25])
+125.6467 	EXP 	number: text = 3
+125.6467 	EXP 	dots: autoDraw = True
+125.6467 	EXP 	equation: autoDraw = True
+125.6467 	EXP 	number: autoDraw = True
+130.6192 	EXP 	New trial (rep=0, index=20): {'dotN': 5, 'equations': '4+1', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+130.6349 	EXP 	dots: autoDraw = False
+130.6349 	EXP 	equation: autoDraw = False
+130.6349 	EXP 	number: autoDraw = False
+130.6349 	EXP 	polygon: autoDraw = True
+131.6192 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+131.6346 	EXP 	polygon: autoDraw = False
+131.6346 	EXP 	dots: pos = array([0.  , 0.25])
+131.6346 	EXP 	dots: fieldPos = array([0.  , 0.25])
+131.6346 	EXP 	equation: pos = array([ 0.3 , -0.25])
+131.6346 	EXP 	equation: text = '4+1'
+131.6346 	EXP 	number: pos = array([-0.3 , -0.25])
+131.6346 	EXP 	number: text = 5
+131.6346 	EXP 	dots: autoDraw = True
+131.6346 	EXP 	equation: autoDraw = True
+131.6346 	EXP 	number: autoDraw = True
+136.6236 	EXP 	New trial (rep=0, index=21): {'dotN': 6, 'equations': '4+2', 'numbers': 6, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+136.6397 	EXP 	dots: autoDraw = False
+136.6397 	EXP 	equation: autoDraw = False
+136.6397 	EXP 	number: autoDraw = False
+136.6397 	EXP 	polygon: autoDraw = True
+137.6271 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+137.6407 	EXP 	polygon: autoDraw = False
+137.6407 	EXP 	dots: pos = array([0.  , 0.25])
+137.6407 	EXP 	dots: fieldPos = array([0.  , 0.25])
+137.6407 	EXP 	equation: pos = array([ 0.3 , -0.25])
+137.6407 	EXP 	equation: text = '4+2'
+137.6407 	EXP 	number: pos = array([-0.3 , -0.25])
+137.6407 	EXP 	number: text = 6
+137.6407 	EXP 	dots: autoDraw = True
+137.6407 	EXP 	equation: autoDraw = True
+137.6407 	EXP 	number: autoDraw = True
+142.6302 	EXP 	New trial (rep=0, index=22): {'dotN': 4, 'equations': '2+1', 'numbers': 4, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+142.6477 	EXP 	dots: autoDraw = False
+142.6477 	EXP 	equation: autoDraw = False
+142.6477 	EXP 	number: autoDraw = False
+142.6477 	EXP 	polygon: autoDraw = True
+143.6305 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=4, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+143.6477 	EXP 	polygon: autoDraw = False
+143.6477 	EXP 	dots: pos = array([0.  , 0.25])
+143.6477 	EXP 	dots: fieldPos = array([0.  , 0.25])
+143.6477 	EXP 	equation: pos = array([ 0.3 , -0.25])
+143.6477 	EXP 	equation: text = '2+1'
+143.6477 	EXP 	number: pos = array([-0.3 , -0.25])
+143.6477 	EXP 	number: text = 4
+143.6477 	EXP 	dots: autoDraw = True
+143.6477 	EXP 	equation: autoDraw = True
+143.6477 	EXP 	number: autoDraw = True
+148.6194 	EXP 	New trial (rep=0, index=23): {'dotN': 7, 'equations': '2+5', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+148.6372 	EXP 	dots: autoDraw = False
+148.6372 	EXP 	equation: autoDraw = False
+148.6372 	EXP 	number: autoDraw = False
+148.6372 	EXP 	polygon: autoDraw = True
+149.6365 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+149.6531 	EXP 	polygon: autoDraw = False
+149.6531 	EXP 	dots: pos = array([0.  , 0.25])
+149.6531 	EXP 	dots: fieldPos = array([0.  , 0.25])
+149.6531 	EXP 	equation: pos = array([ 0.3 , -0.25])
+149.6531 	EXP 	equation: text = '2+5'
+149.6531 	EXP 	number: pos = array([-0.3 , -0.25])
+149.6531 	EXP 	number: text = 7
+149.6531 	EXP 	dots: autoDraw = True
+149.6531 	EXP 	equation: autoDraw = True
+149.6531 	EXP 	number: autoDraw = True
+154.6240 	EXP 	New trial (rep=0, index=24): {'dotN': 5, 'equations': '3+2', 'numbers': 5, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+154.6399 	EXP 	dots: autoDraw = False
+154.6399 	EXP 	equation: autoDraw = False
+154.6399 	EXP 	number: autoDraw = False
+154.6399 	EXP 	polygon: autoDraw = True
+154.6762 	DATA 	Keypress: lwindows
+154.6922 	DATA 	Keypress: lshift
+155.6254 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+155.6409 	EXP 	polygon: autoDraw = False
+155.6409 	EXP 	dots: pos = array([0.  , 0.25])
+155.6409 	EXP 	dots: fieldPos = array([0.  , 0.25])
+155.6409 	EXP 	equation: pos = array([ 0.3 , -0.25])
+155.6409 	EXP 	equation: text = '3+2'
+155.6409 	EXP 	number: pos = array([-0.3 , -0.25])
+155.6409 	EXP 	number: text = 5
+155.6409 	EXP 	dots: autoDraw = True
+155.6409 	EXP 	equation: autoDraw = True
+155.6409 	EXP 	number: autoDraw = True
+157.8841 	DATA 	Keypress: s
+160.6306 	EXP 	New trial (rep=0, index=25): {'dotN': 5, 'equations': '4+1', 'numbers': 6, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+160.6469 	EXP 	dots: autoDraw = False
+160.6469 	EXP 	equation: autoDraw = False
+160.6469 	EXP 	number: autoDraw = False
+160.6469 	EXP 	polygon: autoDraw = True
+161.6594 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=5, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+161.6780 	EXP 	polygon: autoDraw = False
+161.6780 	EXP 	dots: pos = array([ 0.3 , -0.25])
+161.6780 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+161.6780 	EXP 	equation: pos = array([0.  , 0.25])
+161.6780 	EXP 	equation: text = '4+1'
+161.6780 	EXP 	number: pos = array([-0.3 , -0.25])
+161.6780 	EXP 	number: text = 6
+161.6780 	EXP 	dots: autoDraw = True
+161.6780 	EXP 	equation: autoDraw = True
+161.6780 	EXP 	number: autoDraw = True
+165.1609 	DATA 	Mouse: Left button down, pos=(1130,491)
+165.2220 	DATA 	Mouse:  Left button up, pos=(1130,491)
+166.6188 	EXP 	New trial (rep=0, index=26): {'dotN': 8, 'equations': '3+5', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+166.6366 	EXP 	dots: autoDraw = False
+166.6366 	EXP 	equation: autoDraw = False
+166.6366 	EXP 	number: autoDraw = False
+166.6366 	EXP 	polygon: autoDraw = True
+167.6192 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+167.6350 	EXP 	polygon: autoDraw = False
+167.6350 	EXP 	dots: pos = array([-0.3 , -0.25])
+167.6350 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+167.6350 	EXP 	equation: pos = array([0.  , 0.25])
+167.6350 	EXP 	equation: text = '3+5'
+167.6350 	EXP 	number: pos = array([ 0.3 , -0.25])
+167.6350 	EXP 	number: text = 7
+167.6350 	EXP 	dots: autoDraw = True
+167.6350 	EXP 	equation: autoDraw = True
+167.6350 	EXP 	number: autoDraw = True
+172.6223 	EXP 	New trial (rep=0, index=27): {'dotN': 7, 'equations': '5+2', 'numbers': 7, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+172.6399 	EXP 	dots: autoDraw = False
+172.6399 	EXP 	equation: autoDraw = False
+172.6399 	EXP 	number: autoDraw = False
+172.6399 	EXP 	polygon: autoDraw = True
+173.6237 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+173.6409 	EXP 	polygon: autoDraw = False
+173.6409 	EXP 	dots: pos = array([ 0.3 , -0.25])
+173.6409 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+173.6409 	EXP 	equation: pos = array([-0.3 , -0.25])
+173.6409 	EXP 	equation: text = '5+2'
+173.6409 	EXP 	number: pos = array([0.  , 0.25])
+173.6409 	EXP 	number: text = 7
+173.6409 	EXP 	dots: autoDraw = True
+173.6409 	EXP 	equation: autoDraw = True
+173.6409 	EXP 	number: autoDraw = True
+178.6289 	EXP 	New trial (rep=0, index=28): {'dotN': 6, 'equations': '2+4', 'numbers': 6, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+178.6460 	EXP 	dots: autoDraw = False
+178.6460 	EXP 	equation: autoDraw = False
+178.6460 	EXP 	number: autoDraw = False
+178.6460 	EXP 	polygon: autoDraw = True
+179.6156 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+179.6290 	EXP 	polygon: autoDraw = False
+179.6290 	EXP 	dots: pos = array([0.  , 0.25])
+179.6290 	EXP 	dots: fieldPos = array([0.  , 0.25])
+179.6290 	EXP 	equation: pos = array([-0.3 , -0.25])
+179.6290 	EXP 	equation: text = '2+4'
+179.6290 	EXP 	number: pos = array([ 0.3 , -0.25])
+179.6290 	EXP 	number: text = 6
+179.6290 	EXP 	dots: autoDraw = True
+179.6290 	EXP 	equation: autoDraw = True
+179.6290 	EXP 	number: autoDraw = True
+181.3041 	DATA 	Keypress: lwindows
+181.3362 	DATA 	Keypress: lshift
+181.9930 	DATA 	Keypress: s
+184.6183 	EXP 	New trial (rep=0, index=29): {'dotN': 7, 'equations': '2+5', 'numbers': 8, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+184.6340 	EXP 	dots: autoDraw = False
+184.6340 	EXP 	equation: autoDraw = False
+184.6340 	EXP 	number: autoDraw = False
+184.6340 	EXP 	polygon: autoDraw = True
+185.6191 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+185.6349 	EXP 	polygon: autoDraw = False
+185.6349 	EXP 	dots: pos = array([ 0.3 , -0.25])
+185.6349 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+185.6349 	EXP 	equation: pos = array([0.  , 0.25])
+185.6349 	EXP 	equation: text = '2+5'
+185.6349 	EXP 	number: pos = array([-0.3 , -0.25])
+185.6349 	EXP 	number: text = 8
+185.6349 	EXP 	dots: autoDraw = True
+185.6349 	EXP 	equation: autoDraw = True
+185.6349 	EXP 	number: autoDraw = True
+186.7114 	DATA 	Mouse: Left button down, pos=(83,534)
+186.8082 	DATA 	Mouse:  Left button up, pos=(83,534)
+190.6235 	EXP 	New trial (rep=0, index=30): {'dotN': 9, 'equations': '3+6', 'numbers': 9, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 1}
+190.6395 	EXP 	dots: autoDraw = False
+190.6395 	EXP 	equation: autoDraw = False
+190.6395 	EXP 	number: autoDraw = False
+190.6395 	EXP 	polygon: autoDraw = True
+191.6232 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+191.6388 	EXP 	polygon: autoDraw = False
+191.6388 	EXP 	dots: pos = array([ 0.3 , -0.25])
+191.6388 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+191.6388 	EXP 	equation: pos = array([0.  , 0.25])
+191.6388 	EXP 	equation: text = '3+6'
+191.6388 	EXP 	number: pos = array([-0.3 , -0.25])
+191.6388 	EXP 	number: text = 9
+191.6388 	EXP 	dots: autoDraw = True
+191.6388 	EXP 	equation: autoDraw = True
+191.6388 	EXP 	number: autoDraw = True
+196.6272 	EXP 	New trial (rep=0, index=31): {'dotN': 8, 'equations': '3+5', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+196.6464 	EXP 	dots: autoDraw = False
+196.6464 	EXP 	equation: autoDraw = False
+196.6464 	EXP 	number: autoDraw = False
+196.6464 	EXP 	polygon: autoDraw = True
+196.6970 	DATA 	Keypress: lwindows
+196.7139 	DATA 	Keypress: lshift
+197.2023 	DATA 	Keypress: s
+197.6160 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+197.6325 	EXP 	polygon: autoDraw = False
+197.6325 	EXP 	dots: pos = array([-0.3 , -0.25])
+197.6325 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+197.6325 	EXP 	equation: pos = array([0.  , 0.25])
+197.6325 	EXP 	equation: text = '3+5'
+197.6325 	EXP 	number: pos = array([ 0.3 , -0.25])
+197.6325 	EXP 	number: text = 8
+197.6325 	EXP 	dots: autoDraw = True
+197.6325 	EXP 	equation: autoDraw = True
+197.6325 	EXP 	number: autoDraw = True
+199.6525 	DATA 	Keypress: lwindows
+199.6747 	DATA 	Keypress: lshift
+200.0991 	DATA 	Keypress: s
+202.3906 	DATA 	Keypress: lwindows
+202.4736 	DATA 	Keypress: lshift
+202.6215 	EXP 	New trial (rep=0, index=32): {'dotN': 7, 'equations': '1+6', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+202.6341 	EXP 	dots: autoDraw = False
+202.6341 	EXP 	equation: autoDraw = False
+202.6341 	EXP 	number: autoDraw = False
+202.6341 	EXP 	polygon: autoDraw = True
+203.6189 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=7, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+203.6341 	EXP 	polygon: autoDraw = False
+203.6341 	EXP 	dots: pos = array([0.  , 0.25])
+203.6341 	EXP 	dots: fieldPos = array([0.  , 0.25])
+203.6341 	EXP 	equation: pos = array([-0.3 , -0.25])
+203.6341 	EXP 	equation: text = '1+6'
+203.6341 	EXP 	number: pos = array([ 0.3 , -0.25])
+203.6341 	EXP 	number: text = 7
+203.6341 	EXP 	dots: autoDraw = True
+203.6341 	EXP 	equation: autoDraw = True
+203.6341 	EXP 	number: autoDraw = True
+205.3401 	DATA 	Keypress: lwindows
+205.3602 	DATA 	Keypress: lshift
+208.6242 	EXP 	New trial (rep=0, index=33): {'dotN': 8, 'equations': '5+2', 'numbers': 7, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+208.6448 	EXP 	dots: autoDraw = False
+208.6448 	EXP 	equation: autoDraw = False
+208.6448 	EXP 	number: autoDraw = False
+208.6448 	EXP 	polygon: autoDraw = True
+209.6307 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+209.6562 	EXP 	polygon: autoDraw = False
+209.6562 	EXP 	dots: pos = array([0.  , 0.25])
+209.6562 	EXP 	dots: fieldPos = array([0.  , 0.25])
+209.6562 	EXP 	equation: pos = array([-0.3 , -0.25])
+209.6562 	EXP 	equation: text = '5+2'
+209.6562 	EXP 	number: pos = array([ 0.3 , -0.25])
+209.6562 	EXP 	number: text = 7
+209.6562 	EXP 	dots: autoDraw = True
+209.6562 	EXP 	equation: autoDraw = True
+209.6562 	EXP 	number: autoDraw = True
+212.2018 	DATA 	Mouse: Left button down, pos=(89,567)
+212.2810 	DATA 	Mouse:  Left button up, pos=(89,567)
+214.6285 	EXP 	New trial (rep=0, index=34): {'dotN': 9, 'equations': '1+8', 'numbers': 9, 'field_position': (-0.3, -0.25), 'pos1': (0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 1}
+214.6465 	EXP 	dots: autoDraw = False
+214.6465 	EXP 	equation: autoDraw = False
+214.6465 	EXP 	number: autoDraw = False
+214.6465 	EXP 	polygon: autoDraw = True
+214.8309 	DATA 	Keypress: lwindows
+214.8656 	DATA 	Keypress: lshift
+215.6283 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+215.6469 	EXP 	polygon: autoDraw = False
+215.6469 	EXP 	dots: pos = array([-0.3 , -0.25])
+215.6469 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+215.6469 	EXP 	equation: pos = array([ 0.3 , -0.25])
+215.6469 	EXP 	equation: text = '1+8'
+215.6469 	EXP 	number: pos = array([0.  , 0.25])
+215.6469 	EXP 	number: text = 9
+215.6469 	EXP 	dots: autoDraw = True
+215.6469 	EXP 	equation: autoDraw = True
+215.6469 	EXP 	number: autoDraw = True
+219.8374 	DATA 	Keypress: s
+220.6176 	EXP 	New trial (rep=0, index=35): {'dotN': 6, 'equations': '3+4', 'numbers': 7, 'field_position': (0.3, -0.25), 'pos1': (-0.3, -0.25), 'pos2': (0, 0.25), 'correctR': 2}
+220.6337 	EXP 	dots: autoDraw = False
+220.6337 	EXP 	equation: autoDraw = False
+220.6337 	EXP 	number: autoDraw = False
+220.6337 	EXP 	polygon: autoDraw = True
+221.6203 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+221.6374 	EXP 	polygon: autoDraw = False
+221.6374 	EXP 	dots: pos = array([ 0.3 , -0.25])
+221.6374 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+221.6374 	EXP 	equation: pos = array([-0.3 , -0.25])
+221.6374 	EXP 	equation: text = '3+4'
+221.6374 	EXP 	number: pos = array([0.  , 0.25])
+221.6374 	EXP 	number: text = 7
+221.6374 	EXP 	dots: autoDraw = True
+221.6374 	EXP 	equation: autoDraw = True
+221.6374 	EXP 	number: autoDraw = True
+226.6219 	EXP 	New trial (rep=0, index=36): {'dotN': 9, 'equations': '2+7', 'numbers': 9, 'field_position': (0, 0.25), 'pos1': (-0.3, -0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+226.6397 	EXP 	dots: autoDraw = False
+226.6397 	EXP 	equation: autoDraw = False
+226.6397 	EXP 	number: autoDraw = False
+226.6397 	EXP 	polygon: autoDraw = True
+227.6225 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+227.6405 	EXP 	polygon: autoDraw = False
+227.6405 	EXP 	dots: pos = array([0.  , 0.25])
+227.6405 	EXP 	dots: fieldPos = array([0.  , 0.25])
+227.6405 	EXP 	equation: pos = array([-0.3 , -0.25])
+227.6405 	EXP 	equation: text = '2+7'
+227.6405 	EXP 	number: pos = array([ 0.3 , -0.25])
+227.6405 	EXP 	number: text = 9
+227.6405 	EXP 	dots: autoDraw = True
+227.6405 	EXP 	equation: autoDraw = True
+227.6405 	EXP 	number: autoDraw = True
+227.9814 	DATA 	Mouse: Left button down, pos=(79,547)
+228.0825 	DATA 	Mouse:  Left button up, pos=(79,547)
+228.6955 	DATA 	Mouse: Left button down, pos=(750,454)
+228.7819 	DATA 	Mouse:  Left button up, pos=(750,454)
+229.2324 	DATA 	Keypress: lshift
+229.2623 	DATA 	Keypress: lwindows
+229.6669 	DATA 	Keypress: s
+232.6265 	EXP 	New trial (rep=0, index=37): {'dotN': 3, 'equations': '1+2', 'numbers': 4, 'field_position': (0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+232.6485 	EXP 	dots: autoDraw = False
+232.6485 	EXP 	equation: autoDraw = False
+232.6485 	EXP 	number: autoDraw = False
+232.6485 	EXP 	polygon: autoDraw = True
+233.6287 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([ 0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=3, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+233.6461 	EXP 	polygon: autoDraw = False
+233.6461 	EXP 	dots: pos = array([ 0.3 , -0.25])
+233.6461 	EXP 	dots: fieldPos = array([ 0.3 , -0.25])
+233.6461 	EXP 	equation: pos = array([0.  , 0.25])
+233.6461 	EXP 	equation: text = '1+2'
+233.6461 	EXP 	number: pos = array([-0.3 , -0.25])
+233.6461 	EXP 	number: text = 4
+233.6461 	EXP 	dots: autoDraw = True
+233.6461 	EXP 	equation: autoDraw = True
+233.6461 	EXP 	number: autoDraw = True
+238.6178 	EXP 	New trial (rep=0, index=38): {'dotN': 6, 'equations': '3+3', 'numbers': 5, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+238.6374 	EXP 	dots: autoDraw = False
+238.6374 	EXP 	equation: autoDraw = False
+238.6374 	EXP 	number: autoDraw = False
+238.6374 	EXP 	polygon: autoDraw = True
+239.6227 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([-0.3 , -0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=6, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+239.6488 	EXP 	polygon: autoDraw = False
+239.6488 	EXP 	dots: pos = array([-0.3 , -0.25])
+239.6488 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+239.6488 	EXP 	equation: pos = array([0.  , 0.25])
+239.6488 	EXP 	equation: text = '3+3'
+239.6488 	EXP 	number: pos = array([ 0.3 , -0.25])
+239.6488 	EXP 	number: text = 5
+239.6488 	EXP 	dots: autoDraw = True
+239.6488 	EXP 	equation: autoDraw = True
+239.6488 	EXP 	number: autoDraw = True
+244.6214 	EXP 	New trial (rep=0, index=39): {'dotN': 8, 'equations': '4+3', 'numbers': 8, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+244.6375 	EXP 	dots: autoDraw = False
+244.6375 	EXP 	equation: autoDraw = False
+244.6375 	EXP 	number: autoDraw = False
+244.6375 	EXP 	polygon: autoDraw = True
+245.6229 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0.  , 0.25]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=8, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+245.6405 	EXP 	polygon: autoDraw = False
+245.6405 	EXP 	dots: pos = array([0.  , 0.25])
+245.6405 	EXP 	dots: fieldPos = array([0.  , 0.25])
+245.6405 	EXP 	equation: pos = array([ 0.3 , -0.25])
+245.6405 	EXP 	equation: text = '4+3'
+245.6405 	EXP 	number: pos = array([-0.3 , -0.25])
+245.6405 	EXP 	number: text = 8
+245.6405 	EXP 	dots: autoDraw = True
+245.6405 	EXP 	equation: autoDraw = True
+245.6405 	EXP 	number: autoDraw = True
+247.9242 	EXP 	window1: mouseVisible = True

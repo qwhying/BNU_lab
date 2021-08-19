@@ -1,0 +1,17 @@
+1.2045 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+207.1552 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002AFA9527198>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002AFAA09B6A0>, multiSample=False, name='window1', numSamples=2, pos=[325.0, -55.0], screen=0, size=array([1270, 1190]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+207.1556 	EXP 	window1: mouseVisible = True
+207.1556 	EXP 	window1: recordFrameIntervals = False
+207.3203 	EXP 	window1: recordFrameIntervals = True
+207.3814 	WARNING 	t of last frame was 26.44ms (=1/37)
+207.8919 	WARNING 	t of last frame was 37.83ms (=1/26)
+207.9412 	WARNING 	t of last frame was 20.39ms (=1/49)
+208.0157 	WARNING 	t of last frame was 61.55ms (=1/16)
+208.0578 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+209.0401 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+209.3593 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='比较三个项目之间是否相等，相等的话按1键，不相等的话按2键\n准备好了按一键开始', units='height', win=Window(...), wrapWidth=1)
+209.3620 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+209.3935 	EXP 	window1: mouseVisible = True

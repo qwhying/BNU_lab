@@ -1,0 +1,280 @@
+1.2112 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+51.6554 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C1F8EB4048>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C1F6F097F0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+51.6555 	EXP 	window1: mouseVisible = True
+51.6556 	EXP 	window1: recordFrameIntervals = False
+51.8228 	EXP 	window1: recordFrameIntervals = True
+52.0067 	EXP 	window1: recordFrameIntervals = False
+52.3235 	EXP 	Created Cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/cue.png', interpolate=True, mask=None, maskParams=None, name='Cue', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+52.3971 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='instructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+52.4557 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+52.4577 	EXP 	Created Trial1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Trial1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+52.5144 	EXP 	Created Fixation2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+52.5162 	EXP 	Created Trial2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Trial2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+52.5505 	EXP 	Cue: autoDraw = True
+53.5151 	EXP 	instructions: autoDraw = True
+53.5650 	EXP 	Cue: autoDraw = False
+59.5150 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+59.5153 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+59.5155 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同位置及边数2.png', 'correctAns': 1}
+59.5396 	EXP 	instructions: autoDraw = False
+59.5396 	EXP 	Cue: autoDraw = False
+59.5396 	EXP 	instructions: autoDraw = False
+59.5396 	EXP 	Trial1: image = 'Task samples\\相同位置及边数2.png'
+59.5396 	EXP 	Fixation1: autoDraw = True
+60.5406 	EXP 	Fixation1: autoDraw = False
+60.5406 	EXP 	Trial1: autoDraw = True
+68.5266 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同颜色及位置9.png', 'correctAns': 1}
+68.5462 	EXP 	Fixation1: autoDraw = False
+68.5462 	EXP 	Trial1: autoDraw = False
+68.5462 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置9.png'
+68.5462 	EXP 	Fixation1: autoDraw = True
+69.5924 	EXP 	Fixation1: autoDraw = False
+69.5924 	EXP 	Trial1: autoDraw = True
+77.5236 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同颜色及位置10.png', 'correctAns': 2}
+77.5576 	EXP 	Fixation1: autoDraw = False
+77.5576 	EXP 	Trial1: autoDraw = False
+77.5576 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置10.png'
+77.5576 	EXP 	Fixation1: autoDraw = True
+78.5252 	EXP 	Trial1: autoDraw = True
+78.5584 	EXP 	Fixation1: autoDraw = False
+86.5330 	EXP 	Trial1: autoDraw = False
+86.5360 	EXP 	New trial (rep=0, index=3): {'images': 'Task samples\\相同颜色及边数2.png', 'correctAns': 1}
+86.5698 	EXP 	Fixation1: autoDraw = False
+86.5698 	EXP 	Trial1: autoDraw = False
+86.5698 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数2.png'
+86.5698 	EXP 	Fixation1: autoDraw = True
+87.5539 	EXP 	Trial1: autoDraw = True
+87.5706 	EXP 	Fixation1: autoDraw = False
+95.5283 	EXP 	New trial (rep=0, index=4): {'images': 'Task samples\\相同颜色及位置2.png', 'correctAns': 2}
+95.5453 	EXP 	Fixation1: autoDraw = False
+95.5453 	EXP 	Trial1: autoDraw = False
+95.5453 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置2.png'
+95.5453 	EXP 	Fixation1: autoDraw = True
+96.5461 	EXP 	Fixation1: autoDraw = False
+96.5461 	EXP 	Trial1: autoDraw = True
+104.5227 	EXP 	New trial (rep=0, index=5): {'images': 'Task samples\\相同位置及边数8.png', 'correctAns': 1}
+104.5583 	EXP 	Fixation1: autoDraw = False
+104.5583 	EXP 	Trial1: autoDraw = False
+104.5583 	EXP 	Trial1: image = 'Task samples\\相同位置及边数8.png'
+104.5583 	EXP 	Fixation1: autoDraw = True
+105.5257 	EXP 	Trial1: autoDraw = True
+105.5582 	EXP 	Fixation1: autoDraw = False
+112.0680 	EXP 	New trial (rep=0, index=6): {'images': 'Task samples\\相同位置及边数1.png', 'correctAns': 1}
+112.1017 	EXP 	Fixation1: autoDraw = False
+112.1017 	EXP 	Trial1: autoDraw = False
+112.1017 	EXP 	Trial1: image = 'Task samples\\相同位置及边数1.png'
+112.1017 	EXP 	Fixation1: autoDraw = True
+113.0690 	EXP 	Trial1: autoDraw = True
+113.1026 	EXP 	Fixation1: autoDraw = False
+113.1735 	EXP 	New trial (rep=0, index=7): {'images': 'Task samples\\相同颜色及边数6.png', 'correctAns': 1}
+113.2069 	EXP 	Fixation1: autoDraw = False
+113.2069 	EXP 	Trial1: autoDraw = False
+113.2069 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数6.png'
+113.2069 	EXP 	Fixation1: autoDraw = True
+114.1917 	EXP 	Trial1: autoDraw = True
+114.2077 	EXP 	Fixation1: autoDraw = False
+114.2786 	EXP 	New trial (rep=0, index=8): {'images': 'Task samples\\相同颜色及边数7.png', 'correctAns': 2}
+114.3120 	EXP 	Fixation1: autoDraw = False
+114.3120 	EXP 	Trial1: autoDraw = False
+114.3120 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数7.png'
+114.3120 	EXP 	Fixation1: autoDraw = True
+115.2794 	EXP 	Trial1: autoDraw = True
+115.3125 	EXP 	Fixation1: autoDraw = False
+115.4684 	EXP 	New trial (rep=0, index=9): {'images': 'Task samples\\相同位置及边数7.png', 'correctAns': 1}
+115.5004 	EXP 	Fixation1: autoDraw = False
+115.5004 	EXP 	Trial1: autoDraw = False
+115.5004 	EXP 	Trial1: image = 'Task samples\\相同位置及边数7.png'
+115.5004 	EXP 	Fixation1: autoDraw = True
+116.4846 	EXP 	Trial1: autoDraw = True
+116.5012 	EXP 	Fixation1: autoDraw = False
+116.6384 	EXP 	New trial (rep=0, index=10): {'images': 'Task samples\\相同颜色及位置4.png', 'correctAns': 1}
+116.6556 	EXP 	Fixation1: autoDraw = False
+116.6556 	EXP 	Trial1: autoDraw = False
+116.6556 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置4.png'
+116.6556 	EXP 	Fixation1: autoDraw = True
+117.6562 	EXP 	Fixation1: autoDraw = False
+117.6562 	EXP 	Trial1: autoDraw = True
+117.7604 	EXP 	New trial (rep=0, index=11): {'images': 'Task samples\\相同位置及边数3.png', 'correctAns': 2}
+117.7939 	EXP 	Fixation1: autoDraw = False
+117.7939 	EXP 	Trial1: autoDraw = False
+117.7939 	EXP 	Trial1: image = 'Task samples\\相同位置及边数3.png'
+117.7939 	EXP 	Fixation1: autoDraw = True
+118.7613 	EXP 	Trial1: autoDraw = True
+118.7947 	EXP 	Fixation1: autoDraw = False
+118.8166 	EXP 	New trial (rep=0, index=12): {'images': 'Task samples\\相同颜色及边数3.png', 'correctAns': 2}
+118.8497 	EXP 	Fixation1: autoDraw = False
+118.8497 	EXP 	Trial1: autoDraw = False
+118.8497 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数3.png'
+118.8497 	EXP 	Fixation1: autoDraw = True
+119.8339 	EXP 	Trial1: autoDraw = True
+119.8498 	EXP 	Fixation1: autoDraw = False
+119.9045 	EXP 	New trial (rep=0, index=13): {'images': 'Task samples\\相同位置及边数5.png', 'correctAns': 1}
+119.9375 	EXP 	Fixation1: autoDraw = False
+119.9375 	EXP 	Trial1: autoDraw = False
+119.9375 	EXP 	Trial1: image = 'Task samples\\相同位置及边数5.png'
+119.9375 	EXP 	Fixation1: autoDraw = True
+120.9224 	EXP 	Trial1: autoDraw = True
+120.9390 	EXP 	Fixation1: autoDraw = False
+120.9757 	EXP 	New trial (rep=0, index=14): {'images': 'Task samples\\相同颜色及位置7.png', 'correctAns': 1}
+121.0093 	EXP 	Fixation1: autoDraw = False
+121.0093 	EXP 	Trial1: autoDraw = False
+121.0093 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置7.png'
+121.0093 	EXP 	Fixation1: autoDraw = True
+121.9775 	EXP 	Trial1: autoDraw = True
+122.0108 	EXP 	Fixation1: autoDraw = False
+122.2308 	EXP 	New trial (rep=0, index=15): {'images': 'Task samples\\相同颜色及边数4.png', 'correctAns': 2}
+122.2646 	EXP 	Fixation1: autoDraw = False
+122.2646 	EXP 	Trial1: autoDraw = False
+122.2646 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数4.png'
+122.2646 	EXP 	Fixation1: autoDraw = True
+123.2319 	EXP 	Trial1: autoDraw = True
+123.2653 	EXP 	Fixation1: autoDraw = False
+123.2861 	EXP 	New trial (rep=0, index=16): {'images': 'Task samples\\相同颜色及位置8.png', 'correctAns': 2}
+123.3204 	EXP 	Fixation1: autoDraw = False
+123.3204 	EXP 	Trial1: autoDraw = False
+123.3204 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置8.png'
+123.3204 	EXP 	Fixation1: autoDraw = True
+124.2871 	EXP 	Trial1: autoDraw = True
+124.3204 	EXP 	Fixation1: autoDraw = False
+124.3584 	EXP 	New trial (rep=0, index=17): {'images': 'Task samples\\相同位置及边数6.png', 'correctAns': 2}
+124.3914 	EXP 	Fixation1: autoDraw = False
+124.3914 	EXP 	Trial1: autoDraw = False
+124.3914 	EXP 	Trial1: image = 'Task samples\\相同位置及边数6.png'
+124.3914 	EXP 	Fixation1: autoDraw = True
+125.3755 	EXP 	Trial1: autoDraw = True
+125.3922 	EXP 	Fixation1: autoDraw = False
+133.3700 	EXP 	New trial (rep=0, index=18): {'images': 'Task samples\\相同颜色及位置3.png', 'correctAns': 2}
+133.3864 	EXP 	Trial1: autoDraw = False
+133.3864 	EXP 	Fixation1: autoDraw = False
+133.3864 	EXP 	Trial1: autoDraw = False
+133.3864 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置3.png'
+133.3864 	EXP 	Fixation1: autoDraw = True
+134.3870 	EXP 	Fixation1: autoDraw = False
+134.3870 	EXP 	Trial1: autoDraw = True
+134.4084 	EXP 	New trial (rep=0, index=19): {'images': 'Task samples\\相同颜色及边数5.png', 'correctAns': 1}
+134.4415 	EXP 	Fixation1: autoDraw = False
+134.4415 	EXP 	Trial1: autoDraw = False
+134.4415 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数5.png'
+134.4415 	EXP 	Fixation1: autoDraw = True
+135.4255 	EXP 	Trial1: autoDraw = True
+135.4422 	EXP 	Fixation1: autoDraw = False
+135.4813 	EXP 	New trial (rep=0, index=20): {'images': 'Task samples\\相同颜色及位置5.png', 'correctAns': 1}
+135.4967 	EXP 	Fixation1: autoDraw = False
+135.4967 	EXP 	Trial1: autoDraw = False
+135.4967 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置5.png'
+135.4967 	EXP 	Fixation1: autoDraw = True
+136.4825 	EXP 	Trial1: autoDraw = True
+136.4979 	EXP 	Fixation1: autoDraw = False
+136.6693 	EXP 	New trial (rep=0, index=21): {'images': 'Task samples\\相同位置及边数4.png', 'correctAns': 1}
+136.6978 	EXP 	Fixation1: autoDraw = False
+136.6978 	EXP 	Trial1: autoDraw = False
+136.6978 	EXP 	Trial1: image = 'Task samples\\相同位置及边数4.png'
+136.6978 	EXP 	Fixation1: autoDraw = True
+137.6826 	EXP 	Trial1: autoDraw = True
+137.6992 	EXP 	Fixation1: autoDraw = False
+137.8866 	EXP 	New trial (rep=0, index=22): {'images': 'Task samples\\相同颜色及边数10.png', 'correctAns': 2}
+137.9204 	EXP 	Fixation1: autoDraw = False
+137.9204 	EXP 	Trial1: autoDraw = False
+137.9204 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数10.png'
+137.9204 	EXP 	Fixation1: autoDraw = True
+138.9036 	EXP 	Trial1: autoDraw = True
+138.9203 	EXP 	Fixation1: autoDraw = False
+139.2748 	EXP 	New trial (rep=0, index=23): {'images': 'Task samples\\相同位置及边数9.png', 'correctAns': 2}
+139.3091 	EXP 	Fixation1: autoDraw = False
+139.3091 	EXP 	Trial1: autoDraw = False
+139.3091 	EXP 	Trial1: image = 'Task samples\\相同位置及边数9.png'
+139.3091 	EXP 	Fixation1: autoDraw = True
+140.2758 	EXP 	Trial1: autoDraw = True
+140.3089 	EXP 	Fixation1: autoDraw = False
+140.5129 	EXP 	New trial (rep=0, index=24): {'images': 'Task samples\\相同位置及边数10.png', 'correctAns': 1}
+140.5468 	EXP 	Fixation1: autoDraw = False
+140.5468 	EXP 	Trial1: autoDraw = False
+140.5468 	EXP 	Trial1: image = 'Task samples\\相同位置及边数10.png'
+140.5468 	EXP 	Fixation1: autoDraw = True
+141.5143 	EXP 	Trial1: autoDraw = True
+141.5485 	EXP 	Fixation1: autoDraw = False
+141.5851 	EXP 	New trial (rep=0, index=25): {'images': 'Task samples\\相同颜色及边数8.png', 'correctAns': 1}
+141.6195 	EXP 	Fixation1: autoDraw = False
+141.6195 	EXP 	Trial1: autoDraw = False
+141.6195 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数8.png'
+141.6195 	EXP 	Fixation1: autoDraw = True
+142.5860 	EXP 	Trial1: autoDraw = True
+142.6193 	EXP 	Fixation1: autoDraw = False
+142.6905 	EXP 	New trial (rep=0, index=26): {'images': 'Task samples\\相同颜色及边数9.png', 'correctAns': 1}
+142.7238 	EXP 	Fixation1: autoDraw = False
+142.7238 	EXP 	Trial1: autoDraw = False
+142.7238 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数9.png'
+142.7238 	EXP 	Fixation1: autoDraw = True
+143.7087 	EXP 	Trial1: autoDraw = True
+143.7245 	EXP 	Fixation1: autoDraw = False
+143.8122 	EXP 	New trial (rep=0, index=27): {'images': 'Task samples\\相同颜色及边数1.png', 'correctAns': 1}
+143.8456 	EXP 	Fixation1: autoDraw = False
+143.8456 	EXP 	Trial1: autoDraw = False
+143.8456 	EXP 	Trial1: image = 'Task samples\\相同颜色及边数1.png'
+143.8456 	EXP 	Fixation1: autoDraw = True
+144.8129 	EXP 	Trial1: autoDraw = True
+144.8463 	EXP 	Fixation1: autoDraw = False
+144.8853 	EXP 	New trial (rep=0, index=28): {'images': 'Task samples\\相同颜色及位置6.png', 'correctAns': 2}
+144.9182 	EXP 	Fixation1: autoDraw = False
+144.9182 	EXP 	Trial1: autoDraw = False
+144.9182 	EXP 	Trial1: image = 'Task samples\\相同颜色及位置6.png'
+144.9182 	EXP 	Fixation1: autoDraw = True
+145.8846 	EXP 	Trial1: autoDraw = True
+145.9180 	EXP 	Fixation1: autoDraw = False
+146.0129 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+146.0132 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+146.0134 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同的位置规律 1.png', 'correctAns': 1}
+146.0392 	EXP 	Fixation1: autoDraw = False
+146.0392 	EXP 	Trial1: autoDraw = False
+146.0392 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 1.png'
+146.0392 	EXP 	Fixation2: autoDraw = True
+147.0233 	EXP 	Trial2: autoDraw = True
+147.0407 	EXP 	Fixation2: autoDraw = False
+147.1280 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同的数列规律 6.png', 'correctAns': 1}
+147.1609 	EXP 	Fixation2: autoDraw = False
+147.1609 	EXP 	Trial2: autoDraw = False
+147.1609 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 6.png'
+147.1609 	EXP 	Fixation2: autoDraw = True
+148.1284 	EXP 	Trial2: autoDraw = True
+148.1617 	EXP 	Fixation2: autoDraw = False
+156.1355 	EXP 	Trial2: autoDraw = False
+156.1374 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同的数列规律 4.png', 'correctAns': 2}
+156.1547 	EXP 	Fixation2: autoDraw = False
+156.1547 	EXP 	Trial2: autoDraw = False
+156.1547 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 4.png'
+156.1547 	EXP 	Fixation2: autoDraw = True
+157.1553 	EXP 	Fixation2: autoDraw = False
+157.1553 	EXP 	Trial2: autoDraw = True
+165.1627 	EXP 	Trial2: autoDraw = False
+165.1653 	EXP 	New trial (rep=0, index=3): {'images': 'Task samples\\相同的位置规律 7.png', 'correctAns': 1}
+165.1824 	EXP 	Fixation2: autoDraw = False
+165.1824 	EXP 	Trial2: autoDraw = False
+165.1824 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 7.png'
+165.1824 	EXP 	Fixation2: autoDraw = True
+166.1829 	EXP 	Fixation2: autoDraw = False
+166.1829 	EXP 	Trial2: autoDraw = True
+174.1903 	EXP 	Trial2: autoDraw = False
+174.1929 	EXP 	New trial (rep=0, index=4): {'images': 'Task samples\\相同的数列规律 7.png', 'correctAns': 2}
+174.2100 	EXP 	Fixation2: autoDraw = False
+174.2100 	EXP 	Trial2: autoDraw = False
+174.2100 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 7.png'
+174.2100 	EXP 	Fixation2: autoDraw = True
+175.2108 	EXP 	Fixation2: autoDraw = False
+175.2108 	EXP 	Trial2: autoDraw = True
+183.2179 	EXP 	Trial2: autoDraw = False
+183.2205 	EXP 	New trial (rep=0, index=5): {'images': 'Task samples\\相同的位置规律 6.png', 'correctAns': 2}
+183.2376 	EXP 	Fixation2: autoDraw = False
+183.2376 	EXP 	Trial2: autoDraw = False
+183.2376 	EXP 	Trial2: image = 'Task samples\\相同的位置规律 6.png'
+183.2376 	EXP 	Fixation2: autoDraw = True
+184.2383 	EXP 	Fixation2: autoDraw = False
+184.2383 	EXP 	Trial2: autoDraw = True
+192.2456 	EXP 	Trial2: autoDraw = False
+192.2482 	EXP 	New trial (rep=0, index=6): {'images': 'Task samples\\相同的数列规律 9.png', 'correctAns': 1}
+192.2661 	EXP 	Fixation2: autoDraw = False
+192.2661 	EXP 	Trial2: autoDraw = False
+192.2661 	EXP 	Trial2: image = 'Task samples\\相同的数列规律 9.png'
+192.2661 	EXP 	Fixation2: autoDraw = True
+193.2669 	EXP 	Fixation2: autoDraw = False
+193.2669 	EXP 	Trial2: autoDraw = True
+197.9360 	EXP 	window1: mouseVisible = True

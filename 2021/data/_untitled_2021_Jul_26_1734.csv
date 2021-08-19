@@ -1,0 +1,5 @@
+﻿images,texts,pos,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,text.started,text.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+Task samples\相同颜色及位置1.png,11,"(0, 0.01)",0,0,0,0,6.2075919000199065,None,,001,2021_Jul_26_1734,untitled,2021.2.1,59.659570556883054,
+Task samples\相同颜色及位置2.png,12,"(0, 0.02)",0,1,1,1,7.157373299996834,None,,001,2021_Jul_26_1734,untitled,2021.2.1,59.659570556883054,
+Task samples\相同颜色及位置3.png,13,"(0, 0.03)",0,2,2,2,8.15893060003873,None,,001,2021_Jul_26_1734,untitled,2021.2.1,59.659570556883054,
+Task samples\相同颜色及位置4.png,14,"(0, 0.04)",0,3,3,3,9.142634400050156,None,,001,2021_Jul_26_1734,untitled,2021.2.1,59.659570556883054,

@@ -1,0 +1,19 @@
+1.1922 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+8.6388 	ERROR 	'-1.0000, -1.0000, -1.0000' is not a valid rgb color
+10.8816 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000246A01DE908>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000246A00D8438>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.8828 	EXP 	window1: mouseVisible = True
+10.8830 	EXP 	window1: recordFrameIntervals = False
+11.0470 	EXP 	window1: recordFrameIntervals = True
+11.2308 	EXP 	window1: recordFrameIntervals = False
+11.5645 	EXP 	Created fixation = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='taskSamples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='fixation', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+11.5665 	EXP 	Created image1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+11.5686 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+11.5705 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+11.5981 	EXP 	Imported trial.xlsx as conditions, 50 conditions, 8 params
+11.5985 	EXP 	Created sequence: sequential, trialTypes=50, nReps=1, seed=None
+11.5988 	EXP 	New trial (rep=0, index=0): {'trialN': 1, 'images1': 'taskSamples\\A6_1.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 1}
+11.6429 	EXP 	fixation: autoDraw = True
+12.4154 	EXP 	fixation: autoDraw = False
+12.4154 	EXP 	image1: autoDraw = True
+14.3222 	DATA 	Keypress: escape
+14.4857 	EXP 	window1: mouseVisible = True

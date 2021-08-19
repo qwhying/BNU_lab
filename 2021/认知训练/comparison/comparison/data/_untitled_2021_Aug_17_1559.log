@@ -1,0 +1,64 @@
+1.2154 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.9723 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002AD7D8D4828>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002AD7DB1A390>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.9725 	EXP 	window1: mouseVisible = True
+6.9725 	EXP 	window1: recordFrameIntervals = False
+7.1390 	EXP 	window1: recordFrameIntervals = True
+7.3242 	EXP 	window1: recordFrameIntervals = False
+7.7889 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='比较三个项目之间是否相等，相等的话按1键，不相等的话按2键\n准备好了按一键开始', units='height', win=Window(...), wrapWidth=1)
+7.7990 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=UNKNOWN, interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=UNKNOWN, lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.8114 	EXP 	Created dots = DotStim(__class__=<class 'psychopy.visual.dot.DotStim'>, autoLog=True, coherence=1.0, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=0.0, dotSize=35.0, element=None, fieldPos=array([0., 0.]), fieldShape='circle', fieldSize=array([0.3, 0.3]), nDots=9, name='dots', noiseDots='direction', opacity=1, rgb=UNKNOWN, signalDots='same', speed=0.0, units='height', win=Window(...))
+7.8128 	EXP 	Created equation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='equation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+7.8137 	EXP 	Created number = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='number', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+7.8436 	EXP 	text_3: autoDraw = True
+14.9325 	EXP 	Imported trail.xlsx as conditions, 62 conditions, 7 params
+14.9329 	EXP 	Created sequence: random, trialTypes=62, nReps=1, seed=None
+14.9332 	EXP 	New trial (rep=0, index=0): {'dotN': 4, 'equations': '2+1', 'numbers': 4, 'field_position': (0, 0.25), 'pos1': (0.3, -0.25), 'pos2': (-0.3, -0.25), 'correctR': 2}
+14.9386 	DATA 	Keypress: 1
+14.9535 	EXP 	text_3: autoDraw = False
+14.9535 	EXP 	polygon: autoDraw = True
+15.9375 	EXP 	polygon: autoDraw = False
+15.9375 	EXP 	dots: pos = array([0.  , 0.25])
+15.9375 	EXP 	dots: fieldPos = array([0.  , 0.25])
+15.9375 	EXP 	equation: pos = array([ 0.3 , -0.25])
+15.9375 	EXP 	equation: text = '2+1'
+15.9375 	EXP 	number: pos = array([-0.3 , -0.25])
+15.9375 	EXP 	number: text = 4
+15.9375 	EXP 	dots: autoDraw = True
+15.9375 	EXP 	equation: autoDraw = True
+15.9375 	EXP 	number: autoDraw = True
+16.8942 	EXP 	New trial (rep=0, index=1): {'dotN': 8, 'equations': '3+5', 'numbers': 7, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 2}
+16.8970 	DATA 	Keypress: 1
+16.9059 	EXP 	dots: autoDraw = False
+16.9059 	EXP 	equation: autoDraw = False
+16.9059 	EXP 	number: autoDraw = False
+16.9059 	EXP 	polygon: autoDraw = True
+17.9062 	EXP 	polygon: autoDraw = False
+17.9062 	EXP 	polygon: autoDraw = False
+17.9062 	EXP 	dots: pos = array([-0.3 , -0.25])
+17.9062 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+17.9062 	EXP 	equation: pos = array([0.  , 0.25])
+17.9062 	EXP 	equation: text = '3+5'
+17.9062 	EXP 	number: pos = array([ 0.3 , -0.25])
+17.9062 	EXP 	number: text = 7
+17.9062 	EXP 	dots: autoDraw = True
+17.9062 	EXP 	equation: autoDraw = True
+17.9062 	EXP 	number: autoDraw = True
+18.3954 	DATA 	Keypress: 2
+18.4112 	EXP 	New trial (rep=0, index=2): {'dotN': 8, 'equations': '2+6', 'numbers': 8, 'field_position': (-0.3, -0.25), 'pos1': (0, 0.25), 'pos2': (0.3, -0.25), 'correctR': 1}
+18.4232 	EXP 	dots: autoDraw = False
+18.4232 	EXP 	equation: autoDraw = False
+18.4232 	EXP 	number: autoDraw = False
+18.4232 	EXP 	polygon: autoDraw = True
+19.4240 	EXP 	polygon: autoDraw = False
+19.4240 	EXP 	polygon: autoDraw = False
+19.4240 	EXP 	dots: pos = array([-0.3 , -0.25])
+19.4240 	EXP 	dots: fieldPos = array([-0.3 , -0.25])
+19.4240 	EXP 	equation: pos = array([0.  , 0.25])
+19.4240 	EXP 	equation: text = '2+6'
+19.4240 	EXP 	number: pos = array([ 0.3 , -0.25])
+19.4240 	EXP 	number: text = 8
+19.4240 	EXP 	dots: autoDraw = True
+19.4240 	EXP 	equation: autoDraw = True
+19.4240 	EXP 	number: autoDraw = True
+19.6800 	DATA 	Keypress: escape
+19.8309 	EXP 	window1: mouseVisible = True
