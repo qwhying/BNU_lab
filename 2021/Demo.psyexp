@@ -166,7 +166,7 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="name" updates="None" val="key_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -238,7 +238,7 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
         <Param name="name" updates="None" val="key_resp_2" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
