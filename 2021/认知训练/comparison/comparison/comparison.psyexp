@@ -9,7 +9,7 @@
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
     <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
-    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="" valType="str"/>
     <Param name="Incomplete URL" updates="None" val="" valType="str"/>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
@@ -25,7 +25,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[1270, 1190]" valType="list"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="list"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="black" valType="color"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -68,7 +68,7 @@
         <Param name="fieldPos" updates="set every repeat" val="field_position" valType="list"/>
         <Param name="fieldShape" updates="constant" val="circle" valType="str"/>
         <Param name="fieldSize" updates="constant" val="0.3" valType="num"/>
-        <Param name="nDots" updates="constant" val="numbers" valType="int"/>
+        <Param name="nDots" updates="constant" val="9" valType="int"/>
         <Param name="name" updates="None" val="dots" valType="code"/>
         <Param name="noiseDots" updates="None" val="direction" valType="str"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
