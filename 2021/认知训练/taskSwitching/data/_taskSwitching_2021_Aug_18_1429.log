@@ -1,0 +1,197 @@
+1.1854 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.9965 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000132D95B1828>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000132D819B588>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.9970 	EXP 	window1: mouseVisible = True
+7.9970 	EXP 	window1: recordFrameIntervals = False
+8.1626 	EXP 	window1: recordFrameIntervals = True
+8.3473 	EXP 	window1: recordFrameIntervals = False
+8.6113 	DEPRECATION 	'-1.0000, -1.0000, -1.0000' is not a valid rgb color
+8.6753 	EXP 	Created fixation = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([0., 0., 0.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='taskSamples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='fixation', opacity=0, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+8.6772 	EXP 	Created image1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+8.6791 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+8.6810 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+8.7036 	EXP 	Imported trial.xlsx as conditions, 50 conditions, 8 params
+8.7040 	EXP 	Created sequence: sequential, trialTypes=50, nReps=1, seed=None
+8.7042 	EXP 	New trial (rep=0, index=0): {'trialN': 1, 'images1': 'taskSamples\\A6_1.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 1}
+8.7384 	EXP 	fixation: autoDraw = True
+9.5276 	EXP 	fixation: autoDraw = False
+9.5276 	EXP 	image1: autoDraw = True
+17.5518 	EXP 	New trial (rep=0, index=1): {'trialN': 2, 'images1': 'taskSamples\\A20_2.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+17.5702 	EXP 	image1: autoDraw = False
+17.5702 	EXP 	image1: autoDraw = False
+17.5702 	EXP 	image: autoDraw = True
+17.5702 	EXP 	image: autoDraw = False
+17.5702 	EXP 	image: autoDraw = False
+17.5702 	EXP 	image_2: autoDraw = True
+17.5702 	EXP 	image_2: autoDraw = False
+17.5702 	EXP 	image_2: autoDraw = False
+17.5702 	EXP 	fixation: autoDraw = True
+18.4136 	EXP 	fixation: autoDraw = False
+18.4136 	EXP 	image1: autoDraw = True
+26.4289 	EXP 	New trial (rep=0, index=2): {'trialN': 3, 'images1': 'taskSamples\\B17.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+26.4373 	EXP 	image1: autoDraw = False
+26.4373 	EXP 	image1: autoDraw = False
+26.4373 	EXP 	image: autoDraw = True
+26.4373 	EXP 	image: autoDraw = False
+26.4373 	EXP 	image: autoDraw = False
+26.4373 	EXP 	image_2: autoDraw = True
+26.4373 	EXP 	image_2: autoDraw = False
+26.4373 	EXP 	image_2: autoDraw = False
+26.4373 	EXP 	fixation: autoDraw = True
+27.2652 	EXP 	fixation: autoDraw = False
+27.2652 	EXP 	fixation: autoDraw = False
+27.2652 	EXP 	image1: autoDraw = True
+32.2672 	EXP 	New trial (rep=0, index=3): {'trialN': 4, 'images1': 'taskSamples\\B8.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+32.2891 	EXP 	image1: autoDraw = False
+32.2891 	EXP 	image1: autoDraw = False
+32.2891 	EXP 	image: autoDraw = True
+32.2891 	EXP 	image: autoDraw = False
+32.2891 	EXP 	image: autoDraw = False
+32.2891 	EXP 	image_2: autoDraw = True
+32.2891 	EXP 	image_2: autoDraw = False
+32.2891 	EXP 	image_2: autoDraw = False
+32.2891 	EXP 	fixation: autoDraw = True
+33.1107 	EXP 	fixation: autoDraw = False
+33.1107 	EXP 	image1: autoDraw = True
+38.1496 	EXP 	New trial (rep=0, index=4): {'trialN': 5, 'images1': 'taskSamples\\C4_Spatial_ADD_1.png', 'duration1': 8, 'images2': 'taskSamples\\C4_Spatial_ADD_2.png', 'duration2': 2, 'images3': 'taskSamples\\C4_Spatial_ADD_3.png', 'duration3': 5, 'correctAns': 1}
+38.1601 	EXP 	image1: autoDraw = False
+38.1601 	EXP 	image1: autoDraw = False
+38.1601 	EXP 	image: autoDraw = True
+38.1601 	EXP 	image: autoDraw = False
+38.1601 	EXP 	image: autoDraw = False
+38.1601 	EXP 	image_2: autoDraw = True
+38.1601 	EXP 	image_2: autoDraw = False
+38.1601 	EXP 	image_2: autoDraw = False
+38.1601 	EXP 	fixation: autoDraw = True
+38.9818 	EXP 	fixation: autoDraw = False
+38.9818 	EXP 	fixation: autoDraw = False
+38.9818 	EXP 	image1: autoDraw = True
+47.0177 	EXP 	image1: autoDraw = False
+47.0177 	EXP 	image1: autoDraw = False
+47.0177 	EXP 	image: autoDraw = True
+49.0365 	EXP 	image: autoDraw = False
+49.0365 	EXP 	image: autoDraw = False
+49.0365 	EXP 	image_2: autoDraw = True
+54.0604 	EXP 	New trial (rep=0, index=5): {'trialN': 6, 'images1': 'taskSamples\\C3_Episodic_SUB_1.png', 'duration1': 8, 'images2': 'taskSamples\\C3_Episodic_SUB_2.png', 'duration2': 2, 'images3': 'taskSamples\\C3_Episodic_SUB_3.png', 'duration3': 5, 'correctAns': 1}
+54.0742 	EXP 	image_2: autoDraw = False
+54.0742 	EXP 	image_2: autoDraw = False
+54.0742 	EXP 	fixation: autoDraw = True
+54.8984 	EXP 	fixation: autoDraw = False
+54.8984 	EXP 	fixation: autoDraw = False
+54.8984 	EXP 	image1: autoDraw = True
+62.9687 	EXP 	image1: autoDraw = False
+62.9687 	EXP 	image1: autoDraw = False
+62.9687 	EXP 	image: autoDraw = True
+65.0029 	EXP 	image: autoDraw = False
+65.0029 	EXP 	image: autoDraw = False
+65.0029 	EXP 	image_2: autoDraw = True
+69.9928 	EXP 	New trial (rep=0, index=6): {'trialN': 7, 'images1': 'taskSamples\\B18.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+70.0082 	EXP 	image_2: autoDraw = False
+70.0082 	EXP 	image_2: autoDraw = False
+70.0082 	EXP 	fixation: autoDraw = True
+70.8298 	EXP 	fixation: autoDraw = False
+70.8298 	EXP 	fixation: autoDraw = False
+70.8298 	EXP 	image1: autoDraw = True
+75.8356 	EXP 	New trial (rep=0, index=7): {'trialN': 8, 'images1': 'taskSamples\\B2.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+75.8458 	EXP 	image1: autoDraw = False
+75.8458 	EXP 	image1: autoDraw = False
+75.8458 	EXP 	image: autoDraw = True
+75.8458 	EXP 	image: autoDraw = False
+75.8458 	EXP 	image: autoDraw = False
+75.8458 	EXP 	image_2: autoDraw = True
+75.8458 	EXP 	image_2: autoDraw = False
+75.8458 	EXP 	image_2: autoDraw = False
+75.8458 	EXP 	fixation: autoDraw = True
+76.6682 	EXP 	fixation: autoDraw = False
+76.6682 	EXP 	fixation: autoDraw = False
+76.6682 	EXP 	image1: autoDraw = True
+81.6736 	EXP 	New trial (rep=0, index=8): {'trialN': 9, 'images1': 'taskSamples\\A14_2.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+81.6844 	EXP 	image1: autoDraw = False
+81.6844 	EXP 	image1: autoDraw = False
+81.6844 	EXP 	image: autoDraw = True
+81.6844 	EXP 	image: autoDraw = False
+81.6844 	EXP 	image: autoDraw = False
+81.6844 	EXP 	image_2: autoDraw = True
+81.6844 	EXP 	image_2: autoDraw = False
+81.6844 	EXP 	image_2: autoDraw = False
+81.6844 	EXP 	fixation: autoDraw = True
+82.5077 	EXP 	fixation: autoDraw = False
+82.5077 	EXP 	fixation: autoDraw = False
+82.5077 	EXP 	image1: autoDraw = True
+90.5175 	EXP 	New trial (rep=0, index=9): {'trialN': 10, 'images1': 'taskSamples\\A15_2.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+90.5256 	EXP 	image1: autoDraw = False
+90.5256 	EXP 	image1: autoDraw = False
+90.5256 	EXP 	image: autoDraw = True
+90.5256 	EXP 	image: autoDraw = False
+90.5256 	EXP 	image: autoDraw = False
+90.5256 	EXP 	image_2: autoDraw = True
+90.5256 	EXP 	image_2: autoDraw = False
+90.5256 	EXP 	image_2: autoDraw = False
+90.5256 	EXP 	fixation: autoDraw = True
+91.3429 	EXP 	fixation: autoDraw = False
+91.3429 	EXP 	fixation: autoDraw = False
+91.3429 	EXP 	image1: autoDraw = True
+99.3798 	EXP 	New trial (rep=0, index=10): {'trialN': 11, 'images1': 'taskSamples\\B1.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+99.3900 	EXP 	image1: autoDraw = False
+99.3900 	EXP 	image1: autoDraw = False
+99.3900 	EXP 	image: autoDraw = True
+99.3900 	EXP 	image: autoDraw = False
+99.3900 	EXP 	image: autoDraw = False
+99.3900 	EXP 	image_2: autoDraw = True
+99.3900 	EXP 	image_2: autoDraw = False
+99.3900 	EXP 	image_2: autoDraw = False
+99.3900 	EXP 	fixation: autoDraw = True
+100.2124 	EXP 	fixation: autoDraw = False
+100.2124 	EXP 	fixation: autoDraw = False
+100.2124 	EXP 	image1: autoDraw = True
+105.2702 	EXP 	New trial (rep=0, index=11): {'trialN': 12, 'images1': 'taskSamples\\B11.png', 'duration1': 5, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+105.2918 	EXP 	image1: autoDraw = False
+105.2918 	EXP 	image1: autoDraw = False
+105.2918 	EXP 	image: autoDraw = True
+105.2918 	EXP 	image: autoDraw = False
+105.2918 	EXP 	image: autoDraw = False
+105.2918 	EXP 	image_2: autoDraw = True
+105.2918 	EXP 	image_2: autoDraw = False
+105.2918 	EXP 	image_2: autoDraw = False
+105.2918 	EXP 	fixation: autoDraw = True
+106.1125 	EXP 	fixation: autoDraw = False
+106.1125 	EXP 	image1: autoDraw = True
+111.1373 	EXP 	New trial (rep=0, index=12): {'trialN': 13, 'images1': 'taskSamples\\A1_1.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 2}
+111.1595 	EXP 	image1: autoDraw = False
+111.1595 	EXP 	image1: autoDraw = False
+111.1595 	EXP 	image: autoDraw = True
+111.1595 	EXP 	image: autoDraw = False
+111.1595 	EXP 	image: autoDraw = False
+111.1595 	EXP 	image_2: autoDraw = True
+111.1595 	EXP 	image_2: autoDraw = False
+111.1595 	EXP 	image_2: autoDraw = False
+111.1595 	EXP 	fixation: autoDraw = True
+111.9812 	EXP 	fixation: autoDraw = False
+111.9812 	EXP 	image1: autoDraw = True
+119.9939 	EXP 	New trial (rep=0, index=13): {'trialN': 14, 'images1': 'taskSamples\\A9_1.png', 'duration1': 8, 'images2': None, 'duration2': 0, 'images3': None, 'duration3': 0, 'correctAns': 1}
+120.0041 	EXP 	image1: autoDraw = False
+120.0041 	EXP 	image1: autoDraw = False
+120.0041 	EXP 	image: autoDraw = True
+120.0041 	EXP 	image: autoDraw = False
+120.0041 	EXP 	image: autoDraw = False
+120.0041 	EXP 	image_2: autoDraw = True
+120.0041 	EXP 	image_2: autoDraw = False
+120.0041 	EXP 	image_2: autoDraw = False
+120.0041 	EXP 	fixation: autoDraw = True
+120.8265 	EXP 	fixation: autoDraw = False
+120.8265 	EXP 	fixation: autoDraw = False
+120.8265 	EXP 	image1: autoDraw = True
+128.8173 	EXP 	New trial (rep=0, index=14): {'trialN': 15, 'images1': 'taskSamples\\C8_Spatial_SUB_1.png', 'duration1': 8, 'images2': 'taskSamples\\C8_Spatial_SUB_2.png', 'duration2': 2, 'images3': 'taskSamples\\C8_Spatial_SUB_3.png', 'duration3': 5, 'correctAns': 1}
+128.8274 	EXP 	image1: autoDraw = False
+128.8274 	EXP 	image1: autoDraw = False
+128.8274 	EXP 	image: autoDraw = True
+128.8274 	EXP 	image: autoDraw = False
+128.8274 	EXP 	image: autoDraw = False
+128.8274 	EXP 	image_2: autoDraw = True
+128.8274 	EXP 	image_2: autoDraw = False
+128.8274 	EXP 	image_2: autoDraw = False
+128.8274 	EXP 	fixation: autoDraw = True
+129.6492 	EXP 	fixation: autoDraw = False
+129.6492 	EXP 	fixation: autoDraw = False
+129.6492 	EXP 	image1: autoDraw = True
+131.5599 	DATA 	Keypress: escape
+131.7006 	EXP 	window1: mouseVisible = True
