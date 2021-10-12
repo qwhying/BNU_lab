@@ -131,7 +131,8 @@ def trials(difficult):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         Yaoyaxin = 1
-
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #第二屏呈现
     background.image='pictures/Peppa.png'
     m1 = random.randint(2,m-6)
@@ -156,7 +157,8 @@ def trials(difficult):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
-    
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()    
 
     #第三屏
     background.image='pictures/Antelope.png'
@@ -187,6 +189,8 @@ def trials(difficult):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     background.image='pictures/Peppa.png'
     m3 = m - m1 -m2
     m3str = str(m3)
@@ -214,7 +218,8 @@ def trials(difficult):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
-
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #第五屏
     background.image='pictures/Antelope.png'
     background.draw()
@@ -225,7 +230,8 @@ def trials(difficult):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
-        
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #答案选择页面
     AnswerArray = [mstr,m1str,m2str,m3str]#字符串格式备选答案
     AnswerArrayint = [m,m1,m2,m3]
@@ -321,7 +327,8 @@ def trials(difficult):
             if clickornot != 0:
                 feedback = show_feedback(feedback)
                 return feedback, time,information
-            
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
 
 def show_feedback(feedback):
     """显示反馈

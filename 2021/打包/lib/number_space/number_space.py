@@ -97,7 +97,8 @@ def four_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         Yaoyaxin = 1
-
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #第二屏呈现
     background.image='pictures/background.png'
     background.draw()
@@ -110,7 +111,8 @@ def four_trials(difficulty):
     clock.reset()
     while clock.getTime() < res_duration_s:#数字呈现4s
         background.image='pictures/cangbaotu.png'
-   
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
    #d第三屏
     background.draw()
     if numberOFanswer == 1:
@@ -124,6 +126,8 @@ def four_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         background.image='pictures/background.png'
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
    
     answer1 =  my_button(240, 120, '', [-350,100], textColor=[0, 0, 0], 
                                     textSize=40)
@@ -204,6 +208,8 @@ def four_trials(difficulty):
     if len(selectanswer) == numberOFanswer:
         while clock.getTime() < stim_dynamict_s:
             Yaoyaxin = 1
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()    
         if sum(selectanswer)==questionnumber:
             feedback = 1
         else:
@@ -283,7 +289,8 @@ def six_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         Yaoyaxin = 1
-
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #第二屏呈现
     background.image='pictures/background.png'
     background.draw()
@@ -298,7 +305,8 @@ def six_trials(difficulty):
     clock.reset()
     while clock.getTime() < res_duration_s:#数字呈现4s
         background.image='pictures/cangbaotu.png'
-   
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
    #d第三屏
     background.draw()
     if numberOFanswer == 1:
@@ -314,7 +322,8 @@ def six_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         background.image='pictures/background.png'
-   
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     answer1 =  my_button(160, 80, '', [-500,100], textColor=[0,0,0], 
                                     textSize=40)
     answer2 =  my_button(160, 80, '', [500,100], textColor=[0,0,0], 
@@ -444,6 +453,8 @@ def six_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     if numberOFanswer != 4:
         if sum(selectanswer)==questionnumber:
             feedback = 1
@@ -535,7 +546,8 @@ def eight_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         Yaoyaxin = 1
-
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #第二屏呈现
     background.image='pictures/background.png'
     background.draw()
@@ -551,7 +563,8 @@ def eight_trials(difficulty):
     clock.reset()
     while clock.getTime() < res_duration_s:#数字呈现4s
         background.image='pictures/cangbaotu.png'
-   
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
    #d第三屏
     background.draw()
     if numberOFanswer == 1:
@@ -567,7 +580,8 @@ def eight_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         background.image='pictures/background.png'
-   
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     answer1 =  my_button(160, 80, '', [350,150], textColor=[0, 0, 0], 
                                     textSize=40)
     answer2 =  my_button(160, 80, '', [0,150], textColor=[0, 0, 0], 
@@ -749,6 +763,8 @@ def eight_trials(difficulty):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     if numberOFanswer != 4:
         if sum(selectanswer)==questionnumber:
             feedback = 1
@@ -826,6 +842,7 @@ win = psychopy.visual.Window(
     size=[1359, 758],
     units="pix",
     fullscr=False,         # fullscr means full-screen mode
+    allowGUI=None,
 )
 # # store frame rate of monitor if we can measure it
 # expInfo['frameRate'] = win.getActualFrameRate()

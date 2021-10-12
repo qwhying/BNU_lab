@@ -82,7 +82,8 @@ def trials(pathlist):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         background.image='pictures/background.png'
-    
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #图形呈现
     picturepath = ''
     while 1==1:
@@ -118,7 +119,8 @@ def trials(pathlist):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
-    
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
 
     #第三屏
 
@@ -199,7 +201,8 @@ def trials(pathlist):
         if mouse.isPressedIn(button_next.button):
             if feedback != 888:
                 return feedback, time,picturepath,pathlist
-            
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
 def trials_easy(pathlist):
     mouse = psychopy.event.Mouse()
     
@@ -210,7 +213,8 @@ def trials_easy(pathlist):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
         background.image='pictures/background.png'
-    
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
     #图形呈现
     picturepath = ''
     while 1==1:
@@ -249,7 +253,8 @@ def trials_easy(pathlist):
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
-    
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
 
     #第三屏
 
@@ -308,6 +313,8 @@ def trials_easy(pathlist):
         if mouse.isPressedIn(button_next.button):
             if feedback != 888:
                 return feedback, time,picturepath,pathlist
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
 def show_feedback(feedback,scores):
     """显示反馈
     feedback=1为正确，显示笑脸
