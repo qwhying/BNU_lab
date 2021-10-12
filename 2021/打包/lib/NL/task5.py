@@ -10,6 +10,7 @@ import sys
 import csv
 import copy
 from math import ceil
+import stat
 
 # 现在就是按照难度固定，实际位置和标识位置的距离固定
 
@@ -155,13 +156,13 @@ class Numberline():
                 rabbit.draw()
             win.flip()
             if defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
+                save_and_quit()
             if mouse.isPressedIn(self.triangle_mark):
                 no_operation = False
                 while clock.getTime() < 10:
                     buttons = mouse.getPressed(getTime=False)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
-                        core.quit()
+                        save_and_quit()
                     if buttons == [1, 0, 0]:
                         background.draw()
                         my_progress_bar.draw(is_practice)
@@ -309,7 +310,7 @@ def match_tirals(length, frog_or_rabbit, is_practice):
         is_correct = False
     while clock.getTime() < 3.0:  # 反馈时间
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         background.draw()
         my_progress_bar.draw(is_practice)
         score_text.draw()
@@ -402,7 +403,7 @@ def computing_trials(length, add_trial, is_practice):
         is_correct = False
     while clock.getTime() < 3.0:  # 反馈时间
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         background.draw()
         my_progress_bar.draw(is_practice)
         score_text.draw()
@@ -433,7 +434,7 @@ def computing_trials(length, add_trial, is_practice):
         is_correct = False
     while clock.getTime() < 3.0:  # 反馈时间
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         background.draw()
         my_progress_bar.draw(is_practice)
         score_text.draw()
@@ -586,7 +587,7 @@ def numberline_trials(length, add_trial, is_practice):
         is_correct = False
     while clock.getTime() < 3.0:  # 反馈时间
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         background.draw()
         my_progress_bar.draw(is_practice)
         score_text.draw()
@@ -626,18 +627,27 @@ def numberline_trials(length, add_trial, is_practice):
     return my_numberline.mark_pos, ans_pos, time, score
 
 
+def save_and_quit():
+    """保存后退出"""
+    thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+    os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
+    # make sure everything is closed down
+    thisExp.abort()  # or data files will save again on exit
+    core.quit()
+
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.1.3'
+psychopyVersion = '2021.2.3'
 # from the Builder filename that created this script
-expName = 'NL'
+expName = 'task5'
 expInfo = {'被试实验编号': '', '姓名拼音': '', '第几次训练': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
-    core.quit()  # user pressed cancel
+    save_and_quit()  # user pressed cancel
 expInfo['participant'] = expInfo.pop("被试实验编号")
 expInfo['name'] = expInfo.pop("姓名拼音")
 expInfo['session'] = expInfo.pop("第几次训练")
@@ -645,8 +655,8 @@ expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + \
-    u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['session'])
+filename = os.path.dirname(os.path.dirname(_thisDir)) + os.sep + \
+    u'data/%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
                                  extraInfo=expInfo, runtimeInfo=None,

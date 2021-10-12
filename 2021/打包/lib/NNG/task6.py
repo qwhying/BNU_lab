@@ -11,6 +11,7 @@ import csv
 import copy
 import math
 from math import ceil
+import stat
 
 
 class Progress_bar():
@@ -255,6 +256,8 @@ class side_bar():
         clicked = []
         clock.reset()
         while clock.getTime() < 5:
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                save_and_quit()
             background.draw()
             my_progress_bar.draw(is_practice=is_explore)
             this_map.draw(is_explore=is_explore)
@@ -403,6 +406,8 @@ class my_map():
         target_point = -1
         clock.reset()
         while clock.getTime() < 5:
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                save_and_quit()
             background.draw()
             my_progress_bar.draw(is_practice=is_explore)
             self.draw(is_explore=is_explore)
@@ -612,7 +617,7 @@ def explore_mode(covered_points):
     clock.reset()
     while not number_map.present_point == number_map.end_point:
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         operator = my_side_bar.click(mouse, number_map, is_explore=True)
         print(operator)
         if len(operator) > 0:
@@ -633,7 +638,7 @@ def trial(is_energy, covered_points, start_point, end_point):
     clock.reset()
     while not number_map.present_point == number_map.end_point:
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
         operator = my_side_bar.click(mouse, number_map)
         print(operator)
         if len(operator) > 0:
@@ -660,14 +665,23 @@ def trial(is_energy, covered_points, start_point, end_point):
     return number_map, my_side_bar
 
 
+def save_and_quit():
+    """保存后退出"""
+    thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+    os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
+    # make sure everything is closed down
+    thisExp.abort()  # or data files will save again on exit
+    core.quit()
+
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.1.3'
+psychopyVersion = '2021.2.3'
 # from the Builder filename that created this script
-expName = 'NNG'
+expName = 'task6'
 expInfo = {'被试实验编号': '', '姓名拼音': '', '第几次训练': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -679,7 +693,7 @@ expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + \
+filename = os.path.dirname(os.path.dirname(_thisDir)) + os.sep + \
     u'data/%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -825,6 +839,7 @@ win.flip()
 event.waitKeys()
 
 thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
 # make sure everything is closed down
 thisExp.abort()  # or data files will save again on exit
 core.wait(2)

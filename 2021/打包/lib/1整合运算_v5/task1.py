@@ -18,6 +18,7 @@ from math import ceil
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为可读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -81,7 +82,7 @@ def trial(mode, pre_n, mat_1, op_1, mat_2, op_2, mat_3, op_3=[], mat_4=[]):
             38, 170, str(preload_number), 42, color=[255, 59, 48])
         clock.reset()
         while clock.getTime() <= Preload:
-            background.draw()
+            cue_1.draw()
 
             preload_text.draw()
             win.flip()
@@ -92,7 +93,7 @@ def trial(mode, pre_n, mat_1, op_1, mat_2, op_2, mat_3, op_3=[], mat_4=[]):
         while clock.getTime() <= Math_1:
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
-            background.draw()
+            cue_2.draw()
 
             math_1_text.draw()
             win.flip()
@@ -225,7 +226,7 @@ def trial(mode, pre_n, mat_1, op_1, mat_2, op_2, mat_3, op_3=[], mat_4=[]):
         while clock.getTime() <= Preload:
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
-            background.draw()
+            cue_1.draw()
 
             preload_text.draw()
             win.flip()
@@ -236,7 +237,7 @@ def trial(mode, pre_n, mat_1, op_1, mat_2, op_2, mat_3, op_3=[], mat_4=[]):
         while clock.getTime() <= Math_1:
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
-            background.draw()
+            cue_2.draw()
 
             math_1_text.draw()
             win.flip()
@@ -566,6 +567,7 @@ expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
+# 保存在统一的data文件夹内
 filename = os.path.dirname(os.path.dirname(_thisDir)) + os.sep + \
     u'data/%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
@@ -679,6 +681,18 @@ failure = visual.ImageStim(
     units="pix"
 )
 
+cue_1 = visual.ImageStim(
+    win=win,
+    image="pictures/纯背景-请记住数字.png",
+    size=win.size
+)
+
+cue_2 = visual.ImageStim(
+    win=win,
+    image="pictures/纯背景-请运算数字.png",
+    size=win.size
+)
+
 question_1 = visual.ImageStim(
     win=win,
     image="pictures/分离条件-5运算结果.png",
@@ -759,8 +773,4 @@ while game_level < end_level:
             game_level = game_level+1
 
 
-thisExp.saveAsWideText(filename + '.csv', appendFile=True)
-os.chmod(filename + '.csv', stat.S_IREAD)
-# make sure everything is closed down
-thisExp.abort()  # or data files will save again on exit
-core.quit()
+save_and_quit()

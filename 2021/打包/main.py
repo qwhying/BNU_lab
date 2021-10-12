@@ -445,7 +445,7 @@ while continueRoutine:
                 button_4.timesOff[-1] = button_4.buttonClock.getTime()
             if not button_4.wasClicked:
                 continueRoutine = False  # end routine when button_4 is clicked
-                os.system('start pythonw ./lib/AA/dot.py')
+                os.system('start pythonw ./lib/AA/task4.py')
                 None
             # if button_4 is still clicked next frame, it is not a new click
             button_4.wasClicked = True
@@ -475,7 +475,7 @@ while continueRoutine:
                 button_5.timesOff[-1] = button_5.buttonClock.getTime()
             if not button_5.wasClicked:
                 continueRoutine = False  # end routine when button_4 is clicked
-                os.system('start pythonw ./lib/NL/numberline.py')
+                os.system('start pythonw ./lib/NL/task5.py')
                 None
             # if button_4 is still clicked next frame, it is not a new click
             button_5.wasClicked = True
@@ -505,7 +505,7 @@ while continueRoutine:
                 button_6.timesOff[-1] = button_6.buttonClock.getTime()
             if not button_6.wasClicked:
                 continueRoutine = False  # end routine when button_4 is clicked
-                os.system('start pythonw ./lib/NNG/NNG.py')
+                os.system('start pythonw ./lib/NNG/task6.py')
                 None
             # if button_4 is still clicked next frame, it is not a new click
             button_6.wasClicked = True
@@ -535,7 +535,7 @@ while continueRoutine:
                 button_7.timesOff[-1] = button_7.buttonClock.getTime()
             if not button_7.wasClicked:
                 continueRoutine = False  # end routine when button_4 is clicked
-                os.system('start pythonw ./lib/number_space/number_space.py')
+                os.system('start pythonw ./lib/number_space/task7.py')
                 None
             # if button_7 is still clicked next frame, it is not a new click
             button_7.wasClicked = True
@@ -565,7 +565,7 @@ while continueRoutine:
                 button_8.timesOff[-1] = button_8.buttonClock.getTime()
             if not button_8.wasClicked:
                 continueRoutine = False  # end routine when button_8 is clicked
-                os.system('start pythonw ./lib/Peppa/Peppa.py')
+                os.system('start pythonw ./lib/Peppa/task8.py')
                 None
             # if button_8 is still clicked next frame, it is not a new click
             button_8.wasClicked = True
@@ -596,7 +596,7 @@ while continueRoutine:
             if not button_9.wasClicked:
                 continueRoutine = False  # end routine when button_4 is clicked
                 os.system(
-                    'start pythonw ./lib/reinforcement_learning/reinforcement_learning.py')
+                    'start pythonw ./lib/reinforcement_learning/task9.py')
                 None
             # if button_9 is still clicked next frame, it is not a new click
             button_9.wasClicked = True

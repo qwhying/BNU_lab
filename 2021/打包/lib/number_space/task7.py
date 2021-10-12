@@ -9,22 +9,25 @@ import numpy as np
 import os
 import csv
 from psychopy.hardware import keyboard
+import stat
 
 
 class my_button():
     """生成按钮"""
 
-    def __init__(self, length, height, text, pos=[0, 0], textColor=[0, 0, 0], 
-                        textSize=20, fillColor=[0,0,0]):
+    def __init__(self, length, height, text, pos=[0, 0], textColor=[0, 0, 0],
+                 textSize=20, fillColor=[0, 0, 0]):
         self.text = generate_textMark(
             pos[0], pos[1], text, textSize, textColor)
         self.button = generate_button(
             length, height, pos, fillColor)
+
     def draw(self):
         self.button.draw()
         self.text.draw()
-        
-def generate_textMark(x, y, text, size=40,  color=[255,255,255]):
+
+
+def generate_textMark(x, y, text, size=40,  color=[255, 255, 255]):
     """生成标识数字"""
     textMark = psychopy.visual.TextStim(
         win=win,
@@ -37,109 +40,110 @@ def generate_textMark(x, y, text, size=40,  color=[255,255,255]):
     )
     return textMark
 
-def generate_button(length, height, pos=[0, 0], fillColor=[0,0,0]):
+
+def generate_button(length, height, pos=[0, 0], fillColor=[0, 0, 0]):
     button = psychopy.visual.ImageStim(
         win=win,
         image="pictures/tree.png",
-        pos = pos,
+        pos=pos,
         size=[length, height])
 
     return button
 
+
 def four_trials(difficulty):
     level = difficulty
-    answerarray = []#备选答案数组
-    selectanswer = []#被试已经选择答案数组
+    answerarray = []  # 备选答案数组
+    selectanswer = []  # 被试已经选择答案数组
     questionnumber = 0
     mouse = psychopy.event.Mouse()
     if level == 1:
-        numberOFanswer = 1 #被试需要选择答案的数量
-        questionnumber = random.randint(11,29)
+        numberOFanswer = 1  # 被试需要选择答案的数量
+        questionnumber = random.randint(11, 29)
         answerarray.append(questionnumber)
-        while len(answerarray)<4:#生成不相同的备选答案
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 4:  # 生成不相同的备选答案
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
     else:
         numberOFanswer = 2
-        questionnumber = random.randint(25,38)
-        trueanswer = random.randint(11,questionnumber-11)
+        questionnumber = random.randint(25, 38)
+        trueanswer = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2:
-            trueanswer = random.randint(11,questionnumber-11)
+            trueanswer = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer)
         otheranswer = questionnumber - trueanswer
         answerarray.append(otheranswer)
-        while len(answerarray)<4:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 4:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
-    random.shuffle(answerarray)#答案位置打乱
-    
+    random.shuffle(answerarray)  # 答案位置打乱
+
     answerlist = ''
     for i in range(len(answerarray)):
-        answerlist =answerlist + str(answerarray[i-1])+','
-    
-    #生成备选图片
-    answer1 =  my_button(240, 120, str(answerarray[0]), [-350,100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer2 =  my_button(240, 120, str(answerarray[1]), [350,100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer3 =  my_button(240, 120, str(answerarray[2]), [-350,-100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer4 =  my_button(240, 120, str(answerarray[3]), [350,-100], textColor=[255, 255, 255], 
-                                    textSize=40)
+        answerlist = answerlist + str(answerarray[i-1])+','
 
+    # 生成备选图片
+    answer1 = my_button(240, 120, str(answerarray[0]), [-350, 100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer2 = my_button(240, 120, str(answerarray[1]), [350, 100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer3 = my_button(240, 120, str(answerarray[2]), [-350, -100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer4 = my_button(240, 120, str(answerarray[3]), [350, -100], textColor=[255, 255, 255],
+                        textSize=40)
 
-    #第一屏信息
-    background.image='pictures/fixation.png'
+    # 第一屏信息
+    background.image = 'pictures/fixation.png'
     background.draw()
     win.flip()
     clock.reset()
-    while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
+    while clock.getTime() < stim_dynamict_s:  # 刺激呈现时间内持续呈现
         Yaoyaxin = 1
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-    #第二屏呈现
-    background.image='pictures/background.png'
+            save_and_quit()
+    # 第二屏呈现
+    background.image = 'pictures/background.png'
     background.draw()
     answer1.draw()
     answer2.draw()
     answer3.draw()
     answer4.draw()
-    
+
     win.flip()
     clock.reset()
-    while clock.getTime() < res_duration_s:#数字呈现4s
-        background.image='pictures/cangbaotu.png'
+    while clock.getTime() < res_duration_s:  # 数字呈现4s
+        background.image = 'pictures/cangbaotu.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-   #d第三屏
+            save_and_quit()
+   # d第三屏
     background.draw()
     if numberOFanswer == 1:
         text.text = '宝藏在'+str(questionnumber)+'号树后面'
     if numberOFanswer == 2:
         text.text = '两个宝藏所在树桩\n的数字之和是'+str(questionnumber)
     question = text.text
-    text.pos = [-100,0]
+    text.pos = [-100, 0]
     text.draw()
     win.flip()
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
-        background.image='pictures/background.png'
+        background.image = 'pictures/background.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-   
-    answer1 =  my_button(240, 120, '', [-350,100], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer2 =  my_button(240, 120, '', [350,100], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer3 =  my_button(240, 120, '', [-350,-100], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer4 =  my_button(240, 120, '', [350,-100], textColor=[0, 0, 0], 
-                                    textSize=40)
+            save_and_quit()
+
+    answer1 = my_button(240, 120, '', [-350, 100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer2 = my_button(240, 120, '', [350, 100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer3 = my_button(240, 120, '', [-350, -100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer4 = my_button(240, 120, '', [350, -100], textColor=[0, 0, 0],
+                        textSize=40)
     text.text = '请帮光头强找出'+str(numberOFanswer)+'个宝藏'
     text.width
-    text.pos = [0,300]
+    text.pos = [0, 300]
     background.draw()
     answer1.draw()
     answer2.draw()
@@ -148,12 +152,12 @@ def four_trials(difficulty):
     text.draw()
     win.flip()
     clock.reset()
-    
+
     clickornot = 0
-    while len(selectanswer)!=numberOFanswer:
+    while len(selectanswer) != numberOFanswer:
         if clickornot != 1:
             if mouse.isPressedIn(answer1.button):
-                answer1 =  my_button(240, 120, answerarray[0], [-350,100], textColor=[255, 255, 255], 
+                answer1 = my_button(240, 120, answerarray[0], [-350, 100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -166,7 +170,7 @@ def four_trials(difficulty):
                 clickornot = 1
         if clickornot != 2:
             if mouse.isPressedIn(answer2.button):
-                answer2 =  my_button(240, 120, answerarray[1], [350,100], textColor=[255, 255, 255], 
+                answer2 = my_button(240, 120, answerarray[1], [350, 100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -179,7 +183,7 @@ def four_trials(difficulty):
                 clickornot = 2
         if clickornot != 3:
             if mouse.isPressedIn(answer3.button):
-                answer3 =  my_button(240, 120, answerarray[2], [-350,-100], textColor=[255, 255, 255], 
+                answer3 = my_button(240, 120, answerarray[2], [-350, -100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -192,7 +196,7 @@ def four_trials(difficulty):
                 clickornot = 3
         if clickornot != 4:
             if mouse.isPressedIn(answer4.button):
-                answer4 =  my_button(240, 120, answerarray[3], [350,-100], textColor=[255, 255, 255], 
+                answer4 = my_button(240, 120, answerarray[3], [350, -100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -209,90 +213,91 @@ def four_trials(difficulty):
         while clock.getTime() < stim_dynamict_s:
             Yaoyaxin = 1
             if defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()    
-        if sum(selectanswer)==questionnumber:
+                save_and_quit()
+        if sum(selectanswer) == questionnumber:
             feedback = 1
         else:
             feedback = 0
         feedback = show_feedback(feedback)
-        return feedback, time,question,answerlist
+        return feedback, time, question, answerlist
+
 
 def six_trials(difficulty):
     level = difficulty
-    answerarray = []#备选答案数组
-    selectanswer = []#被试已经选择答案数组
+    answerarray = []  # 备选答案数组
+    selectanswer = []  # 被试已经选择答案数组
     questionnumber = 0
     mouse = psychopy.event.Mouse()
     if level == 2:
-        numberOFanswer = 1 #被试需要选择答案的数量
-        questionnumber = random.randint(11,29)
+        numberOFanswer = 1  # 被试需要选择答案的数量
+        questionnumber = random.randint(11, 29)
         answerarray.append(questionnumber)
-        while len(answerarray)<6:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 6:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
     if level == 5:
         numberOFanswer = 2
-        questionnumber = random.randint(25,38)
-        trueanswer = random.randint(11,questionnumber-11)
+        questionnumber = random.randint(25, 38)
+        trueanswer = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2:
-            trueanswer = random.randint(11,questionnumber-11)
+            trueanswer = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer)
         otheranswer = questionnumber - trueanswer
         answerarray.append(otheranswer)
-        while len(answerarray)<6:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 6:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
     if level == 7:
         numberOFanswer = 4
-        questionnumber = random.randint(25,38)
-        trueanswer = random.randint(11,questionnumber-11)
+        questionnumber = random.randint(25, 38)
+        trueanswer = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2:
-            trueanswer = random.randint(11,questionnumber-11)
+            trueanswer = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer)
         otheranswer = questionnumber - trueanswer
         answerarray.append(otheranswer)
-        trueanswer1 = random.randint(11,questionnumber-11)
+        trueanswer1 = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2 or trueanswer1 in answerarray:
-            trueanswer1 = random.randint(11,questionnumber-11)
+            trueanswer1 = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer1)
         otheranswer1 = questionnumber - trueanswer1
         answerarray.append(otheranswer1)
-        while len(answerarray)<6:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 6:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
 
-    random.shuffle(answerarray)#答案位置打乱
+    random.shuffle(answerarray)  # 答案位置打乱
     answerlist = ''
     for i in range(len(answerarray)):
-        answerlist =answerlist + str(answerarray[i-1])+','
-    #生成备选图片
-    answer1 =  my_button(160, 80, str(answerarray[0]), [-500,100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer2 =  my_button(160, 80, str(answerarray[1]), [500,100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer3 =  my_button(160, 80, str(answerarray[2]), [0,100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer4 =  my_button(160, 80, str(answerarray[3]), [-500,-100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer5 =  my_button(160, 80, str(answerarray[4]), [500,-100], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer6 =  my_button(160, 80, str(answerarray[5]), [0,-100], textColor=[255, 255, 255], 
-                                    textSize=40)
+        answerlist = answerlist + str(answerarray[i-1])+','
+    # 生成备选图片
+    answer1 = my_button(160, 80, str(answerarray[0]), [-500, 100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer2 = my_button(160, 80, str(answerarray[1]), [500, 100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer3 = my_button(160, 80, str(answerarray[2]), [0, 100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer4 = my_button(160, 80, str(answerarray[3]), [-500, -100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer5 = my_button(160, 80, str(answerarray[4]), [500, -100], textColor=[255, 255, 255],
+                        textSize=40)
+    answer6 = my_button(160, 80, str(answerarray[5]), [0, -100], textColor=[255, 255, 255],
+                        textSize=40)
 
-    #第一屏信息
-    background.image='pictures/fixation.png'
+    # 第一屏信息
+    background.image = 'pictures/fixation.png'
     background.draw()
     win.flip()
     clock.reset()
-    while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
+    while clock.getTime() < stim_dynamict_s:  # 刺激呈现时间内持续呈现
         Yaoyaxin = 1
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-    #第二屏呈现
-    background.image='pictures/background.png'
+            save_and_quit()
+    # 第二屏呈现
+    background.image = 'pictures/background.png'
     background.draw()
     answer1.draw()
     answer2.draw()
@@ -303,44 +308,44 @@ def six_trials(difficulty):
 
     win.flip()
     clock.reset()
-    while clock.getTime() < res_duration_s:#数字呈现4s
-        background.image='pictures/cangbaotu.png'
+    while clock.getTime() < res_duration_s:  # 数字呈现4s
+        background.image = 'pictures/cangbaotu.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-   #d第三屏
+            save_and_quit()
+   # d第三屏
     background.draw()
     if numberOFanswer == 1:
         text.text = '宝藏在'+str(questionnumber)+'号树后面'
     if numberOFanswer == 2:
         text.text = '两个宝藏所在树桩\n数字之和是'+str(questionnumber)
     if numberOFanswer == 4:
-        text.text = '这个宝藏有4份\n两份宝藏所在树桩的数字之和'+str(questionnumber)+'\n后两份所在树桩的数字之和'+str(questionnumber)
-    text.pos = [-100,0]
+        text.text = '这个宝藏有4份\n两份宝藏所在树桩的数字之和' + \
+            str(questionnumber)+'\n后两份所在树桩的数字之和'+str(questionnumber)
+    text.pos = [-100, 0]
     question = text.text
     text.draw()
     win.flip()
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
-        background.image='pictures/background.png'
+        background.image = 'pictures/background.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-    answer1 =  my_button(160, 80, '', [-500,100], textColor=[0,0,0], 
-                                    textSize=40)
-    answer2 =  my_button(160, 80, '', [500,100], textColor=[0,0,0], 
-                                    textSize=40)
-    answer3 =  my_button(160, 80, '', [0,100], textColor=[0,0,0], 
-                                    textSize=40)
-    answer4 =  my_button(160, 80, '', [-500,-100], textColor=[0,0,0], 
-                                    textSize=40)
-    answer5 =  my_button(160, 80, '', [500,-100], textColor=[0,0,0], 
-                                    textSize=40)
-    answer6 =  my_button(160, 80, '', [0,-100], textColor=[0,0,0], 
-                                    textSize=40)
-
+            save_and_quit()
+    answer1 = my_button(160, 80, '', [-500, 100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer2 = my_button(160, 80, '', [500, 100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer3 = my_button(160, 80, '', [0, 100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer4 = my_button(160, 80, '', [-500, -100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer5 = my_button(160, 80, '', [500, -100], textColor=[0, 0, 0],
+                        textSize=40)
+    answer6 = my_button(160, 80, '', [0, -100], textColor=[0, 0, 0],
+                        textSize=40)
 
     background.draw()
     text.text = '请帮光头强找出'+str(numberOFanswer)+'个宝藏'
-    text.pos = [0,300]
+    text.pos = [0, 300]
     answer1.draw()
     answer2.draw()
     answer3.draw()
@@ -349,12 +354,12 @@ def six_trials(difficulty):
     answer6.draw()
     win.flip()
     clock.reset()
-    
+
     clickornot = 0
-    while len(selectanswer)!=numberOFanswer:
+    while len(selectanswer) != numberOFanswer:
         if clickornot != 1:
             if mouse.isPressedIn(answer1.button):
-                answer1 =  my_button(160, 80, str(answerarray[0]), [-500,100], textColor=[255, 255, 255], 
+                answer1 = my_button(160, 80, str(answerarray[0]), [-500, 100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -369,7 +374,7 @@ def six_trials(difficulty):
                 clickornot = 1
         if clickornot != 2:
             if mouse.isPressedIn(answer2.button):
-                answer2 =  my_button(160, 80, str(answerarray[1]), [500,100], textColor=[255, 255, 255], 
+                answer2 = my_button(160, 80, str(answerarray[1]), [500, 100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -384,7 +389,7 @@ def six_trials(difficulty):
                 clickornot = 2
         if clickornot != 3:
             if mouse.isPressedIn(answer3.button):
-                answer3 =  my_button(160, 80, str(answerarray[2]), [0,100], textColor=[255, 255, 255], 
+                answer3 = my_button(160, 80, str(answerarray[2]), [0, 100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -399,7 +404,7 @@ def six_trials(difficulty):
                 clickornot = 3
         if clickornot != 4:
             if mouse.isPressedIn(answer4.button):
-                answer4 =  my_button(160, 80, str(answerarray[3]), [-500,-100], textColor=[255, 255, 255], 
+                answer4 = my_button(160, 80, str(answerarray[3]), [-500, -100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -414,7 +419,7 @@ def six_trials(difficulty):
                 clickornot = 4
         if clickornot != 5:
             if mouse.isPressedIn(answer5.button):
-                answer5 =  my_button(160, 80, str(answerarray[4]), [500,-100], textColor=[255,255,255], 
+                answer5 = my_button(160, 80, str(answerarray[4]), [500, -100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -429,7 +434,7 @@ def six_trials(difficulty):
                 clickornot = 5
         if clickornot != 6:
             if mouse.isPressedIn(answer6.button):
-                answer6 =  my_button(160, 80, str(answerarray[5]), [0,-100], textColor=[255, 255, 255], 
+                answer6 = my_button(160, 80, str(answerarray[5]), [0, -100], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -448,15 +453,13 @@ def six_trials(difficulty):
                 selectanswer.append(0)
                 break
 
-        
-
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
     if numberOFanswer != 4:
-        if sum(selectanswer)==questionnumber:
+        if sum(selectanswer) == questionnumber:
             feedback = 1
         else:
             feedback = 0
@@ -466,90 +469,91 @@ def six_trials(difficulty):
         else:
             feedback = 0
     feedback = show_feedback(feedback)
-    return feedback, time,question,answerlist
+    return feedback, time, question, answerlist
+
 
 def eight_trials(difficulty):
     level = difficulty
-    answerarray = []#备选答案数组
-    selectanswer = []#被试已经选择答案数组
+    answerarray = []  # 备选答案数组
+    selectanswer = []  # 被试已经选择答案数组
     questionnumber = 0
     mouse = psychopy.event.Mouse()
-    
-    ##设置备选答案不重复
+
+    # 设置备选答案不重复
     if level == 3:
-        numberOFanswer = 1 #被试需要选择答案的数量
-        questionnumber = random.randint(11,29)
+        numberOFanswer = 1  # 被试需要选择答案的数量
+        questionnumber = random.randint(11, 29)
         answerarray.append(questionnumber)
-        while len(answerarray)<8:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 8:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
     if level == 6:
         numberOFanswer = 2
-        questionnumber = random.randint(25,38)
-        trueanswer = random.randint(11,questionnumber-11)
+        questionnumber = random.randint(25, 38)
+        trueanswer = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2:
-            trueanswer = random.randint(11,questionnumber-11)
+            trueanswer = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer)
         otheranswer = questionnumber - trueanswer
         answerarray.append(otheranswer)
-        while len(answerarray)<8:
-            otheranswer = random.randint(25,38)
+        while len(answerarray) < 8:
+            otheranswer = random.randint(25, 38)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
     if level == 8:
         numberOFanswer = 4
-        questionnumber = random.randint(25,38)
-        trueanswer = random.randint(11,questionnumber-11)
+        questionnumber = random.randint(25, 38)
+        trueanswer = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2:
-            trueanswer = random.randint(11,questionnumber-11)
+            trueanswer = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer)
         otheranswer = questionnumber - trueanswer
         answerarray.append(otheranswer)
-        trueanswer1 = random.randint(11,questionnumber-11)
+        trueanswer1 = random.randint(11, questionnumber-11)
         while trueanswer == questionnumber/2 or trueanswer1 in answerarray:
-            trueanswer1 = random.randint(11,questionnumber-11)
+            trueanswer1 = random.randint(11, questionnumber-11)
         answerarray.append(trueanswer1)
         otheranswer1 = questionnumber - trueanswer1
         answerarray.append(otheranswer1)
-        while len(answerarray)<8:
-            otheranswer = random.randint(11,29)
+        while len(answerarray) < 8:
+            otheranswer = random.randint(11, 29)
             if otheranswer not in answerarray:
                 answerarray.append(otheranswer)
 
-    random.shuffle(answerarray)#答案位置打乱
+    random.shuffle(answerarray)  # 答案位置打乱
     answerlist = ''
     for i in range(len(answerarray)):
-        answerlist =answerlist + str(answerarray[i-1])+','
-    #生成备选图片
-    answer1 =  my_button(160, 80, str(answerarray[0]), [350,150], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer2 =  my_button(160, 80, str(answerarray[1]), [0,150], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer3 =  my_button(160, 80, str(answerarray[2]), [-350,150], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer4 =  my_button(160, 80, str(answerarray[3]), [200,-0], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer5 =  my_button(160, 80, str(answerarray[4]), [-200,-0], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer6 =  my_button(160, 80, str(answerarray[5]), [350,-150], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer7 =  my_button(160, 80, str(answerarray[6]), [0,-150], textColor=[255, 255, 255], 
-                                    textSize=40)
-    answer8 =  my_button(160, 80, str(answerarray[7]), [-350,-150], textColor=[255, 255, 255], 
-                                    textSize=40)
+        answerlist = answerlist + str(answerarray[i-1])+','
+    # 生成备选图片
+    answer1 = my_button(160, 80, str(answerarray[0]), [350, 150], textColor=[255, 255, 255],
+                        textSize=40)
+    answer2 = my_button(160, 80, str(answerarray[1]), [0, 150], textColor=[255, 255, 255],
+                        textSize=40)
+    answer3 = my_button(160, 80, str(answerarray[2]), [-350, 150], textColor=[255, 255, 255],
+                        textSize=40)
+    answer4 = my_button(160, 80, str(answerarray[3]), [200, -0], textColor=[255, 255, 255],
+                        textSize=40)
+    answer5 = my_button(160, 80, str(answerarray[4]), [-200, -0], textColor=[255, 255, 255],
+                        textSize=40)
+    answer6 = my_button(160, 80, str(answerarray[5]), [350, -150], textColor=[255, 255, 255],
+                        textSize=40)
+    answer7 = my_button(160, 80, str(answerarray[6]), [0, -150], textColor=[255, 255, 255],
+                        textSize=40)
+    answer8 = my_button(160, 80, str(answerarray[7]), [-350, -150], textColor=[255, 255, 255],
+                        textSize=40)
 
-    #第一屏信息
-    background.image='pictures/fixation.png'
+    # 第一屏信息
+    background.image = 'pictures/fixation.png'
     background.draw()
     win.flip()
     clock.reset()
-    while clock.getTime() < stim_dynamict_s:#刺激呈现时间内持续呈现
+    while clock.getTime() < stim_dynamict_s:  # 刺激呈现时间内持续呈现
         Yaoyaxin = 1
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-    #第二屏呈现
-    background.image='pictures/background.png'
+            save_and_quit()
+    # 第二屏呈现
+    background.image = 'pictures/background.png'
     background.draw()
     answer1.draw()
     answer2.draw()
@@ -561,49 +565,48 @@ def eight_trials(difficulty):
     answer8.draw()
     win.flip()
     clock.reset()
-    while clock.getTime() < res_duration_s:#数字呈现4s
-        background.image='pictures/cangbaotu.png'
+    while clock.getTime() < res_duration_s:  # 数字呈现4s
+        background.image = 'pictures/cangbaotu.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-   #d第三屏
+            save_and_quit()
+   # d第三屏
     background.draw()
     if numberOFanswer == 1:
         text.text = '宝藏在'+str(questionnumber)+'号树后面'
     if numberOFanswer == 2:
         text.text = '两个宝藏所在树桩\n数字之和是'+str(questionnumber)
     if numberOFanswer == 4:
-        text.text = '这个宝藏有4份\n前两份宝藏所在树桩的数字之和为'+str(questionnumber)+'\n后两份所在树桩的数字之和也是'+str(questionnumber)
-    text.pos = [-100,0]
+        text.text = '这个宝藏有4份\n前两份宝藏所在树桩的数字之和为' + \
+            str(questionnumber)+'\n后两份所在树桩的数字之和也是'+str(questionnumber)
+    text.pos = [-100, 0]
     question = text.text
     text.draw()
     win.flip()
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
-        background.image='pictures/background.png'
+        background.image = 'pictures/background.png'
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-    answer1 =  my_button(160, 80, '', [350,150], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer2 =  my_button(160, 80, '', [0,150], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer3 =  my_button(160, 80, '', [-350,150], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer4 =  my_button(160, 80, '', [200,-0], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer5 =  my_button(160, 80, '', [-200,-0], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer6 =  my_button(160, 80, '', [350,-150], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer7 =  my_button(160, 80, '', [0,-150], textColor=[0, 0, 0], 
-                                    textSize=40)
-    answer8 =  my_button(160, 80, '', [-350,-150], textColor=[0, 0, 0], 
-                                    textSize=40)
-
-
+            save_and_quit()
+    answer1 = my_button(160, 80, '', [350, 150], textColor=[0, 0, 0],
+                        textSize=40)
+    answer2 = my_button(160, 80, '', [0, 150], textColor=[0, 0, 0],
+                        textSize=40)
+    answer3 = my_button(160, 80, '', [-350, 150], textColor=[0, 0, 0],
+                        textSize=40)
+    answer4 = my_button(160, 80, '', [200, -0], textColor=[0, 0, 0],
+                        textSize=40)
+    answer5 = my_button(160, 80, '', [-200, -0], textColor=[0, 0, 0],
+                        textSize=40)
+    answer6 = my_button(160, 80, '', [350, -150], textColor=[0, 0, 0],
+                        textSize=40)
+    answer7 = my_button(160, 80, '', [0, -150], textColor=[0, 0, 0],
+                        textSize=40)
+    answer8 = my_button(160, 80, '', [-350, -150], textColor=[0, 0, 0],
+                        textSize=40)
 
     background.draw()
     text.text = '请帮光头强找出'+str(numberOFanswer)+'个宝藏'
-    text.pos = [0,300]
+    text.pos = [0, 300]
     answer1.draw()
     answer2.draw()
     answer3.draw()
@@ -615,12 +618,12 @@ def eight_trials(difficulty):
     text.draw()
     win.flip()
     clock.reset()
-    
+
     clickornot = 0
-    while len(selectanswer)!=numberOFanswer:
+    while len(selectanswer) != numberOFanswer:
         if clickornot != 1:
             if mouse.isPressedIn(answer1.button):
-                answer1 =  my_button(160, 80, str(answerarray[0]), [350,150], textColor=[255, 255, 255], 
+                answer1 = my_button(160, 80, str(answerarray[0]), [350, 150], textColor=[255, 255, 255],
                                     textSize=40)
                 answer1.draw()
                 answer2.draw()
@@ -636,7 +639,7 @@ def eight_trials(difficulty):
                 clickornot = 1
         if clickornot != 2:
             if mouse.isPressedIn(answer2.button):
-                answer2 =  my_button(160, 80, str(answerarray[1]), [0,150], textColor=[255, 255, 255], 
+                answer2 = my_button(160, 80, str(answerarray[1]), [0, 150], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -653,7 +656,7 @@ def eight_trials(difficulty):
                 clickornot = 2
         if clickornot != 3:
             if mouse.isPressedIn(answer3.button):
-                answer3 =  my_button(160, 80, str(answerarray[2]), [-350,150], textColor=[255, 255, 255], 
+                answer3 = my_button(160, 80, str(answerarray[2]), [-350, 150], textColor=[255, 255, 255],
                                     textSize=40)
                 answer1.draw()
                 answer2.draw()
@@ -669,7 +672,7 @@ def eight_trials(difficulty):
                 clickornot = 3
         if clickornot != 4:
             if mouse.isPressedIn(answer4.button):
-                answer4 =  my_button(160, 80, str(answerarray[3]), [200,-0], textColor=[255, 255, 255], 
+                answer4 = my_button(160, 80, str(answerarray[3]), [200, -0], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -686,7 +689,7 @@ def eight_trials(difficulty):
                 clickornot = 4
         if clickornot != 5:
             if mouse.isPressedIn(answer5.button):
-                answer5 =  my_button(160, 80, str(answerarray[4]), [-200,-0], textColor=[255,255,255], 
+                answer5 = my_button(160, 80, str(answerarray[4]), [-200, -0], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -703,7 +706,7 @@ def eight_trials(difficulty):
                 clickornot = 5
         if clickornot != 6:
             if mouse.isPressedIn(answer6.button):
-                answer6 =  my_button(160, 80, str(answerarray[5]), [350,-150], textColor=[255, 255, 255], 
+                answer6 = my_button(160, 80, str(answerarray[5]), [350, -150], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -720,7 +723,7 @@ def eight_trials(difficulty):
                 clickornot = 6
         if clickornot != 7:
             if mouse.isPressedIn(answer7.button):
-                answer7 =  my_button(160, 80, str(answerarray[6]), [0,-150], textColor=[255, 255, 255], 
+                answer7 = my_button(160, 80, str(answerarray[6]), [0, -150], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -737,7 +740,7 @@ def eight_trials(difficulty):
                 clickornot = 7
         if clickornot != 8:
             if mouse.isPressedIn(answer8.button):
-                answer8 =  my_button(160, 80, str(answerarray[7]), [-350,-150], textColor=[255, 255, 255], 
+                answer8 = my_button(160, 80, str(answerarray[7]), [-350, -150], textColor=[255, 255, 255],
                                     textSize=40)
                 background.draw()
                 answer1.draw()
@@ -758,15 +761,13 @@ def eight_trials(difficulty):
                 selectanswer.append(0)
                 break
 
-        
-
     clock.reset()
     while clock.getTime() < stim_dynamict_s:
         Yaoyaxin = 1
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
     if numberOFanswer != 4:
-        if sum(selectanswer)==questionnumber:
+        if sum(selectanswer) == questionnumber:
             feedback = 1
         else:
             feedback = 0
@@ -776,7 +777,8 @@ def eight_trials(difficulty):
         else:
             feedback = 0
     feedback = show_feedback(feedback)
-    return feedback, time,question,answerlist
+    return feedback, time, question, answerlist
+
 
 def show_feedback(feedback):
     """显示反馈
@@ -804,10 +806,18 @@ def show_feedback(feedback):
         text.draw()
         win.flip()
         if defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+            save_and_quit()
     return feedback
 
 
+def save_and_quit():
+    """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
+    thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+    os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
+    # make sure everything is closed down
+    thisExp.abort()  # or data files will save again on exit
+    core.quit()
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -815,9 +825,9 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.1.3'
+psychopyVersion = '2021.2.3'
 # from the Builder filename that created this script
-expName = 'number_space'
+expName = 'task7'
 expInfo = {'被试实验编号': '', '姓名拼音': '', '第几次训练': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -829,7 +839,7 @@ expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + \
+filename = os.path.dirname(os.path.dirname(_thisDir)) + os.sep + \
     u'data/%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -905,18 +915,18 @@ psychopy.event.waitKeys()
 difficulty = 1
 accuracy = []
 for i_trials in range(trials_in_block):
-    
+
     if len(accuracy) > 4:
         if sum(accuracy)/len(accuracy) >= 0.8:
             del accuracy[:]
             if difficulty < 8:
-                difficulty = difficulty +1
+                difficulty = difficulty + 1
     if difficulty == 1 or difficulty == 4:
-        feedback, time,question,answerlist = four_trials(difficulty)
+        feedback, time, question, answerlist = four_trials(difficulty)
     if difficulty == 2 or difficulty == 5 or difficulty == 7:
-        feedback, time,question,answerlist = six_trials(difficulty)
+        feedback, time, question, answerlist = six_trials(difficulty)
     if difficulty == 3 or difficulty == 6 or difficulty == 8:
-        feedback, time,question,answerlist = eight_trials(difficulty)
+        feedback, time, question, answerlist = eight_trials(difficulty)
     accuracy.append(feedback)
     # 保存结果
     #thisExp.addData('block', i_blocks+1)
@@ -930,8 +940,8 @@ for i_trials in range(trials_in_block):
 
     #thisExp.addData('log_difference', log_difference)
     #thisExp.addData('accuracy', corrects / 20)
-    #thisExp.nextEntry()
-thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+    # thisExp.nextEntry()
+save_and_quit()
 background.image = 'pictures/close.png'
 background.draw()
 win.flip()

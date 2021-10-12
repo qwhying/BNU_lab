@@ -11,6 +11,7 @@ import xlrd
 from psychopy.hardware import keyboard
 from psychopy import visual, event, core, gui, data
 from pyglet.window import key
+import stat
 
 
 def generate_textMark(x, y, text, size=20,  color=[0, 0, 0]):
@@ -206,6 +207,7 @@ def trial(l_num, l_big, r_num, r_big, result, level):
 def save_and_quit():
     """保存后退出"""
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
+    os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
     thisExp.abort()  # or data files will save again on exit
     core.quit()
@@ -271,9 +273,9 @@ os.chdir(_thisDir)
 # 窗口
 
 # Store info about the experiment session
-psychopyVersion = '2020.1.3'
+psychopyVersion = '2021.2.3'
 # from the Builder filename that created this script
-expName = 'task2'
+expName = 'task3'
 expInfo = {'被试实验编号': '', '姓名拼音': '', '第几次训练': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -287,7 +289,8 @@ expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .p
 # \u开头的是一个Unicode码的字符。范围在'\u0000'到'\uFFFF'之间。
 # % 是python 字符串格式化符号:
-filename = _thisDir + os.sep + \
+# 保存在统一的data文件夹内
+filename = os.path.dirname(os.path.dirname(_thisDir)) + os.sep + \
     u'data_%s_%s' % (expInfo['participant'], expName)
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
@@ -330,6 +333,7 @@ elif expInfo['session'] == "" and expInfo['participant'] == "" and expInfo['name
         u'test_data_%s' % (expInfo['date'])
 else:
     try:
+        os.chmod(filename+'.csv', stat.S_IWRITE)
         with open(filename + '.csv') as f:
             reader = csv.reader(f)
 
@@ -403,8 +407,10 @@ intro.image = "pictures/new_指导语2.png"
 intro.draw()
 win.flip()
 event.waitKeys()
+# trial数
 number_of_trials = [12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
                     12, 12, 12, 12, 12, 12, 16, 16, 16, 16, 12, 12, 12, 12]
+# 每个trial的时长
 time_of_each_trials = [4, 4, 4, 4, 4, 4, 4, 4,
                        4, 4, 4, 4, 4, 4, 4, 4, 2.5, 2.5, 2.5, 2.5, 4, 4, 4, 4, ]
 
