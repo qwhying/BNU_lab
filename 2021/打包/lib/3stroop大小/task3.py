@@ -355,7 +355,7 @@ else:
 
 intro = visual.ImageStim(
     win=win,
-    image="pictures/new_指导语1.png",
+    image="pictures/指导语1.png",
     size=win.size,
     units="pix"
 )
@@ -403,7 +403,7 @@ intro.draw()
 win.flip()
 event.waitKeys()
 
-intro.image = "pictures/new_指导语2.png"
+intro.image = "pictures/指导语2.png"
 intro.draw()
 win.flip()
 event.waitKeys()
