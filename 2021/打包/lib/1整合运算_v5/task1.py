@@ -703,7 +703,7 @@ cue_2 = visual.ImageStim(
 
 question_1 = visual.ImageStim(
     win=win,
-    image="pictures/分离条件-5运算结果.png",
+    image="pictures/运算结果.png",
     size=win.size
 )
 question_2 = visual.ImageStim(
@@ -755,6 +755,11 @@ kb = keyboard.Keyboard()
 # 练习
 trial(0, 1, 1, '+', 2, '-', 1, '+', 1)
 trial(1, 1, 1, '+', 2, '-', 1, '+', 2)
+
+intro.image = "pictures/指导语3.png"
+intro.draw()
+win.flip()
+event.waitKeys()
 
 end_level = game_level + 6
 
