@@ -54,7 +54,15 @@ def get_key(answer_text_now, clock, response_time):
 
 
 def trial(mode, pre_n, mat_1, op_1, mat_2, op_2, mat_3, op_3=[], mat_4=[]):
-    """mode表示模式0代表运算+回忆，1代表运算 回忆 分离，2代表运算，3代表回忆"""
+    """mode表示模式0代表运算+回忆，1代表运算 回忆 分离，2代表运算，3代表回忆
+    pre_n:回忆数字
+    mat_1:第一个计算数字
+    op_1:第一个符号
+    mat_2:第二个计算数字
+    op_2:第二个符号
+    mat_3:第三个计算数字
+    op_3:第三个符号
+    mat_4:第四个计算数字"""
     preload_number = int(pre_n)
 
     math_1_number = int(mat_1)
@@ -744,6 +752,9 @@ event.waitKeys()
 clock = core.Clock()
 kb = keyboard.Keyboard()
 
+# 练习
+trial(0, 1, 1, '+', 2, '-', 1, '+', 1)
+trial(1, 1, 1, '+', 2, '-', 1, '+', 2)
 
 end_level = game_level + 6
 
