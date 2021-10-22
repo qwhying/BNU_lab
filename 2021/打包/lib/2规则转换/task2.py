@@ -76,6 +76,8 @@ class Balloon():
             self.answer_num = ((text1 - text2) ** 2) ** 0.5
         elif operator == "*":
             self.answer_num = text1 * text2
+        elif operator == "/":
+            self.answer_num = max(text1/text2, text2/text1)
         if ytext == -1:
             ytext = ""
         elif rtext == -1:
@@ -351,9 +353,14 @@ def trial(my_balloon, n_trial, ytext, rtext, gtext, text1, text2, operator, cond
 def get_condition(game_level):
     # 获取题目条件,每一次循环获取一关的题目
 
+    # 打开文件读取关卡信息
+    with open("game_level.csv", "r") as file:
+        reader = csv.reader(file)
+        trials = list(reader)
+
     # game_level = game_level+1
-    conditions_t = []
-    conditions_f = []
+    conditions_t = []  # 临时条件组
+    conditions_f = []  # 最终条件
     mul_conditions = []
     add_conditions = []
     sub_conditions = []
@@ -563,10 +570,6 @@ intro.draw()
 win.flip()
 event.waitKeys()
 
-# 打开文件读取关卡信息
-with open("game_level.csv", "r") as file:
-    reader = csv.reader(file)
-    trials = list(reader)
 
 end_level = game_level+6
 trials_in_each_level = [12, 12, 12, 9, 9, 9, 9, 12,
