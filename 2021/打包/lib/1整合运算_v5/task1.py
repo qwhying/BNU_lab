@@ -519,7 +519,6 @@ def one_round(game_level):
     task_table = read_xlsx("integration_task_design.xlsx", game_level)
     task_data = get_taskdata(task_table, number_of_trials[game_level - 1])
     for trial_i in task_data:
-        trials = task_table[0]
         result_i, pre_ans, pre_time, cal_ans, cal_time = trial(trial_i[0], trial_i[2], trial_i[3], trial_i[4],
                                                                trial_i[5], trial_i[6], trial_i[7], trial_i[8], trial_i[9])
         if result_i == True:
@@ -788,5 +787,5 @@ while game_level < end_level:
             # 超过3分钟，还是没有过关直接进入下一关
             game_level = game_level+1
 
-
+os.system('start python ./../../main.py')
 save_and_quit()

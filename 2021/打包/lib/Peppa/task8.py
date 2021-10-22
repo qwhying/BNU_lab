@@ -85,7 +85,7 @@ def trials(difficult):
     mouse = psychopy.event.Mouse()
     # 问题列表
     questionlist1 = ['学校今天留了\n多少道题目？', '佩奇上午做了\n多少道数学题？',
-                     '佩奇下午做了\n多少道数学题？', '佩奇有几道数\n学题没做完?']
+                     '佩奇晚上做了\n多少道数学题？', '佩奇有几道数\n学题没做完?']
     questionlist2 = ['学校今天留了\n多少道题目？', '佩奇在学校做\n了多少道数学题？',
                      '佩奇在家里做了\n多少道数学题？', '佩奇有几道数学\n题没做完?']
     # 随机选择提什么问题
@@ -168,7 +168,7 @@ def trials(difficult):
 
     # 第三屏
     background.image = 'pictures/Antelope.png'
-    if difficult > 2 and difficult < 5:
+    if difficult > 1 and difficult < 5:
         m2 = m-m1
     else:
         m2 = random.randint(2, m-m1-2)
