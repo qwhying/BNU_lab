@@ -400,10 +400,12 @@ class my_map():
         return hint
 
     def depart(self, operator, this_side_bar, is_explore=False):
+        """出发函数
+        主要用于判定此次航行是否正确（例如航行终点超出范围、使用的数字位于黑洞上方）"""
         number = []
         clicked = []
         temp_present_point = self.present_point
-        target_point = -1
+        target_point = -100
         clock.reset()
         while clock.getTime() < 5:
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -442,9 +444,9 @@ class my_map():
                     this_side_bar.set_score(number)
                     this_side_bar.color_restore()
                     break
-            if target_point != -1:
+            if target_point != -100:
                 break
-        if target_point != -1 and target_point <= 100 and target_point >= 0:
+        if target_point != -100 and target_point <= 100 and target_point >= 0:  # 此次航行终点在100的范围内，target_point==-1时是
             clock.reset()
             while clock.getTime() < 0.1:
                 background.draw()
@@ -452,10 +454,10 @@ class my_map():
                 self.draw(is_explore=is_explore, dynamic=False)
                 this_side_bar.draw(is_explore=is_explore)
                 win.flip()
-            if number in self.covered_points:
+            if number in self.covered_points:  # 使用的操作数字位于黑洞上方
                 self.map[i].circle.fillColor = self.covered_fillColor
                 hint = 2
-            else:
+            else:  # 飞船航行，途中如果经过黑洞返回1，否则返回0
                 self.map[i].circle.fillColor = self.fillColor
                 self.map[i].circle.opacity = 0.3
                 hint = self.travel(
@@ -467,7 +469,13 @@ class my_map():
                 self.error_warning(hint, temp_present_point, target_point)
                 this_side_bar.reset_score()
                 return 0
-        else:
+        elif target_point == -100:
+            self.error_warning(4, temp_present_point, target_point)
+            this_side_bar.reset_score()
+            this_side_bar.color_restore()
+            return 0
+
+        else:  # 超出范围
             self.map[i].circle.fillColor = self.covered_fillColor
             self.error_warning(3, temp_present_point, target_point)
             this_side_bar.reset_score()
@@ -476,7 +484,8 @@ class my_map():
 
     def error_warning(self, mode, start_point, end_point=[]):
         # TODO::这块可能有些问题后续需要补充
-        """错误提示"""
+        """错误提示
+        mode表示错误类型 1 经过黑洞 2 使用红标数字 3 超出范围 4 超时"""
         if mode == 1:
             text = generate_textMark(-win.size[0]/2.647,
                                      0, "不可经过黑洞\n请重新选择路线", 30, [255, 255, 255])
@@ -490,12 +499,18 @@ class my_map():
             arrow.draw()
         elif mode == 2:
             text = generate_textMark(
-                - win.size[0] / 2.647, 0, "不能使用标红的数字进行运算，请重新选择路线", 30, [255, 255, 255])
+                0, 0, "不能使用标红的数字进行运算，请重新选择路线", 30, [255, 255, 255])
+            background.draw()
+            text.draw()
+        elif mode == 4:
+            text = generate_textMark(0, 0, "超时！请重新选择", 30, [255, 255, 255])
+            background.draw()
             text.draw()
         else:
             text = generate_textMark(
-                - win.size[0] / 2.647, 0, "运算结果超出地图范围，请重新选择路线", 30, [255, 255, 255])
-        text.draw()
+                0, 0, "运算结果超出地图范围，请重新选择路线", 30, [255, 255, 255])
+            background.draw()
+            text.draw()
         win.flip()
         event.waitKeys()
 
@@ -630,6 +645,8 @@ def explore_mode(covered_points):
 
 def trial(is_energy, covered_points, start_point, end_point):
 
+    global first_alert, second_alert
+
     number_map = my_map([win.size[0]*0.1111, 0],
                         start_point, end_point, covered_points)
     my_side_bar = side_bar(
@@ -655,18 +672,19 @@ def trial(is_energy, covered_points, start_point, end_point):
             # bell.draw()
             win.flip()
             event.waitKeys()
-        if my_progress_bar.getTime() >= 400 and second_alert == False:
-            second_alert = True
+        if second_alert == False and my_progress_bar.getTime() >= 400:
             intro.image = "NNG_Picture/second_alert.png"
             intro.draw()
             win.flip()
             event.waitKeys()
+            second_alert = True
 
     return number_map, my_side_bar
 
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename+".csv", stat.S_IWRITE)
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -775,6 +793,8 @@ paths = [(56, 83, 18, 4, True), (90, 50, 7, 2, True),
          (1, 24, 8, 3, False), (45, 78, 8, 2, True),
          (45, 78, 8, 2, False), (39, 75, 4, 2, False), (39, 75, 4, 2, True)]
 
+first_alert = False
+second_alert = False
 my_progress_bar = Progress_bar(600, core.Clock(), win.size[1]/2-20)
 mouse = event.Mouse()
 mouse.setVisible(1)
@@ -783,8 +803,7 @@ for i in range(3):
     explore_mode(covered_points)
 
 my_progress_bar.reset()
-first_alert = False
-second_alert = False
+
 for trial_i in range(20):
     path_i = random.choice(paths)
     paths.remove(path_i)

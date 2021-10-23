@@ -69,14 +69,17 @@ def save_and_quit():
 
 
 def generate_rectangle(length, height, pos=[0, 0], fillColor=[255, 255, 255], lineColor=[255, 255, 255]):
+    """生成长方形
+    length长度
+    height高度
+    pos位置"""
     rectangle = visual.Rect(
         win=win,
         size=[length, height],
         pos=pos,
         fillColor=fillColor,
         lineColor=lineColor,
-        fillColorSpace="rgb255",
-        lineColorSpace="rgb255"
+        colorSpace="rgb255"
     )
 
     return rectangle
@@ -278,7 +281,6 @@ def show_feedback(feedback, is_practice):
 
 def compare_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_practice=False):
     """比较任务"""
-    kb = keyboard.Keyboard()
 
     if colors[0] == 0:
         color_text = "黄豆"
@@ -448,7 +450,6 @@ def generate_dots(dots_num, x, y, mode=1, colors=[0]):
 
 def match_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_practice=False):
     """匹配任务"""
-    kb = keyboard.Keyboard()
 
     if colors[0] == 0:
         color_text = "黄豆"
@@ -569,6 +570,7 @@ win = psychopy.visual.Window(
 #     frameDur = 1.0 / round(expInfo['frameRate'])
 # else:
 #     frameDur = 1.0 / 60.0  # could not measure, so guess
+kb = keyboard.Keyboard()
 background = psychopy.visual.ImageStim(
     win=win,
     image='pictures/background-图片透明度降低20%',
@@ -663,7 +665,7 @@ if expInfo['session'] == '01' or expInfo['session'] == '1':
     # 练习部分
     correct_rate = 0
 
-    while correct_rate < 0.95:
+    while correct_rate < 0.75:
         if defaultKeyboard.getKeys(keyList=["escape"]):
             save_and_quit()
 
@@ -677,7 +679,7 @@ if expInfo['session'] == '01' or expInfo['session'] == '1':
                         add_or_sub, mat_or_com)
 
         correct_rate = practice_corrects / count
-        if correct_rate >= 0.95:
+        if correct_rate >= 0.75:
             intro.image = "pictures/New/正式实验.png"
         else:
             intro.image = "pictures/intro-5.png"
