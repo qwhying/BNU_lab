@@ -773,52 +773,52 @@ score_text = generate_textMark(
     0, -300, "得分:"+str(cumulative_score), 30, color=[216, 77, 65])
 
 my_progress_bar = Progress_bar(600, core.Clock(), win.size[1]/2-20)
-# # 练习部分
-# if expInfo['session'] == '01' or expInfo['session'] == '1':
+# 练习部分
+if expInfo['session'] == '01' or expInfo['session'] == '1':
 
-#     intro.image = "Picture/introTask1.png"
-#     intro.draw()
-#     win.flip()
-#     event.waitKeys()
+    intro.image = "Picture/introTask1.png"
+    intro.draw()
+    win.flip()
+    event.waitKeys()
 
-#     reaction_pos, correct_pos, time, score = match_tirals(
-#         50, frog_or_rabbit=0, is_practice=True)
+    reaction_pos, correct_pos, time, score = match_tirals(
+        50, frog_or_rabbit=0, is_practice=True)
 
-#     score_text.text = "得分:"+str(cumulative_score)
-#     intro.image = "Picture/introTask2.png"
-#     intro.draw()
-#     win.flip()
-#     event.waitKeys()
+    score_text.text = "得分:"+str(cumulative_score)
+    intro.image = "Picture/introTask2.png"
+    intro.draw()
+    win.flip()
+    event.waitKeys()
 
-#     reaction_pos, correct_pos, time, score = computing_trials(
-#         50, add_trial=False, is_practice=True)
+    reaction_pos, correct_pos, time, score = computing_trials(
+        50, add_trial=False, is_practice=True)
 
-#     score_text.text = "得分:"+str(cumulative_score)
-#     intro.image = "Picture/introTask3.png"
-#     intro.draw()
-#     win.flip()
-#     event.waitKeys()
+    score_text.text = "得分:"+str(cumulative_score)
+    intro.image = "Picture/introTask3.png"
+    intro.draw()
+    win.flip()
+    event.waitKeys()
 
-#     reaction_pos, correct_pos, time, score = computing_trials(
-#         50, add_trial=True, is_practice=True)
+    reaction_pos, correct_pos, time, score = computing_trials(
+        50, add_trial=True, is_practice=True)
 
-#     score_text.text = "得分:"+str(cumulative_score)
-#     intro.image = "Picture/introTask4.png"
-#     intro.draw()
-#     win.flip()
-#     event.waitKeys()
+    score_text.text = "得分:"+str(cumulative_score)
+    intro.image = "Picture/introTask4.png"
+    intro.draw()
+    win.flip()
+    event.waitKeys()
 
-#     reaction_pos, correct_pos, time, score = numberline_trials(
-#         50, add_trial=True, is_practice=True)
+    reaction_pos, correct_pos, time, score = numberline_trials(
+        50, add_trial=True, is_practice=True)
 
-#     score_text.text = "得分:"+str(cumulative_score)
-#     intro.image = "Picture/introTask5.png"
-#     intro.draw()
-#     win.flip()
-#     event.waitKeys()
+    score_text.text = "得分:"+str(cumulative_score)
+    intro.image = "Picture/introTask5.png"
+    intro.draw()
+    win.flip()
+    event.waitKeys()
 
-#     reaction_pos, correct_pos, time, score = numberline_trials(
-#         50, add_trial=False, is_practice=True)
+    reaction_pos, correct_pos, time, score = numberline_trials(
+        50, add_trial=False, is_practice=True)
 
 background.draw()
 score_text.text = "得分:"+str(cumulative_score)
@@ -831,8 +831,7 @@ trials = 0
 half_time = False
 for mode_i in difficulty_s:
     clock.reset()
-    # mode = mode_i % 5
-    mode = 5
+    mode = mode_i % 5
     length_difficulty = int((mode_i-1) / 5)
     correct = 0
     trial_clock = core.Clock()
