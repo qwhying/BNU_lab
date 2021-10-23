@@ -19,7 +19,11 @@ class Numberline():
     """数轴类，创建数轴，显示答案，操作数轴等，都由这个类来完成"""
 
     def __init__(self, length, y, answer):
-        """初始化方法"""
+        """初始化方法
+        length：数轴的数值长度
+        y：数轴的竖直位置（在屏幕上的高度）
+        answer：答案的数值位置"""
+
         self.length = length  # 轴的数值长度，也就是标出来的长度
         self.L = 700  # 轴的像素长度，也就是物理长度
         self.y = y
@@ -528,6 +532,8 @@ def numberline_trials(length, add_trial, is_practice):
     # 正确答案的位置：0+difficulty*length 到 length-difficulty*length
     ans_pos = random.randint(2, length - 1)
 
+    # 青蛙和兔子在前在后随机平衡
+    # 青蛙和兔子在上在下也随机平衡掉了
     ran = random.getrandbits(1)
     Xs = [50, -50]
     if add_trial:  # 加法
@@ -536,22 +542,36 @@ def numberline_trials(length, add_trial, is_practice):
         hint_text = generate_textMark(0, 230, "+", 60)
         frog.pos = [Xs[ran], 230]
         rabbit.pos = [Xs[int(not bool(ran))], 230]
-    else:
+    else:  # 减法
         pos_1 = random.randint(ans_pos + 1, length)
         pos_2 = pos_1 - ans_pos
         hint_text = generate_textMark(0, 230, "-", 60)
         frog.pos = [Xs[ran], 230]
         rabbit.pos = [Xs[int(not bool(ran))], 230]
     question_mark = generate_textMark(100, 230, "= ?", 55)
-    choices = [pos_1, pos_2]
-    frog_numberline = Numberline(length, 90, choices[ran])
-    frog_numberline.triangle_mark.pos = [
-        frog_numberline.L * pos_1 / length - frog_numberline.L / 2, frog_numberline.y]
-    frog_numberline.frog.pos[0] = frog_numberline.triangle_mark.pos[0]
-    rabbit_numberline = Numberline(length, -110, choices[int(not bool(ran))])
-    rabbit_numberline.triangle_mark.pos = [
-        rabbit_numberline.L * pos_2 / length - rabbit_numberline.L / 2, rabbit_numberline.y]
-    rabbit_numberline.rabbit.pos[0] = rabbit_numberline.triangle_mark.pos[0]
+    choices = [pos_1, pos_2]  # 两个数轴上的位置
+    ys = [90, -110]  # 两个数轴的竖直位置
+    rany = random.getrandbits(1)
+    if frog.pos[0] == -50:
+        frog_numberline = Numberline(length, ys[rany], pos_1)
+        frog_numberline.triangle_mark.pos = [
+            frog_numberline.L * pos_1 / length - frog_numberline.L / 2, frog_numberline.y]
+        frog_numberline.frog.pos[0] = frog_numberline.triangle_mark.pos[0]
+        rabbit_numberline = Numberline(
+            length, ys[int(not bool(rany))], pos_2)
+        rabbit_numberline.triangle_mark.pos = [
+            rabbit_numberline.L * pos_2 / length - rabbit_numberline.L / 2, rabbit_numberline.y]
+        rabbit_numberline.rabbit.pos[0] = rabbit_numberline.triangle_mark.pos[0]
+    else:
+        frog_numberline = Numberline(length, ys[rany], pos_2)
+        frog_numberline.triangle_mark.pos = [
+            frog_numberline.L * pos_2 / length - frog_numberline.L / 2, frog_numberline.y]
+        frog_numberline.frog.pos[0] = frog_numberline.triangle_mark.pos[0]
+        rabbit_numberline = Numberline(
+            length, ys[int(not bool(rany))], pos_1)
+        rabbit_numberline.triangle_mark.pos = [
+            rabbit_numberline.L * pos_1 / length - rabbit_numberline.L / 2, rabbit_numberline.y]
+        rabbit_numberline.rabbit.pos[0] = rabbit_numberline.triangle_mark.pos[0]
 
     # text_ans = generate_textMark(0, 100, str(ans_pos), 25, [1, 217 / 255, 9 / 255])
 
@@ -754,51 +774,51 @@ score_text = generate_textMark(
 
 my_progress_bar = Progress_bar(600, core.Clock(), win.size[1]/2-20)
 # # 练习部分
-if expInfo['session'] == '01' or expInfo['session'] == '1':
+# if expInfo['session'] == '01' or expInfo['session'] == '1':
 
-    intro.image = "Picture/introTask1.png"
-    intro.draw()
-    win.flip()
-    event.waitKeys()
+#     intro.image = "Picture/introTask1.png"
+#     intro.draw()
+#     win.flip()
+#     event.waitKeys()
 
-    reaction_pos, correct_pos, time, score = match_tirals(
-        50, frog_or_rabbit=0, is_practice=True)
+#     reaction_pos, correct_pos, time, score = match_tirals(
+#         50, frog_or_rabbit=0, is_practice=True)
 
-    score_text.text = "得分:"+str(cumulative_score)
-    intro.image = "Picture/introTask2.png"
-    intro.draw()
-    win.flip()
-    event.waitKeys()
+#     score_text.text = "得分:"+str(cumulative_score)
+#     intro.image = "Picture/introTask2.png"
+#     intro.draw()
+#     win.flip()
+#     event.waitKeys()
 
-    reaction_pos, correct_pos, time, score = computing_trials(
-        50, add_trial=False, is_practice=True)
+#     reaction_pos, correct_pos, time, score = computing_trials(
+#         50, add_trial=False, is_practice=True)
 
-    score_text.text = "得分:"+str(cumulative_score)
-    intro.image = "Picture/introTask3.png"
-    intro.draw()
-    win.flip()
-    event.waitKeys()
+#     score_text.text = "得分:"+str(cumulative_score)
+#     intro.image = "Picture/introTask3.png"
+#     intro.draw()
+#     win.flip()
+#     event.waitKeys()
 
-    reaction_pos, correct_pos, time, score = computing_trials(
-        50, add_trial=True, is_practice=True)
+#     reaction_pos, correct_pos, time, score = computing_trials(
+#         50, add_trial=True, is_practice=True)
 
-    score_text.text = "得分:"+str(cumulative_score)
-    intro.image = "Picture/introTask4.png"
-    intro.draw()
-    win.flip()
-    event.waitKeys()
+#     score_text.text = "得分:"+str(cumulative_score)
+#     intro.image = "Picture/introTask4.png"
+#     intro.draw()
+#     win.flip()
+#     event.waitKeys()
 
-    reaction_pos, correct_pos, time, score = numberline_trials(
-        50, add_trial=True, is_practice=True)
+#     reaction_pos, correct_pos, time, score = numberline_trials(
+#         50, add_trial=True, is_practice=True)
 
-    score_text.text = "得分:"+str(cumulative_score)
-    intro.image = "Picture/introTask5.png"
-    intro.draw()
-    win.flip()
-    event.waitKeys()
+#     score_text.text = "得分:"+str(cumulative_score)
+#     intro.image = "Picture/introTask5.png"
+#     intro.draw()
+#     win.flip()
+#     event.waitKeys()
 
-    reaction_pos, correct_pos, time, score = numberline_trials(
-        50, add_trial=False, is_practice=True)
+#     reaction_pos, correct_pos, time, score = numberline_trials(
+#         50, add_trial=False, is_practice=True)
 
 background.draw()
 score_text.text = "得分:"+str(cumulative_score)
@@ -811,7 +831,8 @@ trials = 0
 half_time = False
 for mode_i in difficulty_s:
     clock.reset()
-    mode = mode_i % 5
+    # mode = mode_i % 5
+    mode = 5
     length_difficulty = int((mode_i-1) / 5)
     correct = 0
     trial_clock = core.Clock()

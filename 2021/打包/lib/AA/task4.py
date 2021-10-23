@@ -278,7 +278,7 @@ def show_feedback(feedback, is_practice):
 
 def compare_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_practice=False):
     """比较任务"""
-    mouse = psychopy.event.Mouse()
+    kb = keyboard.Keyboard()
 
     if colors[0] == 0:
         color_text = "黄豆"
@@ -336,27 +336,28 @@ def compare_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_prac
     compare_tips_2.draw()
     win.flip()
     clock.reset()
-    mouse.clickReset()
+    kb.clock.reset()
     while clock.getTime() < res_duration_s:
         if defaultKeyboard.getKeys(keyList=["escape"]):
             save_and_quit()
-        buttons, times = mouse.getPressed(getTime=True)
-        if buttons == [1, 0, 0]:
-            if greater_than_correct == 1:
-                feedback = 1
-            else:
-                feedback = 0
-            time = times[0]
-            feedback = show_feedback(feedback, is_practice)
-            return feedback, time
-        elif buttons == [0, 0, 1]:
-            if greater_than_correct == 1:
-                feedback = 0
-            else:
-                feedback = 1
-            time = times[2]
-            feedback = show_feedback(feedback, is_practice)
-            return feedback, time
+        keys = kb.getKeys(keyList=['left', 'right'])
+        if len(keys) > 0:
+            if keys[0].name == 'left':
+                if greater_than_correct == 1:
+                    feedback = 1
+                else:
+                    feedback = 0
+                time = keys[0].rt
+                feedback = show_feedback(feedback, is_practice)
+                return feedback, time
+            elif keys[0].name == 'right':
+                if greater_than_correct == 1:
+                    feedback = 0
+                else:
+                    feedback = 1
+                time = keys[0].rt
+                feedback = show_feedback(feedback, is_practice)
+                return feedback, time
 
     feedback = 2
     feedback = show_feedback(feedback, is_practice)
@@ -447,7 +448,7 @@ def generate_dots(dots_num, x, y, mode=1, colors=[0]):
 
 def match_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_practice=False):
     """匹配任务"""
-    mouse = psychopy.event.Mouse()
+    kb = keyboard.Keyboard()
 
     if colors[0] == 0:
         color_text = "黄豆"
@@ -498,27 +499,28 @@ def match_trials(correct_ans_n_dots, log_difference, mode, colors=[0], is_practi
     text.draw()
     win.flip()
     clock.reset()
-    mouse.clickReset()
+    kb.clock.reset()
     while clock.getTime() < res_duration_s:
         if defaultKeyboard.getKeys(keyList=["escape"]):
             save_and_quit()
-        buttons, times = mouse.getPressed(getTime=True)
-        if buttons == [1, 0, 0]:
-            if correct_on_left == 1:
-                feedback = 1
-            else:
-                feedback = 0
-            time = times[0]
-            feedback = show_feedback(feedback, is_practice)
-            return feedback, time, compare_ans_n_dots, correct_ans_n_dots
-        elif buttons == [0, 0, 1]:
-            if correct_on_left == 1:
-                feedback = 0
-            else:
-                feedback = 1
-            time = times[2]
-            feedback = show_feedback(feedback, is_practice)
-            return feedback, time, compare_ans_n_dots, correct_ans_n_dots
+        keys = kb.getKeys(keyList=['left', 'right'])
+        if len(keys) > 0:
+            if keys[0].name == 'left':
+                if correct_on_left == 1:
+                    feedback = 1
+                else:
+                    feedback = 0
+                time = keys[0].rt
+                feedback = show_feedback(feedback, is_practice)
+                return feedback, time, compare_ans_n_dots, correct_ans_n_dots
+            elif keys[0].name == 'right':
+                if correct_on_left == 1:
+                    feedback = 0
+                else:
+                    feedback = 1
+                time = keys[0].rt
+                feedback = show_feedback(feedback, is_practice)
+                return feedback, time, compare_ans_n_dots, correct_ans_n_dots
 
     # 没有做操作
     feedback = 2

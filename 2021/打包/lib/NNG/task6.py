@@ -766,8 +766,14 @@ cue_words = generate_textMark(0, 0, "成功到达终点，继续下一题吧！"
 covered_points = [18, 19, 28, 29, 23, 32, 33,
                   34, 42, 43, 44, 53, 59, 68, 69, 70, 79]
 # (起点，终点，energy，step,能量或步数)
-paths = [(56, 83, 18, 4, True), (90, 50, 7, 2, True), (35, 82, 8, 2, True), (11, 78, 7, 2, True), (39, 26, 5, 2, True),
-         (56, 83, 18, 4, False), (90, 50, 7, 2, False), (35, 82, 8, 2, False), (11, 78, 7, 2, False), (39, 26, 5, 2, False)]
+paths = [(56, 83, 18, 4, True), (90, 50, 7, 2, True),
+         (35, 82, 8, 2, True), (11, 78, 7, 2, True), (39, 26, 5, 2, True),
+         (56, 83, 18, 4, False), (90, 50, 7, 2, False), (35, 82, 8, 2, False),
+         (11, 78, 7, 2, False), (39, 26, 5, 2, False), (9, 56, 7,
+                                                        2, False), (9, 56, 7, 2, True), (26, 39, 5, 2, True),
+         (26, 39, 5, 2, False), (1, 24, 8, 3, True),
+         (1, 24, 8, 3, False), (45, 78, 8, 2, True),
+         (45, 78, 8, 2, False), (39, 75, 4, 2, False), (39, 75, 4, 2, True)]
 
 my_progress_bar = Progress_bar(600, core.Clock(), win.size[1]/2-20)
 mouse = event.Mouse()
@@ -779,7 +785,7 @@ for i in range(3):
 my_progress_bar.reset()
 first_alert = False
 second_alert = False
-for trial_i in range(10):
+for trial_i in range(20):
     path_i = random.choice(paths)
     paths.remove(path_i)
 
