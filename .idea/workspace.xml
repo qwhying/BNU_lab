@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42dc22f-c199-46ab-b382-231c0f9ec630" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2021/打包/data/1_untitled_2021_Nov_01_1556.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021/打包/untitled.psyexp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2021/打包/untitled_lastrun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/1整合运算_v5/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/1整合运算_v5/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/2规则转换/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/2规则转换/task2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/3stroop大小/task3.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/3stroop大小/task3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/AA/task4.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/AA/task4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/NL/task5.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/NL/task5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/lib/NNG/task6.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/lib/NNG/task6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/打包/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/打包/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task/inductive_reasoning.psyexp" beforeDir="false" afterPath="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task/inductive_reasoning.psyexp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task/inductive_reasoning_lastrun.py" beforeDir="false" afterPath="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task/inductive_reasoning_lastrun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2021/认知训练/episodicMath11_23/episodicMath11_23/episodicMath.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,17 +64,17 @@
       <method v="2" />
     </configuration>
     <configuration name="inductive_reasoning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BNU_lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\A\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task/inductive_reasoning.py" />
       <option name="PARAMETERS" value="" />
@@ -110,6 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638157178057</updated>
       <workItem from="1638157180042" duration="4139000" />
+      <workItem from="1638517503195" duration="308000" />
     </task>
     <servers />
   </component>
@@ -128,6 +119,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BNU_lab$inductive_reasoning.coverage" NAME="inductive_reasoning Coverage Results" MODIFIED="1638158496066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task" />
+    <SUITE FILE_PATH="coverage/BNU_lab$inductive_reasoning.coverage" NAME="inductive_reasoning Coverage Results" MODIFIED="1638517754355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2021/认知训练/Inductive_Reasoning_Task" />
   </component>
 </project>
