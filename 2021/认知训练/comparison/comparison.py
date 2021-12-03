@@ -87,9 +87,9 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "instruction"
 instructionClock = core.Clock()
 text_3 = visual.TextStim(win=win, name='text_3',
-                         text='比较三个项目之间是否相等，相等的话按1键，不相等的话按2键\n准备好了按一键开始',
+                         text='比较三个项目之间是否相等\n相等的话按1键，不相等的话按2键\n准备好了按一键开始',
                          font='Open Sans',
-                         pos=(0, 0), height=0.02, wrapWidth=None, ori=0.0,
+                         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0,
                          color='white', colorSpace='rgb', opacity=None,
                          languageStyle='LTR',
                          depth=0.0)
@@ -459,6 +459,12 @@ for thisTrial in trials:
                 # just the first key pressed
                 key_resp.keys = _key_resp_allKeys[0].name
                 key_resp.rt = _key_resp_allKeys[0].rt
+                # add screen feedback
+                key_resp.tStop = t
+                key_resp.frameNStop = frameN
+                key_resp.status = FINISHED
+                if t < key_resp.tStart+key_resp.rt+0.3:
+                    polygon.draw()
                 # was this correct?
                 if (key_resp.keys == str('2')) or (key_resp.keys == '2'):
                     key_resp.corr = 1
