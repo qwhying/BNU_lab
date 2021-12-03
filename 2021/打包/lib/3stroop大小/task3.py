@@ -206,6 +206,7 @@ def trial(l_num, l_big, r_num, r_big, result, level):
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down

@@ -28,13 +28,13 @@ class Numberline():
         self.L = 700  # 轴的像素长度，也就是物理长度
         self.y = y
         self.ans = answer
-        self.mark_pos = 0
+        self.mark_pos = 0 #三角标记的位置
         self.tolerance = [0.10, 0.16, 0.20]
         self.main_axis = generate_Line(-490, y, +490, y)
         self.start_bar = generate_Line(-self.L/2, y - 10, -self.L/2, y + 10)
         self.end_bar = generate_Line(+self.L/2, y - 10, +self.L/2, y + 10)
-        self.zero_mark = generate_textMark(-self.L/2, y - 30, "0")
-        self.max_mark = generate_textMark(+self.L/2, y - 30, str(length))
+        self.zero_mark = generate_textMark(-self.L/2, y - 30, "0") #数轴原点处的文字标识
+        self.max_mark = generate_textMark(+self.L/2, y - 30, str(length)) #数轴末尾的文字标识
         self.triangle_mark = visual.ShapeStim(
             win=win,
             fillColor=[28, 214, 108],
@@ -105,10 +105,12 @@ class Numberline():
         self.end_arrow.draw()
 
     def set_mark_pos(self):
+        #将三角标识的位置记录下来，保存到mark_pos上
         self.mark_pos = (
             self.triangle_mark.pos[0] + self.L/2) / self.L * self.length
 
     def get_mark_pos(self):
+        #获取标识的数轴位置
         return self.mark_pos
 
     def is_correct(self):
@@ -143,11 +145,17 @@ class Numberline():
             scale_mark_i.draw()
 
     def slider(self, mouse, text_mark, first=True, frog_or_rabbit=0, is_practice=False):
+        """数轴的拖动条
+        mouse为鼠标对象
+        text_mark为数轴上方的数字或公式
+        first代表是否为第一次拖动数轴（只在数字加减模式出现多次拖动）
+        frog_or_rabbit代表该数轴上是青蛙还是兔子
+        is_practice指明是否为练习试次"""
         no_operation = True
         if not first:
-            triangle_1 = copy.copy(self.triangle_mark)
+            triangle_1 = copy.copy(self.triangle_mark) #在加减模式时备用三角，用于第二次拖动
             self.triangle_mark.fillColor = [45, 195, 213]
-        while clock.getTime() < 10:
+        while clock.getTime() < slid_duration:
             background.draw()
             my_progress_bar.draw(is_practice)
             score_text.draw()
@@ -161,9 +169,9 @@ class Numberline():
             win.flip()
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
-            if mouse.isPressedIn(self.triangle_mark):
+            if mouse.isPressedIn(self.triangle_mark):   #如果鼠标点击上了小三角，
                 no_operation = False
-                while clock.getTime() < 10:
+                while clock.getTime() < slid_duration:
                     buttons = mouse.getPressed(getTime=False)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
                         save_and_quit()
@@ -190,6 +198,7 @@ class Numberline():
         return no_operation, clock.getTime()
 
     def jump(self, jump_length, frog_or_rabbit=0, is_practice=False):
+        """兔子或青蛙跳远的动画呈现"""
         if frog_or_rabbit == 0:
             temp = self.frog
         elif frog_or_rabbit == 1:
@@ -203,7 +212,7 @@ class Numberline():
         if frog_or_rabbit == 2:
             while t < 0.5:
                 t = clock.getTime()
-                x = x0 - 2 * t * jump_length * self.L / self.length
+                x = x0 + 2 * t * jump_length * self.L / self.length
                 y = y0 + 2*t*(1-2*t) * 200
                 temp.pos = [x, y]
                 background.draw()
@@ -398,7 +407,7 @@ def computing_trials(length, add_trial, is_practice):
         mouse, text_formula, first=False, frog_or_rabbit=-int(add_trial)+2, is_practice=is_practice)
     my_numberline.set_mark_pos()
     op_2_pos = my_numberline.get_mark_pos()
-    my_numberline.jump(((my_numberline.get_mark_pos()-op_1_pos)**2)**0.5,
+    my_numberline.jump(my_numberline.get_mark_pos()-op_1_pos,
                        frog_or_rabbit=-int(add_trial) + 2, is_practice=is_practice)
 
     # 第一遍反馈
@@ -649,6 +658,7 @@ def numberline_trials(length, add_trial, is_practice):
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -698,6 +708,7 @@ difficulty_s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 length_s = [50, 100, 200]
 
 trial_duration_s = 4.0  # 4000ms的刺激呈现时间
+slid_duration=15.0 #15s的反应时间
 
 trials_in_block = 30
 

@@ -1,0 +1,54 @@
+1.7815 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+67.6342 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002465EF66710>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002465EFBA5F8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 290.0], screen=0, size=array([1200,  500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+67.6345 	EXP 	window1: mouseVisible = True
+67.6345 	EXP 	window1: recordFrameIntervals = False
+67.8002 	EXP 	window1: recordFrameIntervals = True
+68.1174 	EXP 	window1: recordFrameIntervals = False
+68.4858 	EXP 	Created Cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/cue.png', interpolate=True, mask=None, maskParams=None, name='Cue', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.5910 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='instructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+68.6563 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.7162 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.7200 	EXP 	Created graphic_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='graphic_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.7797 	EXP 	Created Fixation2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.7834 	EXP 	Created number_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='number_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+68.9231 	EXP 	Cue: autoDraw = True
+69.7861 	EXP 	instructions: autoDraw = True
+69.9357 	EXP 	Cue: autoDraw = False
+73.4422 	DATA 	Keypress: space
+75.8038 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+75.8046 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+75.8052 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同位置及边数10.png', 'correctAns': 1}
+75.8456 	EXP 	instructions: autoDraw = False
+75.8456 	EXP 	Cue: autoDraw = False
+75.8456 	EXP 	instructions: autoDraw = False
+75.8456 	EXP 	graphic_img: image = 'Task samples\\相同位置及边数10.png'
+75.8456 	EXP 	Fixation1: autoDraw = True
+76.7113 	DATA 	Keypress: 1
+76.8299 	EXP 	graphic_img: autoDraw = True
+76.8420 	EXP 	Fixation1: autoDraw = False
+77.4819 	DATA 	Keypress: 1
+78.9000 	DATA 	Keypress: 1
+80.9163 	DATA 	Keypress: 2
+84.2368 	DATA 	Keypress: 1
+84.8032 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同颜色及边数3.png', 'correctAns': 2}
+84.8322 	EXP 	Fixation1: autoDraw = False
+84.8322 	EXP 	graphic_img: autoDraw = False
+84.8322 	EXP 	graphic_img: image = 'Task samples\\相同颜色及边数3.png'
+84.8322 	EXP 	Fixation1: autoDraw = True
+85.8215 	EXP 	graphic_img: autoDraw = True
+85.8334 	EXP 	Fixation1: autoDraw = False
+87.4395 	DATA 	Keypress: 1
+90.2763 	DATA 	Keypress: 1
+93.5609 	DATA 	Keypress: 2
+93.7921 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同颜色及边数10.png', 'correctAns': 2}
+93.8249 	EXP 	Fixation1: autoDraw = False
+93.8249 	EXP 	graphic_img: autoDraw = False
+93.8249 	EXP 	graphic_img: image = 'Task samples\\相同颜色及边数10.png'
+93.8249 	EXP 	Fixation1: autoDraw = True
+94.8118 	EXP 	graphic_img: autoDraw = True
+94.8242 	EXP 	Fixation1: autoDraw = False
+95.6303 	DATA 	Keypress: 2
+97.2488 	DATA 	Keypress: 2
+98.9176 	DATA 	Keypress: 2
+102.5061 	DATA 	Keypress: escape
+103.1902 	EXP 	window1: mouseVisible = True

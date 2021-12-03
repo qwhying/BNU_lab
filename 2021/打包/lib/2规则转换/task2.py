@@ -248,6 +248,7 @@ class Balloon():
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -444,7 +445,7 @@ thisExp = data.ExperimentHandler(name=expName, version='',
 
 clock = core.Clock()
 
-present_time = 6.0  # 呈现时间6s
+present_time = 180.0  # 呈现时间100s
 feedback_time = 3.0  # 反馈时间3s
 
 # 窗口

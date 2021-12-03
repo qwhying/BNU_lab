@@ -1,0 +1,31 @@
+1.7919 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+44.6009 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000014DDA6F6710>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000014DDA74A5F8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 290.0], screen=0, size=array([1200,  500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+44.6016 	EXP 	window1: mouseVisible = True
+44.6016 	EXP 	window1: recordFrameIntervals = False
+44.7666 	EXP 	window1: recordFrameIntervals = True
+44.9503 	EXP 	window1: recordFrameIntervals = False
+45.3212 	EXP 	Created Cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/cue.png', interpolate=True, mask=None, maskParams=None, name='Cue', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.4291 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='instructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+45.4914 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.5535 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.5576 	EXP 	Created graphic_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='graphic_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.6194 	EXP 	Created Fixation2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.6229 	EXP 	Created number_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='number_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.6723 	EXP 	Cue: autoDraw = True
+46.0710 	DATA 	Keypress: space
+46.6376 	EXP 	instructions: autoDraw = True
+46.6862 	EXP 	Cue: autoDraw = False
+47.3058 	DATA 	Keypress: space
+50.4927 	DATA 	Keypress: space
+52.6519 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+52.6527 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+52.6531 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同位置及边数4.png', 'correctAns': 1}
+52.6940 	EXP 	Cue: autoDraw = False
+52.6940 	EXP 	instructions: autoDraw = False
+52.6940 	EXP 	graphic_img: image = 'Task samples\\相同位置及边数4.png'
+52.6940 	EXP 	Fixation1: autoDraw = True
+53.6771 	EXP 	graphic_img: autoDraw = True
+53.6912 	EXP 	Fixation1: autoDraw = False
+57.0002 	DATA 	Keypress: 2
+57.5180 	DATA 	Keypress: escape
+58.1715 	EXP 	window1: mouseVisible = True

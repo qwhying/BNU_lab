@@ -735,8 +735,8 @@ Math_1 = 3
 Math_2 = 3
 Math_3 = 3
 Math_4 = 3
-Calculation = 4
-Recall_preload = 4
+Calculation = 6
+Recall_preload = 6
 
 
 intro.draw()

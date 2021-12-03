@@ -253,9 +253,10 @@ class side_bar():
             self.medal_number_text.draw()
 
     def click(self, mouse, this_map, is_explore=False):
+        """点击选择运算符号（+-*/）"""
         clicked = []
         clock.reset()
-        while clock.getTime() < 5:
+        while clock.getTime() < click_duration:
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
             background.draw()
@@ -400,14 +401,14 @@ class my_map():
         return hint
 
     def depart(self, operator, this_side_bar, is_explore=False):
-        """出发函数
+        """出发函数,点击选择运算数字，计算目标位置
         主要用于判定此次航行是否正确（例如航行终点超出范围、使用的数字位于黑洞上方）"""
         number = []
         clicked = []
         temp_present_point = self.present_point
         target_point = -100
         clock.reset()
-        while clock.getTime() < 5:
+        while clock.getTime() < click_duration:
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 save_and_quit()
             background.draw()
@@ -484,7 +485,7 @@ class my_map():
 
     def error_warning(self, mode, start_point, end_point=[]):
         # TODO::这块可能有些问题后续需要补充
-        """错误提示
+        """错误提示（mode/hint）
         mode表示错误类型 1 经过黑洞 2 使用红标数字 3 超出范围 4 超时"""
         if mode == 1:
             text = generate_textMark(-win.size[0]/2.647,
@@ -656,10 +657,10 @@ def trial(is_energy, covered_points, start_point, end_point):
     while not number_map.present_point == number_map.end_point:
         if defaultKeyboard.getKeys(keyList=["escape"]):
             save_and_quit()
-        operator = my_side_bar.click(mouse, number_map)
+        operator = my_side_bar.click(mouse, number_map)#点击选择计算的符号
         print(operator)
         if len(operator) > 0:
-            error = number_map.depart(operator, my_side_bar)
+            error = number_map.depart(operator, my_side_bar)#点击选择运算数字，计算目标位置
             if error == 0:
                 number_map.present_point = number_map.start_point
             elif error == 2:
@@ -684,7 +685,7 @@ def trial(is_energy, covered_points, start_point, end_point):
 
 def save_and_quit():
     """保存后退出"""
-    os.chmod(filename+".csv", stat.S_IWRITE)
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -765,7 +766,7 @@ bell = visual.ImageStim(
     size=[90, 90],
     units="pix"
 )
-
+click_duration=7.5 #7.5s的反应时间
 intro.draw()
 win.flip()
 event.waitKeys()

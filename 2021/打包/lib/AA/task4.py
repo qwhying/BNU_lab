@@ -61,6 +61,7 @@ class Progress_bar():
 
 def save_and_quit():
     """保存后退出"""
+    os.chmod(filename + '.csv', stat.S_IWRITE)  # 权限改为读写
     thisExp.saveAsWideText(filename + '.csv', appendFile=True)
     os.chmod(filename + '.csv', stat.S_IREAD)  # 权限改为只读
     # make sure everything is closed down
@@ -645,7 +646,7 @@ pre_duration_s = 0.5  # 500ms的黑屏
 stim_static_s = 1.0  # 1000ms的刺激呈现
 stim_dynamict_s = 0.5  # 500ms刺激移动
 interal_duration_s = 1.0  # 1000ms的幕间暂停
-res_duration_s = 2.5  # 2500ms的反应时间
+res_duration_s = 4.0  # 4000ms的反应时间
 feedback_duration_s = 2.0  # 2000ms的反馈时间
 
 trials_in_block = 20

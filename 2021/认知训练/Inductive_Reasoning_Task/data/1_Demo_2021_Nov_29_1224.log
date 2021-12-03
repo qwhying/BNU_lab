@@ -1,0 +1,93 @@
+1.7863 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+45.1030 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E455804710>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E45585C5F8>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 290.0], screen=0, size=array([1200,  500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+45.1033 	EXP 	window1: mouseVisible = True
+45.1034 	EXP 	window1: recordFrameIntervals = False
+45.2690 	EXP 	window1: recordFrameIntervals = True
+45.4526 	EXP 	window1: recordFrameIntervals = False
+45.8229 	EXP 	Created Cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/cue.png', interpolate=True, mask=None, maskParams=None, name='Cue', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.9308 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='instructions', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+45.9946 	EXP 	Created Fixation1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+45.9983 	EXP 	Created graphic_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='graphic_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+46.0580 	EXP 	Created Fixation2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Task samples/Fixation.png', interpolate=True, mask=None, maskParams=None, name='Fixation2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+46.0616 	EXP 	Created number_img = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='number_img', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.7]), texRes=128.0, units='height', win=Window(...))
+46.1044 	EXP 	Cue: autoDraw = True
+46.5734 	DATA 	Keypress: space
+47.0546 	EXP 	instructions: autoDraw = True
+47.1035 	EXP 	Cue: autoDraw = False
+48.5585 	DATA 	Keypress: space
+53.0731 	EXP 	Imported task_conditions.xlsx as conditions, 29 conditions, 2 params
+53.0738 	EXP 	Created sequence: random, trialTypes=29, nReps=1, seed=None
+53.0743 	EXP 	New trial (rep=0, index=0): {'images': 'Task samples\\相同颜色及位置2.png', 'correctAns': 2}
+53.1141 	EXP 	instructions: autoDraw = False
+53.1141 	EXP 	Cue: autoDraw = False
+53.1141 	EXP 	instructions: autoDraw = False
+53.1141 	EXP 	graphic_img: image = 'Task samples\\相同颜色及位置2.png'
+53.1141 	EXP 	Fixation1: autoDraw = True
+54.1014 	EXP 	graphic_img: autoDraw = True
+54.1274 	EXP 	Fixation1: autoDraw = False
+54.5167 	DATA 	Keypress: 1
+55.9004 	DATA 	Keypress: 1
+56.1830 	DATA 	Keypress: 2
+56.4337 	DATA 	Keypress: 2
+56.8034 	DATA 	Keypress: 2
+56.9009 	DATA 	Keypress: 1
+57.0850 	DATA 	Keypress: 2
+57.2518 	DATA 	Keypress: 1
+57.3520 	DATA 	Keypress: 2
+57.5014 	DATA 	Keypress: 1
+57.6355 	DATA 	Keypress: 2
+57.7699 	DATA 	Keypress: 1
+57.9368 	DATA 	Keypress: 2
+58.3521 	DATA 	Keypress: 1
+58.5384 	DATA 	Keypress: 2
+58.7032 	DATA 	Keypress: 1
+58.8367 	DATA 	Keypress: 2
+58.9858 	DATA 	Keypress: 1
+59.1058 	DATA 	Keypress: 2
+59.2704 	DATA 	Keypress: 1
+59.3902 	DATA 	Keypress: 2
+59.5389 	DATA 	Keypress: 1
+59.6880 	DATA 	Keypress: 2
+59.8369 	DATA 	Keypress: 1
+59.9875 	DATA 	Keypress: 2
+60.9542 	DATA 	Keypress: 1
+61.0713 	DATA 	Keypress: 2
+61.2222 	DATA 	Keypress: 1
+61.3749 	DATA 	Keypress: 2
+61.5217 	DATA 	Keypress: 1
+62.0690 	EXP 	New trial (rep=0, index=1): {'images': 'Task samples\\相同颜色及位置5.png', 'correctAns': 1}
+62.1001 	EXP 	Fixation1: autoDraw = False
+62.1001 	EXP 	graphic_img: autoDraw = False
+62.1001 	EXP 	graphic_img: image = 'Task samples\\相同颜色及位置5.png'
+62.1001 	EXP 	Fixation1: autoDraw = True
+63.0899 	EXP 	graphic_img: autoDraw = True
+63.1020 	EXP 	Fixation1: autoDraw = False
+63.5071 	DATA 	Keypress: 2
+63.8746 	DATA 	Keypress: 1
+64.1415 	DATA 	Keypress: 2
+64.3242 	DATA 	Keypress: 1
+64.4749 	DATA 	Keypress: 2
+64.6252 	DATA 	Keypress: 1
+65.1586 	DATA 	Keypress: 1
+65.4609 	DATA 	Keypress: 2
+65.7261 	DATA 	Keypress: 2
+65.9264 	DATA 	Keypress: 1
+66.8761 	DATA 	Keypress: 2
+66.8959 	DATA 	Keypress: 1
+67.3450 	DATA 	Keypress: 2
+67.4944 	DATA 	Keypress: 1
+67.8115 	DATA 	Keypress: 2
+68.1455 	DATA 	Keypress: 1
+68.3442 	DATA 	Keypress: 2
+68.7122 	DATA 	Keypress: 2
+69.0318 	DATA 	Keypress: 1
+69.4461 	DATA 	Keypress: 2
+70.1121 	DATA 	Keypress: 1
+70.2291 	DATA 	Keypress: 2
+71.0766 	EXP 	New trial (rep=0, index=2): {'images': 'Task samples\\相同位置及边数6.png', 'correctAns': 2}
+71.1083 	EXP 	Fixation1: autoDraw = False
+71.1083 	EXP 	graphic_img: autoDraw = False
+71.1083 	EXP 	graphic_img: image = 'Task samples\\相同位置及边数6.png'
+71.1083 	EXP 	Fixation1: autoDraw = True
+71.5790 	DATA 	Keypress: escape
+72.3137 	EXP 	window1: mouseVisible = True

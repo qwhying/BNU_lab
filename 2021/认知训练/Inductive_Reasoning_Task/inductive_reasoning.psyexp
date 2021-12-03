@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2021.2.1">
+<PsychoPy2experiment encoding="utf-8" version="2021.2.3">
   <Settings>
     <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
     <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
@@ -107,7 +107,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
     </Routine>
-    <Routine name="trial1">
+    <Routine name="graphic_trial">
       <ImageComponent name="Fixation1">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -134,7 +134,7 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <ImageComponent name="Trial1">
+      <ImageComponent name="graphic_img">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
@@ -145,7 +145,7 @@
         <Param name="image" updates="set every repeat" val="$images" valType="file"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="" valType="str"/>
-        <Param name="name" updates="None" val="Trial1" valType="code"/>
+        <Param name="name" updates="None" val="graphic_img" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
@@ -160,14 +160,14 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp">
+      <KeyboardComponent name="graphic_key_resp">
         <Param name="allowedKeys" updates="constant" val="'1','2'" valType="list"/>
         <Param name="correctAns" updates="constant" val="$correctAns" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="name" updates="None" val="graphic_key_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -179,7 +179,7 @@
         <Param name="syncScreenRefresh" updates="constant" val="False" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="trial2">
+    <Routine name="number_trial">
       <ImageComponent name="Fixation2">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -206,7 +206,7 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <ImageComponent name="Trial2">
+      <ImageComponent name="number_img">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
@@ -217,7 +217,7 @@
         <Param name="image" updates="set every repeat" val="$images" valType="file"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="" valType="str"/>
-        <Param name="name" updates="None" val="Trial2" valType="code"/>
+        <Param name="name" updates="None" val="number_img" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
@@ -232,14 +232,14 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_2">
+      <KeyboardComponent name="number_key_resp">
         <Param name="allowedKeys" updates="constant" val="'1','2'" valType="list"/>
         <Param name="correctAns" updates="constant" val="$correctAns" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="name" updates="None" val="number_key_resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -254,7 +254,7 @@
   </Routines>
   <Flow>
     <Routine name="cue"/>
-    <LoopInitiator loopType="TrialHandler" name="trials">
+    <LoopInitiator loopType="TrialHandler" name="graphic_trials">
       <Param name="Selected rows" updates="None" val="1:30" valType="str"/>
       <Param name="conditions" updates="None" val="[{'images': 'Task samples\\相同颜色及位置1.png'}, {'images': 'Task samples\\相同颜色及位置2.png'}, {'images': 'Task samples\\相同颜色及位置3.png'}, {'images': 'Task samples\\相同颜色及位置4.png'}, {'images': 'Task samples\\相同颜色及位置5.png'}, {'images': 'Task samples\\相同颜色及位置6.png'}, {'images': 'Task samples\\相同颜色及位置7.png'}, {'images': 'Task samples\\相同颜色及位置8.png'}, {'images': 'Task samples\\相同颜色及位置9.png'}, {'images': 'Task samples\\相同颜色及位置10.png'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="task_conditions.xlsx" valType="file"/>
@@ -262,12 +262,12 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="num"/>
-      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="name" updates="None" val="graphic_trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="trial1"/>
-    <LoopTerminator name="trials"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_2">
+    <Routine name="graphic_trial"/>
+    <LoopTerminator name="graphic_trials"/>
+    <LoopInitiator loopType="TrialHandler" name="number_trials">
       <Param name="Selected rows" updates="None" val="31:60" valType="str"/>
       <Param name="conditions" updates="None" val="[{'images': 'Task samples\\相同颜色及位置1.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及位置2.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及位置3.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及位置4.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及位置5.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及位置6.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及位置7.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及位置8.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及位置9.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及位置10.png', 'correctAns': 2}, {'images': 'Task samples\\相同位置及边数1.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数2.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数3.png', 'correctAns': 2}, {'images': 'Task samples\\相同位置及边数4.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数5.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数6.png', 'correctAns': 2}, {'images': 'Task samples\\相同位置及边数7.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数8.png', 'correctAns': 1}, {'images': 'Task samples\\相同位置及边数9.png', 'correctAns': 2}, {'images': 'Task samples\\相同位置及边数10.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数1.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数2.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数3.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及边数4.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及边数5.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数6.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数7.png', 'correctAns': 2}, {'images': 'Task samples\\相同颜色及边数8.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数9.png', 'correctAns': 1}, {'images': 'Task samples\\相同颜色及边数10.png', 'correctAns': 2}, {'images': 'Task samples\\相同的奇偶规律1.png', 'correctAns': 1}, {'images': 'Task samples\\相同的奇偶规律2.png', 'correctAns': 2}, {'images': 'Task samples\\相同的奇偶规律3.png', 'correctAns': 1}, {'images': 'Task samples\\相同的奇偶规律4.png', 'correctAns': 2}, {'images': 'Task samples\\相同的奇偶规律5.png', 'correctAns': 1}, {'images': 'Task samples\\相同的奇偶规律6.png', 'correctAns': 1}, {'images': 'Task samples\\相同的奇偶规律7.png', 'correctAns': 2}, {'images': 'Task samples\\相同的奇偶规律8.png', 'correctAns': 1}, {'images': 'Task samples\\相同的奇偶规律9.png', 'correctAns': 2}, {'images': 'Task samples\\相同的奇偶规律10.png', 'correctAns': 2}, {'images': 'Task samples\\相同的数列规律1.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律2.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律3.png', 'correctAns': 2}, {'images': 'Task samples\\相同的数列规律4.png', 'correctAns': 2}, {'images': 'Task samples\\相同的数列规律5.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律6.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律7.png', 'correctAns': 2}, {'images': 'Task samples\\相同的数列规律8.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律9.png', 'correctAns': 1}, {'images': 'Task samples\\相同的数列规律10.png', 'correctAns': 2}, {'images': 'Task samples\\相同的位置规律1.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律2.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律3.png', 'correctAns': 2}, {'images': 'Task samples\\相同的位置规律4.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律5.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律6.png', 'correctAns': 2}, {'images': 'Task samples\\相同的位置规律7.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律8.png', 'correctAns': 2}, {'images': 'Task samples\\相同的位置规律9.png', 'correctAns': 1}, {'images': 'Task samples\\相同的位置规律10.png', 'correctAns': 2}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="task_conditions.xlsx" valType="file"/>
@@ -275,10 +275,10 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="num"/>
-      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="name" updates="None" val="number_trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="trial2"/>
-    <LoopTerminator name="trials_2"/>
+    <Routine name="number_trial"/>
+    <LoopTerminator name="number_trials"/>
   </Flow>
 </PsychoPy2experiment>

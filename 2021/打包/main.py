@@ -133,7 +133,7 @@ button_2.buttonClock = core.Clock()
 button_3_img = visual.ImageStim(
     win=win, image="./lib/button.png", pos=(-0.3, 0.13), size=[0.4, 0.12], units='height', name='button3_img')
 button_3 = visual.ButtonStim(win,
-                             text=u'', font='SimSun',
+                             text=u'', font='Open Sans',
                              pos=(-0.3, 0.13),
                              letterHeight=0.04,
                              size=[0.3, 0.1], borderWidth=1,
