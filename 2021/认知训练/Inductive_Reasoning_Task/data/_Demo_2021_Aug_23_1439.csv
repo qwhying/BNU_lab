@@ -1,4 +1,0 @@
-﻿images,correctAns,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Fixation1.started,Fixation1.stopped,Trial1.started,Trial1.stopped,key_resp.keys,key_resp.corr,key_resp.started,key_resp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-Task samples\相同颜色及边数5.png,1,0,0,0,23,23.35801680001896,24.35826280002948,24.342970600002445,32.348976799985394,None,0,1.005771850119345,None,,001,2021_Aug_23_1439,Demo,2021.2.1,59.9988720405558,
-Task samples\相同颜色及边数7.png,2,0,1,1,25,32.381377700017765,33.382371600018814,33.36566619994119,None,None,0,1.0137953000376,None,,001,2021_Aug_23_1439,Demo,2021.2.1,59.9988720405558,
-Task samples\相同位置及边数9.png,2,0,2,2,17,41.3599266000092,42.360712999943644,42.360712999943644,None,None,0,1.0049823499284685,None,,001,2021_Aug_23_1439,Demo,2021.2.1,59.9988720405558,
