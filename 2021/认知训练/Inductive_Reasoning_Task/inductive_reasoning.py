@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
@@ -66,7 +66,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1200, 500], fullscr=False, screen=0,
+    size=[1200, 500], fullscr=True, screen=0,
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
     blendMode='avg', useFBO=True,
@@ -363,6 +363,7 @@ for thisGraphic_trial in graphic_trials:
                 # just the last key pressed
                 graphic_key_resp.keys = _graphic_key_resp_allKeys[-1].name
                 graphic_key_resp.rt = _graphic_key_resp_allKeys[-1].rt
+                # add screen feedback
                 graphic_key_resp.tStop = t
                 graphic_key_resp.frameNStop = frameN  # exact frame index
                 graphic_key_resp.status = FINISHED
